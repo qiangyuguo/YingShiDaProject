@@ -1,6 +1,8 @@
 ﻿using Common;
+using Method;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Web;
@@ -33,7 +35,33 @@ namespace YingShiDa.Action
             {
                 switch (action.ToLower())
                 {
-                    case "addfile": AddFile(context, _file); break;
+                    case "companyprofile": GetComPanyProfile(context); break;//公司简介
+                    case "developmenthistory": GetDevelopmentHistory(context); break;//发展历程
+                    case "corporateculture": GetCorporateCulture(context); break;//企业文化
+                    case "enterprisehonor": GetEnterpriseHonor(context); break;//企业荣誉
+
+                    case "companynews": GetCompanyNews(context); break;//公司新闻
+                    case "industryinformation": GetIndustryInformation(context); break;//行业资讯
+
+                    case "memberlist": GetMemberList(context); break;//服务理念
+                    case "membertogrouplist": GetMemberToGroupList(context); break;//常见问题答疑
+
+                    case "talentconcept": GetTalentConcept(context); break;//人才理念
+                    case "talentrecruitment": GetTalentRecruitment(context); break;//人才招聘
+                    case "staffstyle": GetStaffStyle(context); break;//员工风采
+
+                    case "contactinformation": GetContactInformation(context); break;//联系方式
+                    case "companylocation": GetCompanyLocation(context); break;//公司位置
+
+                    case "homepagecarousel": GetHomePageCarousel(context); break;//首页轮播图片
+                    case "teamcarousel": GetTeamCarousel(context); break;//团队轮播图片
+
+                    case "productphoto": GetProductPhoto(context); break;//得到所有产品图片
+
+                    case "productdetail": GetProductDetail(context); break;//得到指定产品的详情
+
+                    case "productdetailbyid": GetProductDetailByID(context); break;//根据详情ID得到产品的详情
+
                 }
 
             }
@@ -48,28 +76,439 @@ namespace YingShiDa.Action
             }
         }
 
-        public void AddFile(HttpContext context, HttpPostedFile _file)
+
+        public string GetComPanyProfile(HttpContext context)
         {
             string jsonStr = string.Empty;
-            List<string> r1 = new List<string>();
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
-                string webPath = WebSite.IMAGESERVER_LOCALPATH + "//Product//";//文件服务路径
-                if (!Directory.Exists(webPath))
+                if (dbm.Open())
                 {
-                    Directory.CreateDirectory(webPath);
+                    Model.Company_Profile cp = Factory.GetExecution().SelectTopList<Model.Company_Profile>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
                 }
-                var strs = _file.FileName.Split('.');
-                string FileName =Guid.NewGuid().ToString("N") + "." + strs[1].ToLower();
-                _file.SaveAs(webPath + FileName);
-                r1.Add(FileName);
-                jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(r1);
-                context.Response.Write(jsonStr);
             }
             catch (Exception ex)
             {
                 context.Response.Write("FAIL|无法获取驳回原因");
             }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetDevelopmentHistory(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Company_History cp = Factory.GetExecution().SelectTopList<Model.Company_History>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetCorporateCulture(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Company_Culture cp = Factory.GetExecution().SelectTopList<Model.Company_Culture>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetEnterpriseHonor(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Company_Honor cp = Factory.GetExecution().SelectTopList<Model.Company_Honor>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetCompanyNews(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Company_News cp = Factory.GetExecution().SelectTopList<Model.Company_News>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetIndustryInformation(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Industry_News cp = Factory.GetExecution().SelectTopList<Model.Industry_News>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetMemberList(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Service_Concept cp = Factory.GetExecution().SelectTopList<Model.Service_Concept>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetMemberToGroupList(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.CommonQuestion cp = Factory.GetExecution().SelectTopList<Model.CommonQuestion>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetTalentConcept(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Talent_Concept cp = Factory.GetExecution().SelectTopList<Model.Talent_Concept>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetTalentRecruitment(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Recruitment cp = Factory.GetExecution().SelectTopList<Model.Recruitment>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetStaffStyle(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Staff_Presence cp = Factory.GetExecution().SelectTopList<Model.Staff_Presence>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetCompanyLocation(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Company_Location cp = Factory.GetExecution().SelectTopList<Model.Company_Location>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetHomePageCarousel(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.InBanner cp = Factory.GetExecution().SelectTopList<Model.InBanner>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetContactInformation(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Contact_US cp = Factory.GetExecution().SelectTopList<Model.Contact_US>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetTeamCarousel(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.InTeam cp = Factory.GetExecution().SelectTopList<Model.InTeam>();
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetProductPhoto(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    DataTable dt = DAL.GetDataTable.GetAllProduct(dbm);
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetProductDetail(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            int ID =Convert.ToInt32(context.Request.Params["ID"]);
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.ProductCenterDetail cp = Factory.GetExecution().SelectByID<Model.ProductCenterDetail>(ID);
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetProductDetailByID(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            string ProductID = context.Request.Params["ProductID"];
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    DataTable dt = DAL.GetDataTable.GetProductDetailByID(ProductID,dbm);
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
         }
 
         public bool IsReusable

@@ -10,7 +10,9 @@ namespace Method
 
         T SelectModel<T>(T t);
 
-        T SelectList<T>(T t);
+        T SelectList<T>();
+
+        T SelectTopList<T>();
 
         bool Add<T>(T t);
 

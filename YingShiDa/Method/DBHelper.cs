@@ -91,17 +91,58 @@ namespace Method
         }
 
         #region 查询某一张表的数据
-        public T SelectList<T>(T t)
+        public T SelectList<T>()
         {
             try
             {
-                string strSql = "select * from [" + t.GetType().Name + "]";
-                object objUser = new object();
+                Type type = typeof(T);
+                object objUser = Activator.CreateInstance(type);
+                string strSql = "select * from [" + objUser.GetType().Name + "]";
                 try
                 {
                     SqlDataReader reader = ExecutionMethod.ExecuteReader(strSql, null);
-                    Type type = typeof(T);
-                    objUser = Activator.CreateInstance(type);
+                    
+                    while (reader.Read())
+                    {
+                        foreach (var item in type.GetProperties())
+                        {
+                            object o = reader[item.Name];
+                            if (o is DBNull)
+                            {
+                                item.SetValue(objUser, null);
+                            }
+                            else
+                            {
+                                item.SetValue(objUser, o);
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+                return (T)objUser;
+            }
+            catch (Exception ex)
+            {
+                LogTool.LogWriter.WriteError("查询失败：" + ex.ToString());
+            }
+            return default(T);
+        }
+        #endregion
+
+        #region 查询某一张表最新的数据
+        public T SelectTopList<T>()
+        {
+            try
+            {
+                Type type = typeof(T);
+                object objUser = Activator.CreateInstance(type);
+                string strSql = "select top 1 * from [" + objUser.GetType().Name + "] order by UpdateTime desc";
+                try
+                {
+                    SqlDataReader reader = ExecutionMethod.ExecuteReader(strSql, null);
+
                     while (reader.Read())
                     {
                         foreach (var item in type.GetProperties())
