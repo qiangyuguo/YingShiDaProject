@@ -8,16 +8,16 @@ namespace Method
     {
         T SelectByID<T>(int ID) where T : new();
 
-        T SelectModel<T>(T t);
+        T SelectModel<T>(string UserName) where T : new();//查询登录名是否匹配
 
-        T SelectList<T>();
+        T SelectList<T>() where T :new();//查询所有的
 
-        T SelectTopList<T>();
+        T SelectTopList<T>() where T : new();//查询最新的一条
 
-        bool Add<T>(T t);
+        bool Add<T>(T t) where T : new();
 
-        bool Update<T>(T t);
+        bool Update<T>(T t) where T : new();
 
-        bool Delete<T>(int ID);
+        bool Delete<T>(int ID) where T : new();
     }
 }

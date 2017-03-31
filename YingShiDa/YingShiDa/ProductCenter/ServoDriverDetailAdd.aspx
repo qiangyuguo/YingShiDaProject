@@ -400,7 +400,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-1 ">首页图片</label>
+                                        <label class="control-label col-md-1 ">附件列表</label>
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
                                             <div class="file-input">

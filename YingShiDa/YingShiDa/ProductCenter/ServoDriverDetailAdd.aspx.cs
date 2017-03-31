@@ -139,9 +139,19 @@ namespace YingShiDa.ProductCenter
                     Common.MessageBox.ShowLayer(this, "特点和优点不能为空", 2);
                     return;
                 }
+                if (Advantage.Length>100)
+                {
+                    Common.MessageBox.ShowLayer(this, "特点和优点长度不能超过100个字符", 2);
+                    return;
+                }
                 if (string.IsNullOrEmpty(TechnicalParameter))
                 {
                     Common.MessageBox.ShowLayer(this, "技术参数不能为空", 2);
+                    return;
+                }
+                if (string.IsNullOrEmpty(photo_list[0]))
+                {
+                    Common.MessageBox.ShowLayer(this, "附件不能为空", 2);
                     return;
                 }
                 if (view_action == "notify")
@@ -189,6 +199,10 @@ namespace YingShiDa.ProductCenter
                     if (!string.IsNullOrEmpty(photo_list[0]))
                     {
                         cp.FileName = photo_list[0].Trim(',');
+                    }
+                    else
+                    {
+                        cp.FileName = "";
                     }
                     bool flag = Factory.GetExecution().Add<Model.ProductCenterDetail>(cp);
                     if (flag)

@@ -21,28 +21,28 @@ namespace YingShiDa
 
         protected void Application_BeginRequest(object sender, EventArgs e)
         {
-            string keyWords = null;
-            foreach (string i in this.Request.Form)
-            {
-                if (i == null || i.IndexOf("_") == 0) continue;
-                if (SqlFilter2(this.Request.Form[i].ToString(), out keyWords))
-                {
-                    Response.Write("<script type='text/javascript'>alert('包含非法字符 " + keyWords + "！');window.location='" + Request.RawUrl + "';</script>");
-                    Response.End();
-                    return;
-                }
-            }
-            //遍历Get参数。
-            foreach (string i in this.Request.QueryString)
-            {
-                if (i == null || i.IndexOf("_") == 0) continue;
-                if (SqlFilter2(this.Request.QueryString[i].ToString(), out keyWords))
-                {
-                    Response.Write("<script type='text/javascript'>alert('包含非法字符 " + keyWords + "！');window.location='" + Request.RawUrl + "';</script>");
-                    Response.End();
-                    return;
-                }
-            }
+            //string keyWords = null;
+            //foreach (string i in this.Request.Form)
+            //{
+            //    if (i == null || i.IndexOf("_") == 0) continue;
+            //    if (SqlFilter2(this.Request.Form[i].ToString(), out keyWords))
+            //    {
+            //        Response.Write("<script type='text/javascript'>alert('包含非法字符 " + keyWords + "！');window.location='" + Request.RawUrl + "';</script>");
+            //        Response.End();
+            //        return;
+            //    }
+            //}
+            ////遍历Get参数。
+            //foreach (string i in this.Request.QueryString)
+            //{
+            //    if (i == null || i.IndexOf("_") == 0) continue;
+            //    if (SqlFilter2(this.Request.QueryString[i].ToString(), out keyWords))
+            //    {
+            //        Response.Write("<script type='text/javascript'>alert('包含非法字符 " + keyWords + "！');window.location='" + Request.RawUrl + "';</script>");
+            //        Response.End();
+            //        return;
+            //    }
+            //}
         }
         static string[] KeyWorks = new string[] { "and", "exec", "insert", "select", "delete", "update", "chr", "mid", "master", "or", "truncate", "char", "declare", "join", "<", ">", "'", "%" };
         public static bool SqlFilter2(string InText, out string keyWord)

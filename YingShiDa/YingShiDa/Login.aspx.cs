@@ -135,8 +135,8 @@ namespace YingShiDa
             try
             {
                 Model.SysUser sysUser = new Model.SysUser();
-                sysUser.UserName = txtMobilePhone.Text.Trim();
-                sysUser = Factory.GetExecution().SelectModel<Model.SysUser>(sysUser);
+                string UserName = txtMobilePhone.Text.Trim();
+                sysUser = Factory.GetExecution().SelectModel<Model.SysUser>(UserName);
                 if (sysUser != null && sysUser.PassWord == password)
                 {
                     Session["UserInfo"] = sysUser;
