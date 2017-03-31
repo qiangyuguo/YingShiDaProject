@@ -1,0 +1,16 @@
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\DBUtility.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\DBUtility.pdb
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\LogTool.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\log4net.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\LogTool.pdb
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Debug\DBUtility.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Debug\DBUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\DBUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\DBUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Debug\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Debug\DBUtility.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Debug\DBUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Debug\DBUtility.pdb

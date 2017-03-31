@@ -1,0 +1,368 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.spanDel {
+    position: absolute;
+    bottom: 140px;
+    width: 131px;
+    height: 21px;
+    opacity: 0;
+    filter: alpha(Opacity=0);
+    background-color: rgba(0, 0, 0,0);
+    left: 0px;
+    z-index: 999;
+}
+
+.spanDelhover {
+    opacity: 0.6;
+    filter: alpha(Opacity=60);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+img {
+    border: 1px solid #ccc;
+}
+
+.cssHide {
+    display: none;
+}
+
+.fu {
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+}
+
+.c-item-i .c-item-con {
+    padding-top: 16px;
+}
+
+.c-item-con input[type="submit"] {
+    background-color: #0095f3;
+    border: 1px solid #0095f3;
+    color: #fff;
+}
+
+/* 多规格块区样式 start */
+.c-spec-block {
+    width: 100%;
+    height: auto;
+    background-color: #f8f8f8;
+}
+
+    .c-spec-block .c-spec-h4 {
+        font-size: 16px;
+        background-color: #f0f0f0;
+        line-height: 44px;
+        margin-left: 0;
+        padding: 13px 0px 13px 10px;
+    }
+
+.c-spec-labe {
+    padding-left: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(../../images/checked.png) no-repeat;
+    cursor: pointer;
+    line-height: 18px;
+    vertical-align: middle;
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+    .c-spec-labe.checked {
+        background: url(../../images/checked.png) 0 -36px no-repeat;
+    }
+
+    .c-spec-labe input {
+        display: none;
+    }
+
+.c-msb-tit {
+    margin-left: 140px !important;
+    margin-top: 10px !important;
+    color: #999 !important;
+}
+
+.c-multipleSpecBox {
+    overflow: hidden;
+    display: none;
+}
+
+.c-msp-i-item {
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.c-msp-specName {
+    width: 130px;
+    margin-top: 20px;
+    float: left;
+}
+
+.c-msp-input-specName {
+    color: #555;
+    font-family: Verdana, Geneva, Tahoma, sans-serif,'Microsoft YaHei',Tahoma,Arial;
+    font-size: 12px;
+    border: 0;
+    outline: 0;
+    vertical-align: middle;
+    padding: 5px 12px;
+    width: 106px;
+    height: 20px;
+    line-height: 20px;
+    border-bottom: 1px dashed #d6dee3;
+    background: 0 0;
+}
+
+.c-msp-i-item .c-msp-close {
+    width: 16px;
+    height: 16px;
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+    .c-msp-i-item .c-msp-close:hover {
+        cursor: pointer;
+    }
+
+.c-msp-specValue {
+    width: auto;
+    margin-left: 130px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+.selectize-input {
+    width: 100%;
+    position: relative;
+    font-size: 13px;
+    font-family: inherit;
+    cursor: text;
+    color: #303030;
+    border: 1px solid #d0d0d0;
+    padding: 11px 8px;
+    display: inline-block;
+    overflow: hidden;
+    z-index: 1;
+    box-sizing: border-box;
+    background: #fff;
+    line-height: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: inherit;
+}
+
+    .selectize-input > * {
+        vertical-align: baseline;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+    }
+
+    .selectize-input input {
+        color: #303030;
+        font-family: inherit;
+        font-size: 13px;
+        line-height: 18px;
+        -webkit-font-smoothing: inherit;
+        outline: 0px;
+    }
+
+    .selectize-input > input {
+        display: inline-block !important;
+        padding: 0 !important;
+        min-height: 0 !important;
+        max-height: none !important;
+        max-width: 100% !important;
+        margin: 0 2px 0 0 !important;
+        text-indent: 0 !important;
+        border: 0 !important;
+        background: 0 0 !important;
+        line-height: inherit !important;
+    }
+
+.c-multipleSpecBox .addSpec, .c-multipleSpecBox .addSpec:hover {
+    color: #1596ad !important;
+}
+
+.c-multipleSpecBox .addSpec {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
+    float: left;
+    margin-top: 20px;
+}
+
+.c-multipleSpecBox .unifiedSetting {
+    display: block;
+    float: left;
+    margin: 15px;
+    line-height: 30px;
+    display: none;
+}
+
+    .c-multipleSpecBox .unifiedSetting #inpMoney {
+        border:1px solid #e5e6e7;
+        height:30px;
+    }
+
+.c-multipleSpecBox .btn {
+    width: 70px;
+    background-color: #769ACD;
+    border: 1px solid #769ACD;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #F3F4F5;
+}
+
+
+.c-msp-specValue .selectize-input > div {
+    cursor: pointer;
+    margin: 0 8px 3px 0;
+    padding: 5px 10px;
+    background: #03b8cc;
+    color: #FFF;
+    border: 0 solid #d0d0d0;
+}
+
+.c-msp-specValue .selectize-input [data-value] {
+    position: relative;
+    padding-right: 24px !important;
+}
+
+    .c-msp-specValue .selectize-input [data-value] .remove {
+        z-index: 1;
+        position: absolute;
+        background: url(../../images/icon8.png) 0 -480px no-repeat;
+        width: 18px;
+        height: 0;
+        padding: 18px 0 0;
+        overflow: hidden;
+        top: -6px;
+        right: -9px;
+        bottom: 0;
+        text-align: center;
+        font-weight: 700;
+        font-size: 12px;
+        color: inherit;
+        text-decoration: none;
+        vertical-align: middle;
+        display: inline-block;
+        border-left: 0;
+    }
+
+        .c-msp-specValue .selectize-input [data-value] .remove:hover {
+            background: url(../../images/icon8.png) -40px -480px no-repeat;
+        }
+
+.c-msg-red {
+    color: red;
+    position: absolute;
+    letter-spacing: 8px;
+    left: 40%;
+    display: none;
+}
+/* 多规格块区样式 end */
+
+/*产品列表块区样式 start */
+.ui-input, .ui-textarea {
+    padding: 5px 12px;
+    line-height: 20px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    color: rgb(85, 85, 85);
+    font-family: verdana, 宋体, "Microsoft Yahei", Tahoma, Arial;
+    font-size: 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(214, 222, 227);
+    outline: 0px;
+    vertical-align: middle;
+}
+
+.tc {
+    text-align: center !important;
+}
+
+.c-product-table {
+    margin-top: 20px;
+}
+
+    .c-product-table table {
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    .c-product-table th {
+        padding: 0 5px;
+        height: 50px;
+        border: 1px solid #e5e8ea;
+        vertical-align: middle;
+        table-layout: fixed;
+        background-color: #f5f6f7;
+        color: #555;
+        font-weight: 400;
+    }
+
+    .c-product-table .key {
+        table-layout: fixed;
+        min-width: 15px;
+        text-align: center;
+    }
+
+    .c-product-table tbody tr {
+        display: table-row;
+    }
+
+        .c-product-table tbody tr td {
+            padding: 0 5px;
+            height: 50px;
+            border: 1px solid #e5e8ea;
+            vertical-align: middle;
+            table-layout: fixed;
+            background-color: #fff;
+            color: #666;
+            word-break: break-all;
+        }
+
+    .c-product-table input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 32px;
+    }
+
+    .c-product-table .trOp {
+        text-align: center;
+        table-layout: fixed;
+        width: 40px;
+    }
+
+.theme-color, a.theme-color:hover {
+    color: #1596ad !important;
+}
+
+/*产品列表块区样式 end */

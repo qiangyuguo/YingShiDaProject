@@ -1,0 +1,1091 @@
+/*common ------------------------------------------------*/
+span {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.area {
+	position: relative;
+	padding: 20px;
+	margin: 0 0 20px;
+	background: white;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+.area .title {
+	padding: 0 0 0 20px;
+	margin: 0 0 30px;
+	font-size: 14px;
+	line-height: 20px;
+	border-left: 6px solid #1ab394;
+	font-weight: normal;
+}
+.area-index {
+	-webkit-border-radius: 0;
+	   -moz-border-radius: 0;
+		 -o-border-radius: 0;
+			border-radius: 0;
+}
+
+.tab {
+	position: absolute;
+	right: 19px;
+	top: 19px;
+	border: 1px solid #1ab394;
+	border-radius: 3px;
+}
+.tab-item {
+	display: inline-block;
+	width: 60px;
+	padding: 2px 0;
+	text-align: center;
+	color: #7b7b7b;
+	border-right: 1px solid #1ab394;
+}
+.tab-item:hover {
+	color: #7b7b7b;
+	text-decoration: none;
+}
+.tab-active {
+	color: white;
+	background: #1ab394;
+}
+.tab-active:hover {
+	color: white;
+}
+.tab-last {
+    border-right: none;
+}
+
+.text-normal {
+	color: #282828;
+	font-size: 12px;
+}
+
+/*重置头部border-bottom*/
+.border-bottom {
+	border-bottom: 0!important;
+}
+
+.orange-normal {
+	color: #f9803b;
+}
+.orange-bg {
+	background: #f9803b;
+}
+
+.green-normal {
+	color: #19b293;
+}
+.green-bg {
+	background: #19b293;
+}
+
+.br-normal-big {
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+.br-normal-small {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+}
+.br-circle {
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+#async-icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 0 0 0 20px;
+	background: url(../../images/select2-spinner.gif) no-repeat;
+}
+
+/*stat --------------------------------------------------*/
+.stat {
+	margin: 18px auto;
+	padding: 0;
+}
+.stat .stat-item {
+	float: left;
+	width: 550px;
+	text-align: center;
+	border-left: 1px solid #f3f3f3;
+}
+.stat .stat-item:first-child {
+	border-left: none;
+}
+.stat .stat-label {
+	font-size: 14px;
+	line-height: 24px;
+	margin: 0 auto 12px;
+}
+.stat .stat-value {
+	display: block;
+	margin-bottom: 20px;
+	font: normal bold 22px/1.5em '微软雅黑'
+}
+.stat .stat-expect {
+	display: block;
+	width: 210px;
+	height: 26px;
+	margin: 0 auto;
+	line-height: 26px;
+	background: #dad8d9;
+}
+.stat-msg {
+	display: inline-block;
+    margin: 0px 0 0 195px;
+	color: #c2c2c2;
+}
+
+/*user-charts ------------------------------------------*/
+.user-charts {
+	position: relative;
+}
+.user-charts .title {
+	margin-bottom: 0;
+}
+
+.mapping {
+	position: absolute;
+	top: 20px;
+	right: 152px;
+}
+.mapping .map-sub-first {
+	margin-right: 28px;
+}
+.mapping .map-sub-first .map-key {
+    background: #f9803b;
+}
+.mapping .map-key {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin: 0 12px 0 0;
+    vertical-align: middle;
+    background: #19b293;
+}
+.mapping .map-value {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.charts {
+	height: 306px;
+}
+
+/*distribulte ------------------------------------------*/
+.distribute {
+	float: left;
+	width: 464px;
+	margin-right: 20px;
+}
+
+.distribe-sub {}
+.distribe-list {
+	padding: 0 0 0 26px;
+	margin: 0;
+}
+.distribe-item {
+    margin-bottom: 18px;
+}
+.distribe-item-first {
+	position: relative;
+}
+.distribe-name {
+	width: 50px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.distribe-percent-sup {
+	position: relative;
+	width: 280px;
+	height: 10px;
+	margin-right: 12px;
+	background: #eee;
+}
+.distribe-percent-sub {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 10px;
+	transition: 1s width linear;
+	-webkit-transition: 1s width linear;
+	-moz-transition: 1s width linear;
+	-o-transition: 1s width linear;
+}
+.distribe-num {
+	width: 56px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.distribe-percent-num {
+	display: inline-block;
+	width: 32px;
+	overflow: hidden;
+}
+
+
+/*user -----------------------*/
+.user {}
+
+/*activity --------------------------------------------*/
+.activity {
+	float: left;
+	width: 1209px;
+	padding-bottom: 0;
+}
+.activity-wrap {
+	position: relative;
+}
+.activity-list {
+	padding-top: 50px;
+}
+.activity-odd {}
+.activity-even {}
+.activity-item {
+	position: relative;
+	width: 970px;
+	margin: auto;
+}
+.activity-item:last-child {
+	padding-bottom: 60px;
+	margin-bottom: 2px;
+}
+.activity-box {
+	position: relative;
+	float: left;
+	width: 438px;
+	padding: 10px 16px;
+	background: #eee;
+	border: 1px solid #c9c9c9;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+.activity-odd .activity-box:after {
+	position: absolute;
+	right: -7px;
+    top: 41px;
+	content: '';
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
+	border-top: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+	background: #eee;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	z-index: 0;
+}
+.activity-even .activity-box:before {
+	position: absolute;
+	left: -7px;
+    top: 41px;
+	content: '';
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
+	border-bottom: 1px solid #c9c9c9;
+	border-left: 1px solid #c9c9c9;
+	background: #eee;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	z-index: 0;
+}
+.activity-even .activity-box {
+	float: right;
+}
+.activity-box-sub:before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 100%;
+	vertical-align: middle;
+}
+.activity-icon {
+    display: inline-block;
+    margin-right: 16px;
+    vertical-align: middle;
+    border: none;
+}
+.activity-even .activity-icon {
+	position: relative;
+	left: 342px;
+}
+.activity-text {
+	display: inline-block;
+	width: 322px;
+	margin: 0;
+	vertical-align: middle;
+	line-height: 24px;
+}
+.activity-even .activity-text {
+	margin-left: -78px;
+}
+.activity-spe {
+    vertical-align: top;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.activity-decorate {
+	position: absolute;
+	top: 41px;
+	left: 50%;
+}
+.activity-decorate:before {
+	content: '';
+	position: absolute;
+	top: -12px;
+	left: -12px;
+	width: 24px;
+	height: 24px;
+	background: #1ab394;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	opacity: .3;
+}
+.activity-decorate:after {
+	content: '';
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	width: 16px;
+	height: 16px;
+	background: #1ab394;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+.activity-time {
+	float: right;
+	width: 438px;
+	height: 80px;
+	line-height: 80px;
+	color: black;
+	font-weight: bold;
+}
+.activity-even .activity-time {
+	float: left;
+	text-align: right;
+}
+
+.activity-separate {
+	position: absolute;
+	left: 50%;
+	top: 2px;
+	width: 2px;
+	margin-left: -1px;
+	height: 100%;
+	background: #19b293;
+}
+.activity-separate:before {
+	content: '';
+	position: absolute;
+	left: -21px;
+	top: -21px;
+	width: 42px;
+	height: 42px;
+	background: #1ab394;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+	opacity: .3;
+}
+.activity-separate:after {
+	content: '';
+	position: absolute;
+	left: -12px;
+	top: -12px;
+	width: 24px;
+	height: 24px;
+	background: #1ab394;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+/*empty -----------------------------------------------*/
+.empty {
+	text-align: center;
+}
+.empty-icon {
+	display: inline-block;
+	width: 79px;
+	height: 96px;
+	margin-bottom: 14px;
+	margin-top: 40px;
+	background: url(../../images/acting-cute.png) no-repeat;
+}
+.empty-text {
+	color: #b2b2b2;
+}
+
+
+
+/********************************************************
+
+					   index.html
+
+********************************************************/
+.wrap-index .empty-icon {
+	margin-top: 40px;
+}
+
+/*关键数据 ------------------------------------------*/
+.key-data {
+	float: left;
+	width: 1230px;
+	margin-right: 20px;
+}
+.key-data .stat {
+	height: 120px;
+	padding: 20px 0 0;
+}
+.key-data .msg {
+	display: inline-block;
+	margin: 0 0 0 6px;
+	color: #c2c2c2;
+	font-size: 12px;
+}
+.key-data .stat-item {
+	width: 297px;
+	padding: 14px 0 0;
+	border-left: 1px dashed #e3e3e3;
+}
+.key-data .stat-label {
+	margin: 0 0 24px;
+	font-size: 16px;
+	/*color: #868686;*/
+	line-height: 16px;
+}
+.key-data .stat-value {
+	font-size: 30px;
+	color: #43ba9c;
+	line-height: 25px;
+}
+
+/*最新动态 ------------------------------------------*/
+.dynamic {
+	float: left;
+	width: 443px;
+	height: 228px;
+}
+.dynamic-wrap {
+	position: relative;
+}
+.dynamic-item {
+	position: relative;
+	height: 34px;
+    margin-bottom: 15px;
+    padding-left: 0;
+    z-index: 100;
+}
+.dynamic-item-last {
+	margin-bottom: 0;
+}
+.dynamic-icon {
+	position: absolute;
+	top: 3px;
+	width: 28px;
+	height: 28px;
+}
+.dynamic-text-wrap {
+	display: table;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+}
+.dynamic-text {
+	display: table-cell;
+	width: 403px;
+	margin-bottom: 0;
+	padding-left: 45px;
+	height: 34px;
+	vertical-align: middle;
+}
+.dynamic-line {
+	position: absolute;
+	top: 8px;
+	left: 14px;
+	width: 0;
+	height: 80%;
+	border-right: 1px dotted #1ab394;
+}
+.dynamic .empty-icon {
+	margin-top: 2px;
+}
+
+/*每日交易数据趋势------------------------------*/
+.trading-trends,
+.line-trends {
+	position: relative;
+}
+.trading-trends .tab,
+.line-trends .tab {
+	top: 0;
+	right: 99px;
+}
+.trading-trends .charts-wrap,
+.line-trends .charts-wrap {
+	position: relative;
+	height: 440px;
+}
+.trading-trends .charts,
+.line-trends .charts {
+	position: absolute;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	height: 100%;
+	width: 100%;
+}
+.trading-trends .charts-show,
+.line-trends .charts-show {
+	visibility: visible;
+}
+
+/*area-aside------------------------------*/
+.area-aside {
+	float: left;
+	padding: 20px 0 0;
+	border-top: 1px dashed #ddd;
+}
+
+/*今日交易金额支付方式比例------------------------------*/
+.mode-ratio,
+.pie-ratio {
+	float: left;
+    width: 816px;
+}
+.mode-ratio {
+	margin-right: 20px;
+}
+.pie-ratio {
+	width: 816px;
+	padding: 0 0 0 20px;
+	border-left: 1px dashed #ddd;
+}
+.mode-ratio .title,
+.pie-ratio .title {
+	margin-bottom: 14px;
+}
+.mode-ratio .charts,
+.pie-ratio .charts {
+	height: 215px;
+}
+.empty {
+	height: 215px;
+}
+
+/*每日优惠券数据趋势------------------------------*/
+.coupon-trends {
+
+}
+.coupon-trends .mapping {
+	top: 0;
+	right: 99px;
+}
+
+/*优惠券核销率排行榜------------------------------*/
+.bdelete {
+	float: left;
+	width: 816px;
+	margin-right: 20px;
+	padding-bottom: 30px;
+}
+.bdelete .distribe-sub {
+	height: 165px;
+	margin-bottom: 16px;
+}
+.bdelete .title {
+	margin-bottom: 14px;
+}
+.bdelete .distribe-name {
+    width: 24px;
+    color: #f9803b;
+}
+.bdelete .distribe-list {
+	padding: 4px 0 0 33px;
+}
+.bdelete .distribe-item {
+	margin-bottom: 14px;
+}
+.bdelete .distribe-item-first .distribe-name {
+	position: absolute;
+    top: -4px;
+    left: -8px;
+    height: 26px;
+    text-indent: -9999px;
+    background: url(../../images/sysuser/iconfont-paixingbang.png) no-repeat;
+    overflow: auto;
+}
+.bdelete .distribe-item-first .distribe-percent-sup {
+	margin-left: 24px;
+}
+.bdelete .distribe-percent-sup {
+	width: 460px;
+	margin-right: 24px;
+}
+.bdelete .distribe-num {
+	width: 256px;
+}
+
+/*订单数据------------------------------*/
+.order-trends {
+	float: left;
+	width: 816px;
+	margin-right: 20px;
+}
+.order-trends .mapping {
+	top: 1px;
+	right: 194px;
+}
+.order-trends .tab {
+	right: 59px;
+}
+.order-trends .charts-wrap {
+	height: 340px;
+}
+
+/*第三方外卖订单金额分布----------------*/
+.area-aside-order {
+	padding: 0;
+	border: none;
+}
+.area-aside-order .pie-ratio {
+	height: 390px;
+}
+.area-aside-order .charts {
+	margin-top: 62px;
+}
+.area-aside-order .empty-icon {
+	margin-top: 90px;
+}
+
+/*提示----------------*/
+.tips {
+	margin-bottom: 20px;
+	color: #999;
+	font-size: 14px;
+}
+
+/*min-width: 1920px -----------------------------------*/
+@media screen and (min-width: 1920px) {
+	.wrap {
+		width: 1693px;
+		margin: 0 auto;
+	}
+
+	/*navbar ------------*/
+	.navbar {
+		width: 1693px;
+		margin: 0 auto;
+	}
+	.navbar .navbar-minimalize {
+		margin-left: 0;
+	}
+	.navbar .navbar-top-links li:last-child {
+		margin-right: 0;
+	}
+	.navbar .nav.navbar-right > li > a {
+		/*padding-right: 0;*/
+	}
+}
+
+/*min-width: 1366px -----------------------------------*/
+@media screen and (min-width: 1366px) and (max-width: auto) {
+	.wrap {
+		width: 1124px;
+		margin: 0 auto;
+	}
+
+	.area {
+		padding: 18px;
+	}
+	.area .title {
+		padding-left: 10px;
+		margin: 0 0 20px;
+	}
+
+	/*navbar ------------*/
+	.navbar {
+		width: 1124px;
+		margin: 0 auto;
+	}
+	.navbar .navbar-minimalize {
+		margin-left: 0;
+	}
+	.navbar .navbar-top-links li:last-child {
+		margin-right: 0;
+	}
+
+	/*stat --------------------------------------------------*/
+	.stat {
+		margin: 0 auto;
+		padding: 0;
+	}
+	.stat .stat-item {
+		width: 362px;
+	}
+	.stat .stat-item:first-child {
+		border-left: none;
+	}
+	.stat .stat-label {
+		margin: 0 auto 8px;
+	}
+	.stat .stat-value {
+		margin-bottom: 14px;
+	}
+	.stat .stat-expect {
+		width: 164px;
+	}
+	.stat-msg {
+		margin: 12px 0 0 106px;
+	}
+
+	/*distribulte ------------------------------------------*/
+	.distribute {
+		width: 341px;
+	}
+
+	.distribe-list {
+		padding: 0 0 0 18px;
+		margin: 0;
+	}
+	.distribe-item {
+	    margin-bottom: 16px;
+	}
+	.distribe-percent-sup {
+		width: 176px;
+		height: 8px;
+		margin-right: 8px;
+	}
+	.distribe-percent-sub {
+		width: 0;
+		height: 8px;
+	}
+	.distribe-num {
+		width: 53px;
+	}
+
+	/*activity --------------------------------------------*/
+	.activity {
+		width: 763px;
+		padding-bottom: 0;
+	}
+	.activity-list {
+		padding-top: 50px;
+	}
+	.activity-item {
+		width: 710px;
+	}
+	.activity-box {
+		width: 314px;
+	}
+	.activity-even .activity-icon {
+	    left: 216px;
+	}
+	.activity-text {
+		width: 198px;
+	}
+	.activity-time {
+		width: 314px;
+	}
+
+
+
+	/********************************************************
+
+						   index.html
+
+	********************************************************/
+	.wrap-index .area .title {
+		padding-left: 20px;
+	}
+
+	.key-data {
+	    width: 780px;
+	    margin-right: 14px;
+	}
+	.key-data .stat {
+	    height: 137px;
+	}
+	.key-data .stat-label {
+	    margin: 0 0 24px;
+	    font-size: 14px;
+	}
+	.key-data .stat-value {
+	    font-size: 24px;
+	}
+
+	.key-data .stat-item {
+	    width: 186px;
+	}
+
+	.dynamic {
+	    width: 330px;
+	    height: 214px;
+	}
+	.dynamic-item {
+		padding-left: 0;
+	}
+	.dynamic-text {
+	    width: 294px;
+	    margin-right: 0
+	}
+	.dynamic-line {
+	    left: 14px;
+	}
+
+	.trading-trends, .line-trends {
+	    width: 100%;
+	    height: 510px;
+	}
+	.order-trends {
+		width: 535px;
+		height: 380px;
+	}
+
+	.area-aside-spe .distribe-sub {
+		margin-left: 20px;
+	}
+
+	.bdelete {
+		width: 534px;
+	}
+	.bdelete .distribe-percent-sup {
+	    width: 240px;
+	}
+	.bdelete .distribe-num {
+	    width: 172px;
+	}
+
+	.mode-ratio {
+	    width: 534px;
+	}
+	.pie-ratio {
+		width: 534px;
+	}
+	.area-aside-order {
+		width: 533px;
+	}
+	.area-aside-order .charts {
+		margin-top: 52px;
+	}
+}
+
+/*min-width: 1366px -----------------------------------*/
+@media screen and (max-width:auto) {
+	body {
+		background-color: #f3f3f4;
+		overflow-x: auto;
+	}
+
+	#wrapper {
+		background: #2f4050;
+	}
+
+	.wrap {
+		width: 1124px;
+		margin: 0 auto;
+	}
+
+	.area {
+		padding: 18px;
+	}
+	.area .title {
+		padding-left: 10px;
+		margin: 0 0 20px;
+	}
+
+	/*navbar ------------*/
+	.navbar {
+		width: 1124px;
+		margin: 0 auto;
+	}
+	.navbar .navbar-minimalize {
+		margin-left: 15;
+	}
+	.navbar .navbar-top-links li:last-child {
+		margin-right: -15px;
+	}
+
+	/*stat --------------------------------------------------*/
+	.stat {
+		margin: 0 auto;
+		padding: 0;
+	}
+	.stat .stat-item {
+		width: 362px;
+	}
+	.stat .stat-item:first-child {
+		border-left: none;
+	}
+	.stat .stat-label {
+		margin: 0 auto 8px;
+	}
+	.stat .stat-value {
+		margin-bottom: 14px;
+	}
+	.stat .stat-expect {
+		width: 164px;
+	}
+	.stat-msg {
+		margin: 12px 0 0 106px;
+	}
+
+	/*distribulte ------------------------------------------*/
+	.distribute {
+		width: 341px;
+	}
+
+	.distribe-list {
+		padding: 0 0 0 18px;
+		margin: 0;
+	}
+	.distribe-item {
+	    margin-bottom: 16px;
+	}
+	.distribe-percent-sup {
+		width: 176px;
+		height: 8px;
+		margin-right: 8px;
+	}
+	.distribe-percent-sub {
+		width: 0;
+		height: 8px;
+	}
+	.distribe-num {
+		width: 53px;
+	}
+
+	/*activity --------------------------------------------*/
+	.activity {
+		width: 763px;
+		padding-bottom: 0;
+	}
+	.activity-list {
+		padding-top: 50px;
+	}
+	.activity-item {
+		width: 710px;
+	}
+	.activity-box {
+		width: 314px;
+	}
+	.activity-even .activity-icon {
+	    left: 216px;
+	}
+	.activity-text {
+		width: 198px;
+	}
+	.activity-time {
+		width: 314px;
+	}
+
+
+
+	/********************************************************
+
+						   index.html
+
+	********************************************************/
+	.wrap-index .area .title {
+		padding-left: 20px;
+	}
+
+	.key-data {
+	    width: 780px;
+	    margin-right: 14px;
+	}
+	.key-data .stat {
+	    height: 137px;
+	}
+	.key-data .stat-label {
+	    margin: 0 0 24px;
+	    font-size: 14px;
+	}
+	.key-data .stat-value {
+	    font-size: 24px;
+	}
+
+	.key-data .stat-item {
+	    width: 186px;
+	}
+
+	.dynamic {
+	    width: 330px;
+	    height: 214px;
+	}
+	.dynamic-item {
+		padding-left: 0;
+	}
+	.dynamic-text {
+	    width: 294px;
+	    margin-right: 0
+	}
+	.dynamic-line {
+	    left: 14px;
+	}
+
+	.trading-trends, .line-trends {
+	    width: 100%;
+	    height: 510px;
+	}
+	.order-trends {
+		width: 535px;
+		height: 380px;
+	}
+
+	.area-aside-spe .distribe-sub {
+		margin-left: 20px;
+	}
+
+	.bdelete {
+		width: 534px;
+	}
+	.bdelete .distribe-percent-sup {
+	    width: 240px;
+	}
+	.bdelete .distribe-num {
+	    width: 172px;
+	}
+
+	.mode-ratio {
+	    width: 534px;
+	}
+	.pie-ratio {
+		width: 534px;
+	}
+	.area-aside-order {
+		width: 533px;
+	}
+	.area-aside-order .charts {
+		margin-top: 52px;
+	}
+}

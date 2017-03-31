@@ -1,0 +1,445 @@
+﻿@charset "utf-8";
+
+body {
+    font-size: 14px;
+    /*font-family: "华文黑体", "思源黑体";*/
+    font-family: "微软雅黑", "Microsoft Yahei";
+    color: #333;
+}
+
+.table > thead > tr > th {
+    font-size: 16px;
+    /*font-family: "华文黑体", "思源黑体";*/
+    font-family: "微软雅黑", "Microsoft Yahei";
+    font-weight: bold;
+}
+
+.com-table-warp {
+    background: #fff;
+    border-radius: 4px;
+}
+
+.search-modal {
+    padding: 15px 20px;
+}
+
+.search-row {
+    overflow: hidden;
+}
+
+.search-modal .search-row {
+    display: block;
+    overflow: hidden;
+}
+
+.com-label-parent {
+    position: relative;
+    float: left;
+    margin: 0 30px 26px 0;
+}
+
+.com-table-warp .com-label-parent {
+    width: 330px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+}
+
+
+.com-label-wrap {
+    float: left;
+    width: 90px;
+    height: 34px;
+    margin: 0 16px 0 0;
+    line-height: 15px;
+}
+
+.com-table-wrap .com-label-wrap {
+    width: 80px;
+    margin: 0 10px 0 0;
+}
+
+.com-label-wrap i {
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.com-label {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    word-break: break-all;
+}
+
+.com-table-wrap .com-label {
+    text-align: left;
+}
+
+.com-select, .com-input {
+    float: left;
+    width: 220px;
+    height: 34px;
+    padding: 5px 6px;
+    font-size: 14px;
+    border: 1px solid #e5e6e7;
+    outline: 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.com-label-time {
+    width: 220px;
+    height: 34px;
+}
+
+@media(max-width:1200px) {
+    .com-table-warp .com-label-parent {
+        margin-right: 25px;
+    }
+}
+
+/*
+    弹出窗体设置 开始
+*/
+.fun_win_right {
+    width: 700px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    float: left;
+    /*display:none;*/
+    top: 0px;
+    right: -700px;
+    z-index: 999980;
+    transition: right .5s ease;
+    -moz-transition: right .5s ease;
+    -webkit-transition: right .5s ease;
+    -o-transition: right .5s ease;
+    /*box-shadow: -6px 0 0 rgba(0,0,0,.1);*/
+    /*background-color: #fff;*/
+}
+
+.fun_win_rightHide {
+    right: 0px;
+    display: none;
+    transition: right .5s ease;
+    -moz-transition: right .5s ease;
+    -webkit-transition: right .5s ease;
+    -o-transition: right .5s ease;
+}
+
+.fun_win_right .fun_win_border_opacty {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    opacity: 0.4;
+    z-index: 999981;
+}
+
+.fun_win_right .fun_win_content {
+    width: 100%;
+    height: 100%;
+    margin-left: 5px;
+    float: left;
+    background: #f9f9f9;
+    z-index: 999982;
+    position: absolute;
+}
+/*
+    弹出窗体结束
+*/
+
+/* 
+    原料模块开始
+*/
+.mrs {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+    background: #f3f3f5;
+}
+
+    .mrs .mrs-content {
+        overflow: hidden;
+    }
+
+.mrs_search {
+    width: 100%;
+    height: 45px;
+    padding: 5px;
+    float: left;
+    border: 2px solid #f3f3f5;
+    background-color: #ffffff;
+}
+
+    .mrs_search .condition, .templateCon .condition {
+        background-color: #FFFFFF;
+        background-image: none;
+        border: 1px solid #e5e6e7;
+        border-radius: 1px;
+        color: inherit;
+        display: inline-block;
+        width: 180px;
+        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+        margin: 0px 10px;
+        float: left;
+        height: 30px;
+        margin-top: 1px;
+    }
+
+    .mrs_search .w200 {
+        width: 200px;
+    }
+
+    .mrs_search .w255 {
+        width: 255px;
+    }
+
+    .mrs_search .stati-tool-item, .mrs_add .stati-tool-item {
+        width: 70px;
+        height: 30px;
+        margin: 0px 10px;
+    }
+
+.mrs_add {
+    position: relative;
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.35);
+    color: #000;
+}
+
+.mrs_left {
+    width: 180px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    background: #2e4250;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+    .mrs_left ul li {
+        height: 30px;
+        line-height: 30px;
+        cursor: -webkit-grab;
+    }
+
+        .mrs_left ul li.action {
+            background: #fff;
+            color: #000;
+        }
+
+        .mrs_left ul li:hover {
+            background: #fff;
+            color: #000;
+        }
+
+.mrs_right {
+    width: 500px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding-right: 5px;
+}
+/* 
+    原料模块结束 
+*/
+
+/*
+    原料模块弹出窗体2 开始
+*/
+.mrs_productItem {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+    .mrs_productItem .mrs_ItemI {
+        height: 50px;
+        width: 100%;
+        padding: 0px 15px;
+        line-height: 50px;
+        background-color: #ffffff;
+        border-bottom: 1px solid #f3f3f5;
+        text-align: left;
+        font-size: 16px;
+        position: relative;
+        cursor: pointer;
+    }
+
+.mrs_ItemI .mrs_del {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    right: 15px;
+    font-weight: bold;
+    line-height: 35px;
+    color: #ffffff;
+    top: 7px;
+    background-color: #769ccd;
+    padding-left: 9px;
+}
+
+.mrs_ItemI label {
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.cloneTemplate {
+    height: 100px;
+}
+
+    .cloneTemplate .templateCon {
+        width: 100%;
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    .cloneTemplate p {
+        color: #dedee0;
+        margin-left: 15px;
+        display: inline-block;
+    }
+
+.templateCon .tc_left {
+    width: 310px;
+    float: left;
+}
+
+.templateCon .tc_right {
+    width: 360px;
+    float: left;
+}
+
+.tc_left label, .tc_right label {
+    margin: 0px;
+    line-height: 34px;
+    float: left;
+}
+
+.mrs_search .condition, .templateCon .condition {
+    margin: 0px;
+    height: 34px;
+}
+
+.tc_right .stati-check {
+    width: 90px;
+    margin: 0px;
+    background: #ff3e9e;
+    color: #ffffff;
+    border: 0px;
+}
+
+#fenye {
+    text-align: center;
+    background-color: #ffffff;
+}
+/*
+    原料模块弹出窗体2 结束
+*/
+
+
+/*
+    SettingPrinterType
+    打印机配置弹出框开始
+*/
+.spt_win_con_top {
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+}
+
+    .spt_win_con_top .spt_left, .spt_win_con_top .spt_right {
+        width: 50%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        float: left;
+    }
+
+    .spt_win_con_top .spt_left {
+        border-right: 1px solid #eaeaea;
+    }
+
+.spt_left a, .spt_right a {
+    text-decoration: none;
+    height: 58px;
+    display: inline-block;
+    width: 80%;
+    overflow: hidden;
+}
+
+    .spt_left a:hover, .spt_right a:hover {
+        color: #769ccd;
+        border-bottom: 2px solid #769ccd;
+    }
+
+.spt_win_con_top .action {
+    color: #769ccd;
+    border-bottom: 2px solid #769ccd;
+}
+
+.spt_win_con_con {
+    height: auto;
+    padding: 0 10px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.spt_allselected {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 15px;
+}
+
+    .spt_allselected .cb_all, .spt_win_con_con li input[type="checkbox"] {
+        width: 15px;
+        height: 15px;
+        margin: 0 25px 0 15px;
+    }
+
+.spt_win_con_con ul {
+    width: 100%;
+}
+
+    .spt_win_con_con ul li {
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #eaeaea;
+        font-size: 15px;
+    }
+
+        .spt_win_con_con ul li:hover {
+            background: #f1f1f1;
+        }
+
+.spt_win_con_foot {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+    .spt_win_con_foot > input[type="submit"] {
+        margin-left: 15px;
+    }
+
+    .spt_win_con_foot > .delete {
+        background: #fd4545;
+        border: 1px solid #fd4545;
+    }
+/*
+    打印机配置弹出框结束
+*/
+
+

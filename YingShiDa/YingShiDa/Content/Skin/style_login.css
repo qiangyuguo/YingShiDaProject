@@ -1,0 +1,219 @@
+/* reset */
+body{background:#fff;line-height:166.6%;font-size:12px;position:relative;}
+body,input,select,button{font-family:verdana,sans-serif}
+h1,h2,h3,h4,h5,h6,select,input,textarea,button,table{font-size:100%}
+body,h1,h2,h3,h4,h5,h6,ul,ol,li,form,p,dl,dt,dd,table,th,td,img,blockquote{margin:0;padding:0;border:0}
+input,button,textarea,img{line-height:normal;float:left;}
+abbr,acronym,address,cite,q,em,code,var,dfn,ins{font-style:normal;text-decoration:none;border:0}
+q:before,q:after{content:""}
+ul,ol{list-style:none}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+select,input,button,button img{vertical-align:middle}
+.ipt-r,
+.ipt-c{width:16px;height:16px;+width:15px;+height:15px;_height:14px;padding:0;margin:2px 3px 2px 0;overflow:hidden;-ms-box-sizing:border-box}
+.page,.header,.content,.footer{margin:auto}
+
+/* 全局 */
+a{color:#1F4E8B}
+
+/* 清除浮动和垂直边距重叠 */
+
+.login .fi-btns,
+.header,
+.fn-clear{+zoom:1;}
+
+.login .fi-btns:before,
+.login .fi-btns:after,
+.header:before,
+.header:after,
+.fn-clear:before,
+.fn-clear:after{clear:both;content:".";font-size:0;display:block;height:0;overflow:hidden;visibility:hidden;}
+
+/* 内联块元素 */
+.ftinfo .split,
+.btn,
+.fn-ib{display:-moz-inline-box;-moz-box-align:center;display:inline-block;+display:inline;+zoom:1;vertical-align:middle;}
+
+
+/* 公用背景图 */
+.clogo,
+.main .intro li,
+.ftlink h3,
+.ftinfo,
+.ftinfo .case,
+.ftinfo .info,
+.ftinfo h2,
+.logo em,
+.ico,
+.btn,
+.bg{background-image:url(/Content/Skin/skin_default/img/denglu.png);background-color:transparent;background-repeat:no-repeat}
+
+/* 整体 */
+html,body,.page{height:100%}
+.page{position:relative}
+.inner{position:absolute;/*top:50%;*/margin-top:10px;width:100%;/*background:url(/Content/images/login/bgx.jpg) 0 58px repeat-x*/}
+
+/* 页头 */
+.header{width:892px;position:relative;z-index:2}
+.logo{float:left}
+.logo h1,
+.logo em{float:left}
+.logo em{width:186px;height:30px;margin-left:20px;text-indent:-999em;overflow:hidden}
+.logo h1{position:relative}
+.logo .beta{position:absolute;right:0;top:-16px}
+.toplink{float:right;display:inline;text-align:right}
+.toplink,
+.toplink a{color:#848585;text-decoration:none}
+.toplink a{margin:0 5px}
+
+/* 主体 */
+.content{width:892px;margin-top:12px}
+.main{height:468px;background:url(/Content/images/login/theme_dft.jpg) no-repeat;/*position:relative*/}
+
+.intro{width:360px;position:absolute;top:310px;left:70px}
+.intro li{float:left;width:165px;background-position:0 -32px;padding-left:15px;color:#626262}
+
+.login {
+    width: 399px;
+    height: 371px;
+    /* padding: 100px 0 0 40px; */
+    position: absolute;
+    top: 310px;
+    right: 200px;
+    background: #7b7a78;
+    opacity: 0.9;
+    filter: alpha(opacity=80);
+}
+.login span {
+    display: block;
+    color: white;
+    font-size: 30px;
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, Arial, sans-serif;
+    height:50px;
+    line-height:50px;
+}
+.login_tr {
+    height:65px;
+    line-height:65px;
+}
+.login_tr div {
+    float:left;
+    background: #646361;
+    height: 35.5px;
+}
+.login_tr div img {
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.inner .div1 span {
+    font-size: 30px;
+    padding-left: 15px;
+    color: white;
+    padding-top: 55px;
+    float: left;
+}
+.toplink .div2 span {
+    font-size: 22px;
+    font-family: 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, Arial, sans-serif;
+    padding-left: 5px;
+}
+.toplink .div2 {
+    position: absolute;
+    top: 100px;
+    right: -450px;
+}
+.inner .div1 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.h4{
+    float:left;
+    color:white;
+}
+.login .form{zoom:1}
+.login .fi{margin:10px 0;position:relative}
+.login .fi .lb{font-size:14px;}
+.login .fi-btns,
+.login .fi-nolb{padding-left:50px}
+.login .at{font-size:16px;font-family:arial,sans-serif}
+.login .ipt-t{width:252px;height:26px;margin-right:3px;border:1px solid #646361;padding:4px;font-size:14px;line-height:18px;font-weight:bold;background-color:#646361;color:white;}
+.login .ipt-t-focus,
+.login .ipt-t:focus{background-color:#FFFFE1}
+.login .ipt-t-fullid{width:255px}
+.login .ipt-t-domain{width:100px;margin-left:3px}
+.login .cookie,
+.login .ssl{color:#707070;margin-right:35px}
+.login .btn-login {
+    border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    float: left;
+    padding: 0;
+    width: 302px;
+    height: 35px;
+    _height: 36px;
+    margin-right: 11px;
+    _margin-right: 17px;
+    /* background-position: 0 -144px; */
+    cursor: pointer;
+    margin-top:30px;
+}
+.login .btn-login span{visibility:hidden}
+/*.login .btn-login-hover,
+.login .btn-login:hover{background-position:-144px -144px}*/
+.login .domain{width:125px;position:absolute;left:230px;top:5px;+left:235px;+top:8px;line-height:normal;word-break:break-all;word-wrap:break-word}
+.login .msg-err{color:#d90000}
+.login .link{margin:0 20px 0 -20px;padding-top:12px;border-top:0px solid #CDD8E6;text-align:center}
+.login .link a{color:#768AA4;text-decoration:none}
+
+.create{position:absolute;left:120px;top:170px; display:none;}
+.create .btn-create{width:132px;height:46px;line-height:999em;overflow:hidden;background-position:0 -72px}
+.create .btn-create-hover,
+.create .btn-create:hover{background-position:-144px -72px}
+
+.ftinfo{height:73px;margin-top:2px;background-position:100% -180px}
+.ftinfo h2{float:left;display:inline;width:58px;height:17px;margin:28px 0 0 16px;text-indent:-999px;overflow:hidden}
+.ftinfo .case{float:left;height:73px;background-position:0 -253px}
+.ftinfo .info{float:right;width:300px;height:73px;background-position:0 -253px}
+.ftinfo .case h2{background-position:-288px 0}
+.ftinfo .case ul{float:left;padding:12px 0 0 12px}
+.ftinfo .case li{float:left;margin-right:10px;height:47px;line-height:47px;padding:0 10px 0 0;border:1px solid #DDE5E8;background:#fff;color:#707070}
+.ftinfo .case li a{float:left;height:100%;padding-right:10px;margin-right:-10px;text-decoration:none;color:#707070}
+.ftinfo .clogo{float:left;margin:5px 6px 0;_margin-right:3px;width:36px;height:36px}
+.ftinfo .clogo-1{background-position:0 -360px}
+.ftinfo .clogo-2{background-position:-72px -360px}
+.ftinfo .clogo-3{background-position:-144px -360px}
+.ftinfo .info h2{background-position:-288px -36px}
+.ftinfo .info ul{float:left;margin:6px 0 0 10px}
+.ftinfo .info li{width:210px;height:20px;overflow:hidden}
+.ftinfo .info a{color:#898989;text-decoration:none}
+.ftinfo .info span{color:#3A6F9E;font-family:simsun,serif}
+
+/*
+.ftlink{height:26px;line-height:26px}
+.ftlink a{color:#4A76A4;text-decoration:none}
+.ftlink h3,
+.ftlink ul,
+.ftlink li{float:left}
+.ftlink h3{width:64px;padding-right:3px;text-align:center;background-position:-288px -360px}
+.ftlink h3,
+.ftlink h3 a{color:#034E8E}
+.ftlink ul{width:780px;margin-left:40px}
+.ftlink li{width:25%}
+*/
+
+/* 页脚 */
+.footer{margin-top:30px;width:892px}
+.footer .logo2010{float:left;display:inline;margin:-5px 50px 0 200px;+margin-top:0;_margin-right:47px}
+.footer p{margin:5px 0; text-align:center;}
+.footer,
+.footer a{color:#8E8E8E;margin-top:2000px;}
+.footer a{margin:0 10px;text-decoration:none}
+.footer a.fst{margin-left:0}

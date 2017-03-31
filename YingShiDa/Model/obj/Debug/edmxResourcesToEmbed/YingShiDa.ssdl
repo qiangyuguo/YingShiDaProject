@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="YingShiDaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CommonQuestion">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="ContentQuestion" Type="ntext" />
+    <Property Name="ContentAnswer" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Company_Culture">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Company_History">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Company_Honor">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Company_Location">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Company_News">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateCompany" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="BrowseTimes" Type="int" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="Company_Profile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="TextUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Contact_US">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Department" Type="nvarchar" MaxLength="30" />
+    <Property Name="Company" Type="nvarchar" MaxLength="30" />
+    <Property Name="Address" Type="nvarchar" MaxLength="50" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="30" />
+    <Property Name="Postcode" Type="nvarchar" MaxLength="20" />
+    <Property Name="mailbox" Type="nvarchar" MaxLength="20" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="BrowseTimes" Type="int" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="InBanner">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreatePeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="BannerPicname" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Industry_News">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="BrowseTimes" Type="int" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="InTeam">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content1" Type="nvarchar" MaxLength="30" />
+    <Property Name="COntent2" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content3" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreatePeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="TeamPicname" Type="nvarchar" MaxLength="500" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="ProductCenter">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductID" Type="nvarchar" MaxLength="30" />
+    <Property Name="ProductTitle" Type="nvarchar" MaxLength="30" />
+    <Property Name="ProductType" Type="int" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="ProductCenterDetail">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductDetailID" Type="nvarchar" MaxLength="30" />
+    <Property Name="ProductModelID" Type="nvarchar" MaxLength="30" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Series" Type="nvarchar" MaxLength="20" />
+    <Property Name="ClothAngle" Type="nvarchar" MaxLength="20" />
+    <Property Name="Advantage" Type="nvarchar" MaxLength="100" />
+    <Property Name="TechnicalParameter" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="FileName" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="ProductCenterModel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductModelID" Type="nvarchar" MaxLength="30" />
+    <Property Name="ProductID" Type="nvarchar" MaxLength="30" />
+    <Property Name="ProductModel" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Recruitment">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="BrowseTimes" Type="int" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Department" Type="nvarchar" MaxLength="20" />
+    <Property Name="Number" Type="int" />
+    <Property Name="Responsibilities" Type="ntext" />
+    <Property Name="JobRequirements" Type="ntext" />
+    <Property Name="Salary" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Service_Concept">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Staff_Presence">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="SysUser">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="nvarchar" MaxLength="30" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="30" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="30" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Talent_Concept">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Title" Type="nvarchar" MaxLength="30" />
+    <Property Name="Content" Type="ntext" />
+    <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+    <Property Name="CreateTime" Type="datetime" />
+    <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Function Name="Common_FastPageList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sql" Type="nvarchar(max)" Mode="In" />
+    <Parameter Name="page" Type="int" Mode="In" />
+    <Parameter Name="pageSize" Type="int" Mode="In" />
+    <Parameter Name="pageCount" Type="int" Mode="InOut" />
+    <Parameter Name="recordCount" Type="int" Mode="InOut" />
+  </Function>
+  <EntityContainer Name="YingShiDaModelStoreContainer">
+    <EntitySet Name="CommonQuestion" EntityType="Self.CommonQuestion" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company_Culture" EntityType="Self.Company_Culture" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company_History" EntityType="Self.Company_History" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company_Honor" EntityType="Self.Company_Honor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company_Location" EntityType="Self.Company_Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company_News" EntityType="Self.Company_News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company_Profile" EntityType="Self.Company_Profile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contact_US" EntityType="Self.Contact_US" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InBanner" EntityType="Self.InBanner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Industry_News" EntityType="Self.Industry_News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InTeam" EntityType="Self.InTeam" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductCenter" EntityType="Self.ProductCenter" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductCenterDetail" EntityType="Self.ProductCenterDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductCenterModel" EntityType="Self.ProductCenterModel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Recruitment" EntityType="Self.Recruitment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Service_Concept" EntityType="Self.Service_Concept" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Staff_Presence" EntityType="Self.Staff_Presence" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SysUser" EntityType="Self.SysUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Talent_Concept" EntityType="Self.Talent_Concept" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

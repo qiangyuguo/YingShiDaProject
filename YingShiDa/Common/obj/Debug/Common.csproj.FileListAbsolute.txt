@@ -1,0 +1,16 @@
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\Common.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\Common.pdb
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\LogTool.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\log4net.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\LogTool.pdb
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.dll
+D:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\Common.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\Common.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.pdb

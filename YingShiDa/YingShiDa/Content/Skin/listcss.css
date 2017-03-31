@@ -1,0 +1,144 @@
+    .showPanelBg
+    {
+        background: url('/Content/softed/images/homePageSeperator.gif') no-repeat;
+    }
+    
+    .searchUIBasic
+    {
+        background-image: url('/Content/softed/images/layerPopupBg.gif');
+        border: 2px solid #a5b5ee;
+    }
+    
+    .small
+    {
+        font-family: Arial, Helvetica, sans-serif;display: table-row-group;
+        font-size: 12px;
+        color: #323232;
+		padding-top:3px;
+    }
+    
+    .lvtCol
+    {
+        border-top: 1px solid #ededed;
+        border-left: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        /*background: #f8f8f8 url('/Content/softed/images/level2Bg.gif') repeat-x center bottom;*/
+        font-weight: bold;
+        color: #323232;
+        background-color:#f3f4f5;
+        /*text-align:left;*/
+    }
+    
+    .moduleName
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #33338c;
+        font-weight: bold;
+    }
+    
+    
+    .txtBox
+    {
+        width: 85%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+    }
+    
+    .crmButton
+    {
+        border: solid #669BB4; height:26px; border-width:0px 1px; color:#000000;
+    }
+    
+    .edit
+    {
+        background-color: #0095f3;
+        /*background-image: url('/Content/Skin/skin_default/img/bgx.png');*/
+		background-position:0 -397px;
+		color:#fff;
+		border:1px solid #0095f3;
+		font-weight: normal;
+		height:24px;
+		line-height:20px;
+		font-size:12px;
+		padding:1px 5px;
+    }
+    
+    .cancel
+    {
+        background-color: #DEF0FF;
+        background-image: url('/Content/Skin/skin_default/img/bgx.png');
+		background-position:0 -397px;
+		color:#000000;
+		border:1px solid #669BB4;
+		font-weight: normal;
+		height:24px;
+		line-height:20px;
+		font-size:12px;
+		padding:1px 5px;
+    }
+    
+    .delete
+    {
+        background-color: #DEF0FF;
+        background-image: url('/Content/Skin/skin_default/img/bgx.png');
+		background-position:0 -397px;
+		color:#000000;
+		border:1px solid #669BB4;
+		font-weight: normal;
+		height:24px;
+		line-height:20px;
+		font-size:12px;
+		padding:1px 5px;
+    }
+    
+    a
+    {
+        text-decoration: none;
+        color: #0070BA;
+    }
+    
+    .lvt
+    {
+        background-color: #ddd;
+        border: 0px solid #cce;
+    }
+
+    .genHeaderSmall
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        color: #323232;
+        font-weight: bold;
+    }
+    .textoverflow
+    {
+        max-width:300px;
+        *width:expression('300'+'PX');
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .lvtColData td
+    {
+        border-top: 0px solid #ededed;
+        border-left: 0px solid #ededed;
+        border-right: 0px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        /*padding:2px;*/
+        font-family:'Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Î¢ÈíÑÅºÚ, Arial, sans-serif;
+    }
+    .lvtColDatatrordered
+    {
+       color:Red;
+    }
+    .lvtColDatatrordered td
+    {
+        border-top: 1px solid #ededed;
+        border-left: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        padding:2px;
+    }

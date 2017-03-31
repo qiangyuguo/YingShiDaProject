@@ -1,0 +1,98 @@
+﻿@charset "utf-8";
+
+
+/* 动态面板 */
+.dynamic_panel {
+    position: relative;
+    font-size: 13px;
+    color: #333333;
+    line-height: normal;
+    display: inline-block;
+}
+
+    .dynamic_panel .panel_state {
+        width: 80px;
+        height: 34px;
+        visibility: visible;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .dynamic_panel .panel_enable {
+        background-color: #2fcb38;
+        border: 1px solid #e5e6e7;
+        overflow: hidden;
+    }
+
+.panel_enable .panel_enable_content {
+    width: 50%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border: 0px;
+    line-height: 34px;
+    text-align: center;
+}
+
+.dynamic_panel .panel_no {
+    background-color: #d6d6d6;
+    border: 1px solid #e5e6e7;
+    overflow: hidden;
+}
+
+.panel_no .panel_no_content {
+    width: 50%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border: 0px;
+    line-height: 34px;
+    text-align: center;
+    float: right;
+}
+
+/* 动态面板 结束 */
+
+/* 动态面板2 开始 */
+
+
+.dynamic_panel .w100, .w100 {
+    width: 100px;
+}
+
+.w120 {
+    width: 120px;
+}
+
+.panel_enable .wb70, .panel_no .wb70 {
+    width: 70%;
+}
+
+.w100c {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+}
+
+.pd5 {
+    padding: 0px 5px;
+}
+
+.dynamic_panel .lan1 {
+    background-color: #65cbdc;
+}
+
+.dynamic_panel .hui1 {
+    background-color: #f1f1f1;
+}
+
+.baicolor {
+    color: aliceblue;
+}
+
+.stati-check {
+    width: 100px;
+}
+
+    .stati-check:hover {
+        color:#ffffff;
+    }

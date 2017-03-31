@@ -1,0 +1,137 @@
+.container {
+	position: relative;
+}
+
+.pgContainer {
+	/*background-color:#F9F9F9;*/
+	padding:10px;
+	line-height:20px;
+}
+ 
+#pagetest5 .pgContainer {
+	color:#93A5B3;
+	/*background:url(desk.jpg);*/
+}
+ 
+hr {
+	margin:10px 0 10px 0;
+	border:0;
+	border-top:1px dashed #CCCCCC;
+	height:0;
+}
+
+.pgContainer {
+	min-height:50px;
+	_height:100px;
+}
+
+.pgToolbar {
+	width:100%;
+	height:30px;
+	font-size:12px;
+	line-height:30px;
+	background:0px 0px rgb(248, 248, 248);
+}
+
+.pgPanel {
+	float:left;
+	padding:0 10px 0 10px;
+}
+
+.pgToolbar div {
+	float:left;
+}
+
+.pgBtn {
+	width: 20px;
+	height: 28px;
+	display: block;
+	cursor: pointer;
+	margin:1px;
+}
+
+.pgPress {
+	margin:2px 0 0 2px;
+}
+
+.pgPrev {
+	background: url(/Content/jq/images/pageImg/prev.gif) no-repeat center;
+}
+
+.pgPrevDisabled {
+	background: url(/Content/jq/images/pageImg/prev_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgNext {
+	background: url(/Content/jq/images/pageImg/next.gif) no-repeat center;
+}
+
+.pgNextDisabled{
+	background: url(/Content/jq/images/pageImg/next_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgFirst {
+	background: url(/Content/jq/images/pageImg/first.gif) no-repeat center;
+}
+
+.pgFirstDisabled {
+	background: url(/Content/jq/images/pageImg/first_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgLast {
+	background: url(/Content/jq/images/pageImg/last.gif) no-repeat center;
+}
+
+.pgLastDisabled {
+	background: url(/Content/jq/images/pageImg/last_disabled.gif) no-repeat center;
+	cursor:auto;
+}
+
+.pgRefresh {
+	background: url(/Content/jq/images/pageImg/load.png) no-repeat center;
+}
+
+.pgLoad {
+	background: url(/Content/jq/images/pageImg/load.gif) no-repeat center;
+}
+
+.pgCurrentPage {
+	width:30px;
+	height:16px;
+	line-height:16px;
+	text-align:center;
+	border:1px solid #CCCCCC;
+}
+
+.pgSearchInfo {
+	margin-left:20px;
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	background: url(/Content/jq/images/pageImg/loading.gif) no-repeat center;
+	background-color: #FFFFFF;
+	position: absolute;
+	zIndex: 999;
+	top:0;
+	left:0;
+	filter:alpha(opacity=70);
+	-moz-opacity:0.70;
+	opacity:.70;
+}
+
+.cleanFloat {
+	clear:both;
+	display:none;
+}
+
+.separator {
+	width:2px;
+	height:30px;
+	margin:0 5px 0 5px;
+	background: url(/Content/jq/images/pageImg/separator.gif) no-repeat center;
+}

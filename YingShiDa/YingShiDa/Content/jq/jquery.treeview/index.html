@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="css/jquery.treeview.css" />
+    <link rel="stylesheet" href="css/red-treeview.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+    <script src="../jquery-1.4.2.min.js" type="text/javascript"></script>
+    <script src="lib/jquery.cookie.js" type="text/javascript"></script>
+    <script src="lib/jquery.treeview.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#tree').treeview({
+                collapsed: true,
+                animated: "medium",
+                control: "#sidetreecontrol",
+                prerendered: true,
+                persist: "location"
+            });
+        })
+		
+    </script>
+</head>
+<body>
+    <h1 id="banner">
+        <a href="http://bassistance.de/jquery-plugins/jquery-plugin-treeview/">jQuery Treeview
+            Plugin</a> Demo</h1>
+    <div id="main">
+        <div id="sidetree">
+            <div class="treeheader">
+                &nbsp;</div>
+            <div id="sidetreecontrol">
+                <a href="">Collapse All</a> | <a href="">Expand All</a>
+            </div>
+            <ul class="treeview" id="tree">
+              <li class="expandable">
+                  <div class="hitarea expandable-hitarea">
+                  </div>
+                  <strong><a href="">Lifestyle</a></strong>
+                  <ul style="display: none;">
+                      <li class="expandable">
+                          <div class="hitarea expandable-hitarea">
+                          </div>
+                          <a href="">About Airdrie</a>
+                          <ul style="display: none;">
+                              <li class="last"><a href="">History</a></li>
+                          </ul>
+                      </li>
+                      <li class="expandable">
+                          <div class="hitarea expandable-hitarea">
+                          </div>
+                          <a href="">Arts &amp; Culture</a>
+                          <ul style="display: none;">
+                              <li><a href="">Airdrie Art</a></li>
+                              <li><a href="?http://www.airdriepubliclibrary.ca/" target="_new">Airdrie Public Library</a></li>
+                              <li><a href="">Airdrie Rodeo Ranch</a></li>
+                              <li><a href="">Bert Church LIVE Theatre</a></li>
+                              <li><a href="">Korean Twinning Program</a></li>
+                              <li><a href="">Little Theatre Association</a></li>
+                              <li><a href="" target="_new">Nose Creek Valley Museum</a></li>
+                              <li class="last"><a href="?http://www.rockyview.ab.ca/rvae/" target="_new">Rocky View
+                                  Adult Education</a></li>
+                          </ul>
+                      </li>
+                      <li class="expandable">
+                          <div class="hitarea expandable-hitarea">
+                          </div>
+                          <a href="">Bert Church LIVE Theatre</a>
+                          <ul style="display: none;">
+                              <li><a href="" title="About Us">About Us</a></li>
+                              <li><a href="" title="Current Season Program">Current Season Program</a></li>
+                              <li><a href="" title="Box Office">Box Office</a></li>
+                              <li><a href="" title="Theatre Rental">Theatre Rental</a></li>
+                              <li><a href="" title="Technical Specifications">Technical Specifications</a></li>
+                              <li><a href="" title="Contact Us">Contact Us</a></li>
+                              <li><a href="" title="Photo Gallery">Photo Gallery</a></li>
+                              <li><a href="" title="Links">Links</a></li>
+                              <li class="last"><a href="?http://www.theresawasden.com/music_in_common.htm" target="_blank"
+                                    title="Performing Arts Classes">Performing Arts Classes</a></li>
+                          </ul>
+                      </li>
+                      <li class="expandable">
+                          <div class="hitarea expandable-hitarea">
+                          </div>
+                          <a href="">East Lake Recreation &amp; Wellness Centre</a>
+                          <ul style="display: none;">
+                              <li><a href="" title="About the Facility">About the Facility</a></li>
+                              <li><a href="" title="Contact Us">Contact Us</a></li>
+                              <li><a href="" title="Forms">Forms</a></li>
+                              <li><a href="" title="Future Phases">Future Phases</a></li>
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a href="" title="Hours of Operation &amp; Schedules">Hours of Operation &amp; Schedules</a>
+                                  <ul style="display: none;">
+                                      <li class="last"><a href="">Schedules</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="" title="In the City Guide">In the City Guide</a></li>
+                              <li><a href="" title="Opportunities &amp; Events">Opportunities &amp; Events</a></li>
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a href="" title="Programs &amp; Services">Programs &amp; Services</a>
+                                  <ul style="display: none;">
+                                      <li class="expandable">
+                                          <div class="hitarea expandable-hitarea">
+                                          </div>
+                                          <a title="Aquatics" href="">Aquatics</a>
+                                          <ul style="display: none;">
+                                              <li class="last"><a title="Water Drop-in Classes" href="">Water Drop-in Classes</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a title="Child Care Services" href="">Child Care Services</a></li>
+                                      <li><a title="Children Activities" href="">Children Activities</a></li>
+                                      <li class="expandable">
+                                          <div class="hitarea expandable-hitarea">
+                                          </div>
+                                          <a title="Fitness &amp; Wellness" href="">Fitness &amp; Wellness</a>
+                                          <ul style="display: none;">
+                                              <li><a title="Dry Land Drop-in Classes" href="">Dry Land Drop-in Classes</a></li>
+                                              <li class="last"><a title="Fitness &amp; Wellness Services" href="">Fitness &amp; Wellness
+                                                  Services</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a title="Party Packages" href="">Party Packages</a></li>
+                                      <li class="last"><a title="Room Rentals" href="">Room Rentals</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="" title="Rates &amp; Fees">Rates &amp; Fees</a></li>
+                              <li class="last"><a href="" title="Register Now">Register Now</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="">Education</a></li>
+                      <li><a href="">Health</a></li>
+                      <li><a href="">Maps (GIS)</a></li>
+                      <li><a href="">Parks &amp; Recreation</a></li>
+                      <li class="expandable">
+                          <div class="hitarea expandable-hitarea">
+                          </div>
+                          <a title="Parks" href="">Parks</a>
+                          <ul style="display: none;">
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a title="City Parks Programs" href="">City Parks Programs</a>
+                                  <ul style="display: none;">
+                                      <li><a href="" title="Airdrie Horticulture Society">Airdrie Horticulture Society</a></li>
+                                      <li><a href="" title="Communities in Bloom">Communities in Bloom</a></li>
+                                      <li><a href="" title="Community Garden">Community Garden</a></li>
+                                      <li class="last"><a href="" title="Landscape Awards Program">Landscape Awards Program</a></li>
+                                  </ul>
+                              </li>
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a title="Maintenance" href="">Maintenance</a>
+                                  <ul style="display: none;">
+                                      <li><a href="" title="Dandelions">Dandelions</a></li>
+                                      <li><a href="" title="Gophers">Gophers</a></li>
+                                      <li><a href="" title="Grass Cutting">Grass Cutting</a></li>
+                                      <li class="last"><a href="" title="Pathway Snow Removal">Pathway Snow Removal</a></li>
+                                  </ul>
+                              </li>
+                              <li><a title="Maps" href="">Maps</a></li>
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a title="Outdoor Facilities" href="">Outdoor Facilities</a>
+                                  <ul style="display: none;">
+                                      <li><a title="Ball Diamonds" href="">Ball Diamonds</a></li>
+                                      <li><a title="BMX Track" href="">BMX Track</a></li>
+                                      <li><a title="Bookings" href="">Bookings</a></li>
+                                      <li><a title="Cemetery" href="">Cemetery</a></li>
+                                      <li><a title="Fire Pits" href="">Fire Pits</a></li>
+                                      <li><a title="Gwacheon Park" href="">Gwacheon Park</a></li>
+                                      <li><a title="Off-Leash Areas" href="">Off-Leash Areas</a></li>
+                                      <li><a title="Outdoor Rinks" href="">Outdoor Rinks</a></li>
+                                      <li><a title="Parks &amp; Playgrounds" href="">Parks &amp; Playgrounds</a></li>
+                                      <li><a title="Skate Park" href="">Skate Park</a></li>
+                                      <li><a title="Soccer/Athletic Fields" href="">Soccer/Athletic Fields</a></li>
+                                      <li><a title="Splash Park" href="">Splash Park</a></li>
+                                      <li class="last"><a title="Tennis Courts" href="">Tennis Courts</a></li>
+                                  </ul>
+                              </li>
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a title="Parks Planning &amp; Construction" href="">Parks Planning &amp; Construction</a>
+                                  <ul style="display: none;">
+                                      <li><a href="" title="Construction">Construction</a></li>
+                                      <li class="last"><a href="" title="Plans">Plans</a></li>
+                                  </ul>
+                              </li>
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a title="Urban Forest" href="">Urban Forest</a>
+                                  <ul style="display: none;">
+                                      <li><a href="" title="City Trees">City Trees</a></li>
+                                      <li class="last"><a href="" title="Tree Planting">Tree Planting</a></li>
+                                  </ul>
+                              </li>
+                              <li class="expandable lastExpandable">
+                                  <div class="hitarea expandable-hitarea lastExpandable-hitarea">
+                                  </div>
+                                  <a title="Weeds &amp; Pests" href="">Weeds &amp; Pests</a>
+                                  <ul style="display: none;">
+                                      <li><a href="" title="Mosquito Control">Mosquito Control</a></li>
+                                      <li><a href="" title="Pest Control">Pest Control</a></li>
+                                      <li class="last"><a href="" title="Weed Control &amp; Plant Disease">Weed Control &amp;
+                                          Plant Disease</a></li>
+                                  </ul>
+                              </li>
+                          </ul>
+                      </li>
+                      <li class="expandable lastExpandable">
+                          <div class="hitarea expandable-hitarea lastExpandable-hitarea">
+                          </div>
+                          <a title="Sport &amp; Community Facilities" href="">Sport &amp; Community Facilities</a>
+                          <ul style="display: none;">
+                              <li class="expandable">
+                                  <div class="hitarea expandable-hitarea">
+                                  </div>
+                                  <a title="Indoor Facilities" href="">Indoor Facilities</a>
+                                  <ul style="display: none;">
+                                      <li><a title="Arenas/Gymnastics" href="">Arenas/Gymnastics</a></li>
+                                      <li><a title="Curling Rink" href="">Curling Rink</a></li>
+                                      <li><a title="East Lake Recreation &amp; Wellness Centre" href="">East Lake Recreation
+                                          &amp; Wellness Centre</a></li>
+                                      <li><a title="Nose Creek Valley Museum" href="">Nose Creek Valley Museum</a></li>
+                                      <li><a title="Over 50 Club" href="">Over 50 Club</a></li>
+                                      <li class="last"><a title="Town &amp; Country" href="">Town &amp; Country</a></li>
+                                  </ul>
+                              </li>
+                              <li class="last"><a title="Outdoor Facilities" href="">Outdoor Facilities</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+                </li>
+                <li class="last"><strong><a href="#">Online Services</a></strong></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

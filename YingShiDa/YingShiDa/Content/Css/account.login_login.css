@@ -1,0 +1,59 @@
+.aliyun-login{/*background:url(images/IndexImages/login_banner.png) no-repeat center 0;*/width:750px;margin:0 auto;overflow:hidden;}
+.aliyun-login-page{background: url(images/IndexImages/login_bg_my.jpg) no-repeat left 0; width:750px; margin:0 auto;}
+.aliyun-login-page .logo-aliyun{width:750px;height:65px;margin:0 auto;padding:25px 0 0 0;}
+.aliyun-login-header{height:90px;margin:0 auto;}
+.aliyun-login .logo-uc{}
+.login-wrap{float:right;display:inline;margin:15px 30px 15px 0;width:327px;}
+.login-wrap-top{height:10px;background:url(images/IndexImages/me_icon24_login_Y.png) no-repeat 0 0; overflow:hidden;}
+.login-wrap-bottom{height:14px;background:url(images/IndexImages/me_icon24_login_Y.png) no-repeat -328px 0;}
+
+.login-wrap-main{background:url(images/IndexImages/me_icon24_login_Y.png) repeat-y -656px 0;}
+.login-wrap .login-sub{min-height:237px;_height:237px;padding:7px 15px 0 20px;}
+.login-wrap .login-sub h2{font-size:24px;font-weight:700;color:#484848;}
+.login-wrap .login-sub ul{}
+.login-wrap .login-sub ul li{}
+.login-wrap .login-sub ul li em{width:27px;padding:0 7px 0 0;color:#333; line-height:33px;}
+.login-wrap .login-sub ul li .input-h33 span{width:225px;}
+.login-wrap .login-sub ul li .input-h33 input{height:31px;margin-top:1px;}
+.login-wrap .login-sub ul.to-mail li .input-h33 span{width:150px;}
+.login-wrap .login-sub ul.to-mail li .extra{float:left;display:inline;color:#666;line-height:33px;margin-left:5px;}
+
+.login-wrap .login-sub .f-back{height:16px;line-height:16px;margin:5px 0 3px 43px;color:#c00;}
+.login-wrap .login-sub .f-back span{padding:0 0 0 14px; background:url(images/IndexImages/error.png) no-repeat 0 3px;}
+.login-wrap .login-sub .btn-cmd input{vertical-align:top;}
+.login-wrap .login-remember .check-tip{display:none;position:absolute;left:-15px;top:-30px;z-index:999;width:100px; text-align:center;background:#ffc;padding:2px 7px;color:#930;-moz-border-radius:5px;-webkit-border-radius:5px;border-radius:5px;border:1px solid #f2d263;}
+.check-tip .corner1, .check-tip .corner2{ position:absolute;left:16px;z-index:9999;width:0;height:0;border:6px solid; overflow:hidden;_filter:chroma(color = #ffffff);}
+.check-tip .corner1{bottom:-12px;border-color:#f2d263 transparent transparent transparent !important;border-color:#f2d263 #fff #fff #fff;}
+.check-tip .corner2{bottom:-11px;border-color:#ffc transparent transparent transparent !important;border-color:#ffc #fff #fff #fff;}
+.login-wrap .login-checkcode{padding:0 0 5px 32px; line-height:33px;color:#333;}
+.login-wrap .login-checkcode em{padding:0 10px 0 0;color:#333;}
+.login-wrap .login-checkcode img{width:140px;height:28px;border:1px solid #888;margin-right:5px;}
+.login-wrap .login-checkcode .change-check{line-height:30px;}
+.login-wrap .login-checkcode .change-check a{color:#0081d2; text-decoration:underline;}
+.login-wrap .login-checkcode .input-h33 span{width:33px;}
+.login-wrap .login-checkcode .input-h33 input{text-align:center;}
+.login-wrap .login-checkcode .f-back{ line-height:33px;margin:0;}
+.back-msg{display:block;width:12px; height:9px; overflow:hidden;}
+.back-msg.reg-right{background:url(images/IndexImages/right.png) no-repeat 0 0;}
+.back-msg.reg-error{background:url(images/IndexImages/error.png) no-repeat 0 0;}
+
+
+.login-wrap .login-option{padding:0 0 20px 32px;}
+.login-wrap .login-option input{_float:left;}
+.login-wrap .login-option label{float:left;padding:1px 0 0 2px;}
+.login-wrap .login-option a{ text-decoration:underline;}
+.login-wrap .login-ctrl{padding-left:32px;height:30px;}
+.login-wrap .login-ctrl .form-btn-h30{float:left;}
+.login-wrap .login-ctrl .forget-pw{float:left; line-height:33px;color:#666;padding-left:10px;}
+
+.login-wrap .login-reglink{padding:20px 21px 0 21px;}
+.login-wrap .login-reglink .login-link{margin:0 auto;}
+.login-wrap .login-reglink p{color:#aaa;padding:10px 0 20px 0; text-align:center;}
+
+.aliyun-login .cloud-link{width:900px;margin:0 auto;}
+.aliyun-login .cloud-link p{float:left;}
+.aliyun-login .cloud-link p.link-mycloud{padding-right:10px;border-right:1px solid #ccc;}
+.aliyun-login .cloud-link p.link-browser{padding-left:10px;border-left:1px solid #fff;}
+.aliyun-login .cloud-link a{color:#666;}
+.aliyun-login .cloud-link img{ vertical-align:middle;padding-right:5px;}
+
