@@ -86,7 +86,6 @@ F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Microsoft.AI.WindowsSer
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Microsoft.ApplicationInsights.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Model.dll
-F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Newtonsoft.Json.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\PlatformManagment.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\RuleUtility.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\log4net.dll
