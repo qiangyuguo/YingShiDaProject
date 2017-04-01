@@ -49,8 +49,15 @@
     <script type="text/javascript" src="../scripts/XxscProductAdd.js"></script>
 
     <script type="text/javascript">
+        //获取url中的参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
         function firstForm() {
-            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriver.aspx', '伺服驱动器列表');
+            var ProductType = getUrlParam("ProductType");
+            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriver.aspx?ProductType=' + ProductType, '伺服驱动器列表');
         }
     </script>
     <style type="text/css">

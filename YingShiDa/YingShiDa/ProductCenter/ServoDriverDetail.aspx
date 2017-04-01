@@ -78,7 +78,8 @@
             if (r != null) return unescape(r[2]); return null; //返回参数值
         }
         function Edit(ID) {
-            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriverDetailAdd.aspx?action=notify&ID=' + ID, "修改");
+            var ProductType = getUrlParam("ProductType");
+            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriverDetailAdd.aspx?action=notify&ID=' + ID + "&ProductType=" + ProductType, "修改");
         }
 
         function Add() {

@@ -148,8 +148,15 @@
                 width: $(".col-md-10").width()
             });
         }
+        //获取url中的参数
+        function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
         function firstForm() {
-            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriver.aspx', '伺服驱动器详情列表');
+            var ProductType = getUrlParam("ProductType");
+            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriver.aspx?ProductType=' + ProductType, '伺服驱动器详情列表');
         }
 
         function showPhotoClick(obj) {
@@ -400,7 +407,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-1 ">附件列表</label>
+                                        <label class="control-label col-md-1 ">图片列表</label>
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
                                             <div class="file-input">
@@ -426,7 +433,7 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label class="control-label col-md-1 ">图片列表</label>
+                                        <label class="control-label col-md-1 ">附件列表</label>
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
                                             <div class="file-input">

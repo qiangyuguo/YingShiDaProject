@@ -80,7 +80,8 @@
         }
 
         function Edit(ID) {
-            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriverAdd.aspx?action=notify&ID=' + ID, "修改");
+            var ProductType = getUrlParam("ProductType");
+            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriverAdd.aspx?action=notify&ID=' + ID + "&ProductType=" + ProductType, "修改");
         }
         
         function Add() {
