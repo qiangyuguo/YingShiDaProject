@@ -56,49 +56,17 @@ namespace YingShiDa
             //}
 
             //IsVerifyCode = false;
-            //bgFile = GetFileName("bg.png", "HighBusinessArea", businessAreaID);
+            bgFile = GetFileName("bg.jpg");
             //logoFile = GetFileName("logo.png", "HighBusinessArea", businessAreaID);
         }
 
 
-        private string GetFileName(string file, string platName, string businessAreaID)
+        private string GetFileName(string file)
         {
-            string TemplateDir;
-            if (string.IsNullOrEmpty(businessAreaID))
+            string TemplateDir=string.Empty;
+            if (!string.IsNullOrEmpty(file))
             {
-                if (!File.Exists(WebSite.TEMPLATES_LOCAL_PATH + "Self\\BusinessArea\\" + platName + "\\" + file))
-                {
-                    TemplateDir = WebSite.TEMPLATES_WEB_PATH + "Default/" + platName + "/" + file;
-                }
-                else
-                {
-                    TemplateDir = WebSite.TEMPLATES_WEB_PATH + "Self/BusinessArea/" + platName + "/" + file;
-                }
-            }
-            else
-            {
-                if (!File.Exists(WebSite.TEMPLATES_LOCAL_PATH + "Self\\BusinessArea\\" + businessAreaID + "\\" + platName + "\\" + file))
-                {
-                    if (!File.Exists(WebSite.TEMPLATES_LOCAL_PATH + "Self\\BusinessArea\\" + platName + "\\" + file))
-                    {
-                        if (!File.Exists(WebSite.TEMPLATES_LOCAL_PATH + "Self\\" + platName + "\\" + file))
-                        {
-                            TemplateDir = WebSite.TEMPLATES_WEB_PATH + "Default/" + platName + "/" + file;
-                        }
-                        else
-                        {
-                            TemplateDir = WebSite.TEMPLATES_WEB_PATH + "Self/" + platName + "/" + file;
-                        }
-                    }
-                    else
-                    {
-                        TemplateDir = WebSite.TEMPLATES_WEB_PATH + "Self/BusinessArea/" + platName + "/" + file;
-                    }
-                }
-                else
-                {
-                    TemplateDir = WebSite.TEMPLATES_WEB_PATH + "Self/BusinessArea/" + businessAreaID + "/" + platName + "/" + file;
-                }
+                TemplateDir = WebSite.TEMPLATES_WEB_PATH + "/Default/" + file;
             }
             return TemplateDir;
         }

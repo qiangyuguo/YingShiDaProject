@@ -30,11 +30,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right newcss">
-                        <li><a href="javascript:void(0)"><% 
-                                                             Model.SysUser userinfo = (Model.SysUser)Session["UserInfo"];
-                        %>
-                            <%=userinfo.UserName%>  欢迎您
-                        </a></li>
+                        <li><a href="javascript:void(0)">简体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="javascript:void(0)">繁体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="javascript:void(0)">英文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+                        <li><a href="javascript:void(0)"><%Model.SysUser userinfo = (Model.SysUser)Session["UserInfo"];%><%=userinfo.UserName%>  欢迎您</a></li>
                         <%--<li><a href="javascript:void(0)" onclick="javascript: $.PE_FrameTab.AddNew('SystemManage/UserEdit.aspx','修改密码')">修改密码</a></li>
                         <li>
                             <asp:LinkButton ID="lbtnLogout" runat="server" OnClick="lbtnLogout_Click" CssClass="newa30">退出</asp:LinkButton></li>--%>

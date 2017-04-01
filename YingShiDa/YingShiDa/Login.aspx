@@ -82,12 +82,12 @@
     </script>
 </head>
 <body style="overflow-x: hidden; overflow-y: hidden; width: 100%; height: 100%;">
-    <%--<img src="<%=bgFile %>" alt="" class="beijing" style="width: 100%; height: 100%;" />--%>
+    <img src="<%=bgFile %>" alt="" class="beijing" style="width: 100%; height: 100%;" />
     <form id="form1" runat="server" defaultbutton="btnLogin">
         <div class="page" id="divPage">
             <div class="inner">
                 <div class="div1">
-                    <asp:Image ID="Image5" runat="server" ImageUrl="/Content/Skin/skin_default/img/logo.png" /><span>|门店管理后台系统</span>
+                    <span>英仕达后台管理系统</span>
                 </div>
                 <div class="header">
                     <div class="logo" id="PreferencesLogo">
