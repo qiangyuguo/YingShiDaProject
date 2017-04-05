@@ -2739,6 +2739,11 @@
     <Compile Include="Main.aspx.designer.cs">
       <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Main.aspx1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Main.aspx.resx</DependentUpon>
+    </Compile>
     <Compile Include="NoPermission.aspx.cs">
       <DependentUpon>NoPermission.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2858,6 +2863,13 @@
     <Folder Include="Content\Css\images\UploadImages\" />
     <Folder Include="Content\umeditor1_2_2-utf8-net\net\upload\" />
     <Folder Include="DownloadCenter\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Main.aspx.resx">
+      <DependentUpon>Main.aspx.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Main.aspx1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

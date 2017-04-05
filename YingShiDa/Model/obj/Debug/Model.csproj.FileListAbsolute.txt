@@ -17,6 +17,6 @@ F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Debug\EntityFramework.SqlSe
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Debug\EntityFramework.xml
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Debug\EntityFramework.SqlServer.xml
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
-F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Debug\Model.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Debug\Model.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache

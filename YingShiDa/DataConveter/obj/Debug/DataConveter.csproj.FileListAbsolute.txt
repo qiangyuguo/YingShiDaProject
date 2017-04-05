@@ -5,6 +5,5 @@ D:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Debug\DataConveter.d
 D:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Debug\DataConveter.pdb
 F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\bin\Debug\DataConveter.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\bin\Debug\DataConveter.pdb
-F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Debug\DataConveter.csprojResolveAssemblyReference.cache
 F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Debug\DataConveter.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Debug\DataConveter.pdb

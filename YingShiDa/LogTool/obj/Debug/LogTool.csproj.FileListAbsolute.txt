@@ -5,6 +5,5 @@ D:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Debug\LogTool.dll
 D:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Debug\LogTool.pdb
 F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\bin\Debug\LogTool.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\bin\Debug\LogTool.pdb
-F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Debug\LogTool.csprojResolveAssemblyReference.cache
 F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Debug\LogTool.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Debug\LogTool.pdb
