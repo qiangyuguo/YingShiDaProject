@@ -71,6 +71,22 @@ namespace YingShiDa
             }
             return TemplateDir;
         }
+
+        protected void SC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TC_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void EN_Click(object sender, EventArgs e)
+        {
+
+        }
+
         /// <summary>
         /// 退出
         /// </summary>

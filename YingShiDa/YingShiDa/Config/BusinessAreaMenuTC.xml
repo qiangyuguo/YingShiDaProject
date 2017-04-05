@@ -1,0 +1,53 @@
+﻿<MenuList>
+  <Menu name="关于我们" key="YYWM" value="">
+    <Menu name="公司简介" key="GSJJ" value="/AboutUs/CompanyProfileTC.aspx" />
+    <Menu name="发展历程" key="FZLC" value="/AboutUs/DevelopmentHistoryTC.aspx" />
+    <Menu name="企业文化" key="QYWH" value="/AboutUs/CorporateCultureTC.aspx" />
+    <Menu name="企业荣誉" key="QYRY" value="/AboutUs/EnterpriseHonorTC.aspx" />
+  </Menu>
+  <Menu name="企业咨询" key="YEZX" value="">
+    <Menu name="公司新闻" key="GSXW" value="/BusinessConsulting/CompanyNewsTC.aspx" />
+    <Menu name="行业资讯" key="HYZX" value="/BusinessConsulting/IndustryInformationTC.aspx" />
+  </Menu>
+  <Menu name="产品中心" key="CPZX" value="">
+    <Menu name="伺服驱动器" key="CFQDQ" value="/ProductCenter/ServoDriverTC.aspx?ProductType=1" />
+    <Menu name="伺服电机" key="CFDJ" value="/ProductCenter/ServoDriverTC.aspx?ProductType=2" />
+    <Menu name="闭环步进驱动" key="BHBJQD" value="/ProductCenter/ServoDriverTC.aspx?ProductType=3"/>
+    <Menu name="步进驱动器" key="BJQDQ" value="/ProductCenter/ServoDriverTC.aspx?ProductType=4"/>
+    <Menu name="闭环步进电机" key="BHBJDJ" value="/ProductCenter/ServoDriverTC.aspx?ProductType=5" />
+    <Menu name="直线步进电机" key="ZXBJDJ" value="/ProductCenter/ServoDriverTC.aspx?ProductType=6" />
+    <Menu name="步进电机" key="BJDJ" value="/ProductCenter/ServoDriverTC.aspx?ProductType=7"/>
+    <Menu name="日本SANYO山洋步进电机" key="SYBJDJ" value="/ProductCenter/ServoDriverTC.aspx?ProductType=8"/>
+    <Menu name="其他产品" key="QTCP" value="/ProductCenter/ServoDriverTC.aspx?ProductType=9" />
+  </Menu>
+  <Menu name="技术支持" key="JSZC" value="">
+    <Menu name="服务理念" key="FWLN" value="/TechnicalSupport/MemberListTC.aspx" />
+    <Menu name="常见问题答疑" key="CJWTDY" value="/TechnicalSupport/MemberToGroupListTC.aspx"/>
+  </Menu>
+  <Menu name="人力资源" key="RLZY" value="">
+    <Menu name="人才理念" key="RCLN" value="/HumanResources/TalentConceptTC.aspx" />
+    <Menu name="人才招聘" key="RCZP" value="/HumanResources/TalentRecruitmentTC.aspx" />
+    <Menu name="员工风采" key="YGFC" value="/HumanResources/StaffStyleTC.aspx" />
+  </Menu>
+  <Menu name="联系我们" key="LXWM" value="">
+    <Menu name="联系方式" key="LXFS" value="/ContactUs/ContactInformationTC.aspx" />
+    <Menu name="公司位置" key="GSWZ" value="/ContactUs/CompanyLocationTC.aspx" />
+  </Menu>
+  <Menu name="轮播图片" key="LBTP" value="">
+    <Menu name="首页轮播图片" key="SYLBTP" value="/Carousel/HomePageCarouselTC.aspx" />
+    <Menu name="团队轮播图片" key="TDLBTP" value="/Carousel/TeamCarouselTC.aspx" />
+  </Menu>
+</MenuList>
+
+
+<!--<Menu name="下载中心" key="XZZX" value="">
+  <Menu name="伺服驱动器" key="XZCFQDQ" value="/ProductCenter/XZServoDriver.aspx" />
+  <Menu name="伺服电机" key="XZCFDJ" value="/ProductCenter/XZServoMotor.aspx" />
+  <Menu name="闭环步进驱动" key="XZBHBJQD" value="/ProductCenter/XZClosedLoopDteppingDrive.aspx"/>
+  <Menu name="步进驱动器" key="XZBJQDQ" value="/ProductCenter/XZStepDrive.aspx"/>
+  <Menu name="闭环步进电机" key="XZBHBJDJ" value="/ProductCenter/XZClosedLoopStepperMotor.aspx" />
+  <Menu name="直线步进电机" key="XZZXBJDJ" value="/ProductCenter/XZLinearSteppingMotor.aspx" />
+  <Menu name="步进电机" key="XZBJDJ" value="/ProductCenter/XZStepperMotor.aspx"/>
+  <Menu name="日本SANYO山洋步进电机" key="XZSYBJDJ" value="/ProductCenter/XZSteppingMotor.aspx"/>
+  <Menu name="其他产品" key="XZQTCP" value="/ProductCenter/XZOtherProducts.aspx" />
+</Menu>-->

@@ -117,6 +117,12 @@
     <Content Include="Carousel\HomePageCarousel.aspx" />
     <Content Include="Carousel\TeamCarouselAdd.aspx" />
     <Content Include="Carousel\HomePageCarouselAdd.aspx" />
+    <Content Include="Config\BusinessAreaMenuEN.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Config\BusinessAreaMenuTC.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="ContactUs\CompanyLocation.aspx" />
     <Content Include="ContactUs\ContactInformation.aspx" />
     <Content Include="ContactUs\CompanyLocationAdd.aspx" />
