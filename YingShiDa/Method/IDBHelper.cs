@@ -8,11 +8,13 @@ namespace Method
     {
         T SelectByID<T>(int ID) where T : new();
 
+        T SelectByIDL<T>(int ID,int Language) where T : new();
+
         T SelectModel<T>(string UserName) where T : new();//查询登录名是否匹配
 
         T SelectList<T>() where T :new();//查询所有的
 
-        T SelectTopList<T>() where T : new();//查询最新的一条
+        T SelectTopList<T>(int Language) where T : new();//查询最新的一条
 
         bool Add<T>(T t) where T : new();
 

@@ -69,6 +69,40 @@ namespace Method
         }
         #endregion
 
+        #region 根据ID和语言查询某一张表的数据
+        public T SelectByIDL<T>(int ID,int Language) where T : new()
+        {
+            PropertyInfo[] propertyInfos = typeof(T).GetProperties();
+            T model = new T();//返回的结果集
+            string sql = string.Format(" Select {0} From {1} Where ID = @ID and Language=@Language "
+                , string.Join(",", propertyInfos.Select(x => " [" + x.Name + "] "))
+                , model.GetType().Name
+                );
+
+            using (SqlConnection conn = new SqlConnection(connString))
+            {
+                conn.Open();
+                using (SqlCommand comm = new SqlCommand(sql.ToString(), conn))
+                {
+                    comm.Parameters.Add(new SqlParameter("@ID", ID));
+                    comm.Parameters.Add(new SqlParameter("@Language", Language));
+                    using (SqlDataReader read = comm.ExecuteReader())
+                    {
+                        while (read.Read())//如果有数据
+                        {
+                            foreach (PropertyInfo item in propertyInfos)
+                            {
+                                if (!(read[item.Name] is DBNull))//加上是不是DBNull的判断
+                                    item.SetValue(model, read[item.Name]);
+                            }
+                        }
+                    }
+                }
+            }
+            return model;
+        }
+        #endregion
+
         #region 查询登录名是否匹配
         public T SelectModel<T>(string UserName) where T :new()
         {
@@ -202,11 +236,11 @@ namespace Method
         #endregion
 
         #region 查询某一张表最新的数据
-        public T SelectTopList<T>() where T :new()
+        public T SelectTopList<T>(int Language) where T :new()
         {
             PropertyInfo[] propertyInfos = typeof(T).GetProperties();
             T model = new T();//返回的结果集
-            string sql = string.Format("   Select {0}   From   {1}  order by UpdateTime desc "
+            string sql = string.Format(" Select {0} From {1} Where Language = @Language order by UpdateTime desc "
                 , string.Join(",", propertyInfos.Select(x => " [" + x.Name + "] "))
                 , model.GetType().Name
                 );
@@ -216,6 +250,7 @@ namespace Method
                 conn.Open();
                 using (SqlCommand comm = new SqlCommand(sql.ToString(), conn))
                 {
+                    comm.Parameters.Add(new SqlParameter("@Language", Language));
                     using (SqlDataReader read = comm.ExecuteReader())
                     {
                         while (read.Read())//如果有数据
@@ -230,6 +265,7 @@ namespace Method
                 }
             }
             return model;
+
             //try
             //{
             //    Type type = typeof(T);

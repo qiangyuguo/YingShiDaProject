@@ -80,12 +80,13 @@ namespace YingShiDa.Action
         public string GetComPanyProfile(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Company_Profile cp = Factory.GetExecution().SelectTopList<Model.Company_Profile>();
+                    Model.Company_Profile cp = Factory.GetExecution().SelectTopList<Model.Company_Profile>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -104,12 +105,13 @@ namespace YingShiDa.Action
         public string GetDevelopmentHistory(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Company_History cp = Factory.GetExecution().SelectTopList<Model.Company_History>();
+                    Model.Company_History cp = Factory.GetExecution().SelectTopList<Model.Company_History>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -128,12 +130,13 @@ namespace YingShiDa.Action
         public string GetCorporateCulture(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Company_Culture cp = Factory.GetExecution().SelectTopList<Model.Company_Culture>();
+                    Model.Company_Culture cp = Factory.GetExecution().SelectTopList<Model.Company_Culture>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -152,12 +155,13 @@ namespace YingShiDa.Action
         public string GetEnterpriseHonor(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Company_Honor cp = Factory.GetExecution().SelectTopList<Model.Company_Honor>();
+                    Model.Company_Honor cp = Factory.GetExecution().SelectTopList<Model.Company_Honor>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -176,12 +180,13 @@ namespace YingShiDa.Action
         public string GetCompanyNews(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Company_News cp = Factory.GetExecution().SelectTopList<Model.Company_News>();
+                    Model.Company_News cp = Factory.GetExecution().SelectTopList<Model.Company_News>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -200,12 +205,13 @@ namespace YingShiDa.Action
         public string GetIndustryInformation(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Industry_News cp = Factory.GetExecution().SelectTopList<Model.Industry_News>();
+                    Model.Industry_News cp = Factory.GetExecution().SelectTopList<Model.Industry_News>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -224,12 +230,13 @@ namespace YingShiDa.Action
         public string GetMemberList(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Service_Concept cp = Factory.GetExecution().SelectTopList<Model.Service_Concept>();
+                    Model.Service_Concept cp = Factory.GetExecution().SelectTopList<Model.Service_Concept>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -248,12 +255,13 @@ namespace YingShiDa.Action
         public string GetMemberToGroupList(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.CommonQuestion cp = Factory.GetExecution().SelectTopList<Model.CommonQuestion>();
+                    Model.CommonQuestion cp = Factory.GetExecution().SelectTopList<Model.CommonQuestion>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -272,12 +280,13 @@ namespace YingShiDa.Action
         public string GetTalentConcept(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Talent_Concept cp = Factory.GetExecution().SelectTopList<Model.Talent_Concept>();
+                    Model.Talent_Concept cp = Factory.GetExecution().SelectTopList<Model.Talent_Concept>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -296,12 +305,13 @@ namespace YingShiDa.Action
         public string GetTalentRecruitment(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Recruitment cp = Factory.GetExecution().SelectTopList<Model.Recruitment>();
+                    Model.Recruitment cp = Factory.GetExecution().SelectTopList<Model.Recruitment>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -320,12 +330,13 @@ namespace YingShiDa.Action
         public string GetStaffStyle(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Staff_Presence cp = Factory.GetExecution().SelectTopList<Model.Staff_Presence>();
+                    Model.Staff_Presence cp = Factory.GetExecution().SelectTopList<Model.Staff_Presence>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -344,12 +355,13 @@ namespace YingShiDa.Action
         public string GetCompanyLocation(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Company_Location cp = Factory.GetExecution().SelectTopList<Model.Company_Location>();
+                    Model.Company_Location cp = Factory.GetExecution().SelectTopList<Model.Company_Location>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -368,12 +380,13 @@ namespace YingShiDa.Action
         public string GetHomePageCarousel(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.InBanner cp = Factory.GetExecution().SelectTopList<Model.InBanner>();
+                    Model.InBanner cp = Factory.GetExecution().SelectTopList<Model.InBanner>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -392,12 +405,13 @@ namespace YingShiDa.Action
         public string GetContactInformation(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.Contact_US cp = Factory.GetExecution().SelectTopList<Model.Contact_US>();
+                    Model.Contact_US cp = Factory.GetExecution().SelectTopList<Model.Contact_US>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -416,12 +430,13 @@ namespace YingShiDa.Action
         public string GetTeamCarousel(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.InTeam cp = Factory.GetExecution().SelectTopList<Model.InTeam>();
+                    Model.InTeam cp = Factory.GetExecution().SelectTopList<Model.InTeam>(Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -465,12 +480,13 @@ namespace YingShiDa.Action
         {
             string jsonStr = string.Empty;
             int ID =Convert.ToInt32(context.Request.Params["ID"]);
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    Model.ProductCenterDetail cp = Factory.GetExecution().SelectByID<Model.ProductCenterDetail>(ID);
+                    Model.ProductCenterDetail cp = Factory.GetExecution().SelectByIDL<Model.ProductCenterDetail>(ID,Language);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
