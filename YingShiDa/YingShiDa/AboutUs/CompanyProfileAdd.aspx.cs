@@ -36,7 +36,7 @@ namespace YingShiDa.AboutUs
             view_action = Request["action"];
             if (!IsPostBack)
             {
-                Int32.TryParse(Request["ID"],out requestID);
+                Int32.TryParse(Request["ID"], out requestID);
                 BindData();
             }
         }
@@ -50,11 +50,23 @@ namespace YingShiDa.AboutUs
                 {
                     txtTitle.Text = cp.Title;
                     XiangQing = cp.Content;
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtCreatePeople.Text = cp.CreatetPeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
-                    HomePageUploadFileName.Text= cp.LogoUrl;
+                    HomePageUploadFileName.Text = cp.LogoUrl;
                     TextUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.TextUrl;
-                    TextUploadFileName.Text= cp.TextUrl;
+                    TextUploadFileName.Text = cp.TextUrl;
                 }
             }
         }
@@ -65,7 +77,7 @@ namespace YingShiDa.AboutUs
                 XiangQing = Request.Form["editorValue"]; //获取umeditor的值
                 if (string.IsNullOrEmpty(XiangQing))
                 {
-                    Common.MessageBox.ShowLayer(this, "正文内容不能为空",2);
+                    Common.MessageBox.ShowLayer(this, "正文内容不能为空", 2);
                     return;
                 }
                 if (view_action == "notify")
@@ -74,8 +86,9 @@ namespace YingShiDa.AboutUs
                     if (cp != null)
                     {
                         cp.Title = txtTitle.Text;
-                        cp.Content=XiangQing;
-                        cp.CreatetPeople=txtCreatePeople.Text;
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
+                        cp.Content = XiangQing;
+                        cp.CreatetPeople = txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.TextUrl = TextUploadFileName.Text;
                         cp.CreatetPeople = txtCreatePeople.Text;
@@ -92,6 +105,7 @@ namespace YingShiDa.AboutUs
                     Model.Company_Profile cp = new Model.Company_Profile();
                     cp.Title = txtTitle.Text;
                     cp.Content = XiangQing;
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.CreatetPeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
                     cp.TextUrl = TextUploadFileName.Text;
@@ -107,7 +121,7 @@ namespace YingShiDa.AboutUs
             }
             catch (Exception ex)
             {
-                Common.MessageBox.ShowLayer(this, "添加失败!" + ex.Message,2);
+                Common.MessageBox.ShowLayer(this, "添加失败!" + ex.Message, 2);
             }
             finally
             {
@@ -156,7 +170,7 @@ namespace YingShiDa.AboutUs
                     }
                     else
                     {
-                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择",2);
+                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择", 2);
                         XiangQing = Request.Form["editorValue"]; //获取umeditor的值
                         return;
                     }
@@ -170,7 +184,7 @@ namespace YingShiDa.AboutUs
             }
             else
             {
-                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件",2);
+                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件", 2);
                 XiangQing = Request.Form["editorValue"]; //获取umeditor的值
                 return;
             }
@@ -222,7 +236,7 @@ namespace YingShiDa.AboutUs
                     }
                     else
                     {
-                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择",2);
+                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择", 2);
                         XiangQing = Request.Form["editorValue"]; //获取umeditor的值
                         return;
                     }
@@ -236,7 +250,7 @@ namespace YingShiDa.AboutUs
             }
             else
             {
-                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件",2);
+                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件", 2);
                 XiangQing = Request.Form["editorValue"]; //获取umeditor的值
                 return;
             }

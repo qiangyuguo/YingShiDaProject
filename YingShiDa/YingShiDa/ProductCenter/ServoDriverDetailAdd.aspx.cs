@@ -86,6 +86,18 @@ namespace YingShiDa.ProductCenter
             {
                 if (cp != null)
                 {
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtTitle.Text = cp.Title;
                     ddlProductModel.SelectedValue = cp.ProductModelID;
                     txtSeries.Text = cp.Series;
@@ -159,6 +171,7 @@ namespace YingShiDa.ProductCenter
                     Model.ProductCenterDetail cp = Factory.GetExecution().SelectByID<Model.ProductCenterDetail>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.ProductModelID = ddlProductModel.SelectedValue;
                         cp.Series = txtSeries.Text;
@@ -185,6 +198,7 @@ namespace YingShiDa.ProductCenter
                 {
                     Model.ProductCenterDetail cp = new Model.ProductCenterDetail();
                     cp.ProductDetailID = RuleUtility.IDsCreater.GetCreater().CreateProductDetailID(dbm);
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.ProductModelID = ddlProductModel.SelectedValue;
                     cp.Series = txtSeries.Text;

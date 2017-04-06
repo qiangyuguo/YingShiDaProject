@@ -48,6 +48,18 @@ namespace YingShiDa.BusinessConsulting
                 Model.Industry_News cp = Factory.GetExecution().SelectByID<Model.Industry_News>(requestID);
                 if (cp != null)
                 {
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtTitle.Text = cp.Title;
                     XiangQing = cp.Content;
                     txtCreatePeople.Text = cp.CreatetPeople;
@@ -71,6 +83,7 @@ namespace YingShiDa.BusinessConsulting
                     Model.Industry_News cp = Factory.GetExecution().SelectByID<Model.Industry_News>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.Content=XiangQing;
                         cp.CreatetPeople=txtCreatePeople.Text;
@@ -87,6 +100,7 @@ namespace YingShiDa.BusinessConsulting
                 else
                 {
                     Model.Industry_News cp = new Model.Industry_News();
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Content = XiangQing;
                     cp.CreatetPeople = txtCreatePeople.Text;

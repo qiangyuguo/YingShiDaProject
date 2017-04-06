@@ -7,11 +7,13 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-html,body,div,p,form,label,button,textarea,h1,h2,h3,h4,h5,h6,ul,li,ol,dd,dl,dt,table,thead,tbody,tr,td,th,tfoot,pre,small,span,u,var,legend,strong,fieldset,iframe,img,ins,center,cite,code,del,a,address,blockquote,acronym,applet,audio,dfn,embed,object,samp,strike,sub,blockquote,hr,legend,summary,sup,time,tt,font,i,em,b,big,canvas,video,article,mark,aside,details,caption,figcaption,figure,footer,header,hgroup,menu,nav,section {
+
+html, body, div, p, form, label, button, textarea, h1, h2, h3, h4, h5, h6, ul, li, ol, dd, dl, dt, table, thead, tbody, tr, td, th, tfoot, pre, small, span, u, var, legend, strong, fieldset, iframe, img, ins, center, cite, code, del, a, address, blockquote, acronym, applet, audio, dfn, embed, object, samp, strike, sub, blockquote, hr, legend, summary, sup, time, tt, font, i, em, b, big, canvas, video, article, mark, aside, details, caption, figcaption, figure, footer, header, hgroup, menu, nav, section {
     margin: 0;
     padding: 0;
     border: 0;
 }
+
 html {
     font-size: 62.5%;
 }
@@ -20,36 +22,45 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-fieldset,img {
+
+fieldset, img {
     border: 0;
 }
-address,caption,cite,code,dfn,em,i,th,var {
+
+address, caption, cite, code, dfn, em, i, th, var {
     font-style: normal;
     font-weight: 500;
 }
-ol,ul,li,dl,dd,dt {
+
+ol, ul, li, dl, dd, dt {
     list-style: none;
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
     font-weight: 500;
 }
-ins,a {
+
+ins, a {
     text-decoration: none;
 }
+
 textarea {
     outline: 0;
     resize: none;
     border: 1px solid #ccc;
     /*transition: border-color .25s linear;*/
 }
+
 textarea {
     overflow-y: auto;
 }
-input[type="submit"],input[type="reset"],input[type="button"],input {
+
+input[type="submit"], input[type="reset"], input[type="button"], input {
     /*-webkit-appearance: none;*/
 }
-label,input,button {
+
+label, input, button {
     display: inline-block;
 }
 
@@ -61,12 +72,15 @@ label,input,button {
     clear: both;
     visibility: hidden;
 }
+
 .cf {
-    *zoom:1;
+    *zoom: 1;
 }
+
 .fl {
     float: left;
 }
+
 .fr {
     float: right;
 }
@@ -75,12 +89,15 @@ label,input,button {
 .dark-green {
     color: #1ab394;
 }
+
 .dark-red {
     color: #ed5565;
 }
+
 .dark-blue {
     color: #23c6c8;
 }
+
 .dark-yellow {
     color: #f8ac59;
 }
@@ -129,9 +146,26 @@ label,input,button {
 .label-right {
     margin-right: 26px;
 }
+
 .label-margin {
     margin: 20px 26px 0 0;
 }
+
 .btn-right {
     margin-right: 10px;
+}
+
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 0px 5px;
+    line-height: 20px;
+}
+
+.tit {
+    font-size: 14px;
+    display: inline-block;
+    text-align: left;
+    width: 76px;
+    vertical-align: bottom;
 }

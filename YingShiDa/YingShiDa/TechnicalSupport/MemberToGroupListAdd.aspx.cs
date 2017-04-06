@@ -47,6 +47,18 @@ namespace YingShiDa.TechnicalSupport
                 Model.CommonQuestion cp = Factory.GetExecution().SelectByID<Model.CommonQuestion>(requestID);
                 if (cp != null)
                 {
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtTitle.Text = cp.Title;
                     txtContentQuestion.Text = cp.ContentQuestion;
                     txtContentAnswer.Text = cp.ContentAnswer;
@@ -75,6 +87,7 @@ namespace YingShiDa.TechnicalSupport
                     Model.CommonQuestion cp = Factory.GetExecution().SelectByID<Model.CommonQuestion>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.ContentQuestion= txtContentQuestion.Text;
                         cp.ContentAnswer= txtContentAnswer.Text;
@@ -92,6 +105,7 @@ namespace YingShiDa.TechnicalSupport
                 else
                 {
                     Model.CommonQuestion cp = new Model.CommonQuestion();
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.ContentQuestion = txtContentQuestion.Text;
                     cp.ContentAnswer = txtContentAnswer.Text;

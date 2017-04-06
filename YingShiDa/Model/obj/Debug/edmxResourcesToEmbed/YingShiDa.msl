@@ -12,6 +12,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -25,6 +26,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -38,6 +40,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -51,6 +54,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -64,6 +68,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -79,6 +84,7 @@
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -93,6 +99,7 @@
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
           <ScalarProperty Name="TextUrl" ColumnName="TextUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -113,6 +120,7 @@
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -125,6 +133,7 @@
           <ScalarProperty Name="BannerPicname" ColumnName="BannerPicname" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -139,6 +148,7 @@
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -154,6 +164,7 @@
           <ScalarProperty Name="TeamPicname" ColumnName="TeamPicname" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -168,6 +179,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -187,6 +199,7 @@
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
           <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -199,6 +212,7 @@
           <ScalarProperty Name="ProductModel" ColumnName="ProductModel" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -217,6 +231,7 @@
           <ScalarProperty Name="Responsibilities" ColumnName="Responsibilities" />
           <ScalarProperty Name="JobRequirements" ColumnName="JobRequirements" />
           <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -230,6 +245,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -243,6 +259,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -256,6 +273,7 @@
           <ScalarProperty Name="Phone" ColumnName="Phone" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -269,6 +287,7 @@
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

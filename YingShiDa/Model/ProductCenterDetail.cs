@@ -27,5 +27,6 @@ namespace Model
         public Nullable<System.DateTime> UpdateTime { get; set; }
         public string LogoUrl { get; set; }
         public string FileName { get; set; }
+        public Nullable<int> Language { get; set; }
     }
 }

@@ -30,9 +30,12 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right newcss">
-                        <li><asp:LinkButton runat="server" ID="SC" OnClick="SC_Click">简体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
-                        <li><asp:LinkButton runat="server" ID="TC" OnClick="TC_Click">繁体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
-                        <li><asp:LinkButton runat="server" ID="EN" OnClick="EN_Click">英文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
+                        <li style="display: none;">
+                            <asp:LinkButton runat="server" ID="SC" OnClick="SC_Click">简体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
+                        <li style="display: none;">
+                            <asp:LinkButton runat="server" ID="TC" OnClick="TC_Click">繁体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
+                        <li style="display: none;">
+                            <asp:LinkButton runat="server" ID="EN" OnClick="EN_Click">英文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
                         <li><a href="javascript:void(0)"><%Model.SysUser userinfo = (Model.SysUser)Session["UserInfo"];%><%=userinfo.UserName%>  欢迎您</a></li>
                         <%--<li><a href="javascript:void(0)" onclick="javascript: $.PE_FrameTab.AddNew('SystemManage/UserEdit.aspx','修改密码')">修改密码</a></li>
                         <li>
@@ -100,7 +103,7 @@
             <asp:Label ID="lblCopyRight" runat="server" Text=""></asp:Label>
         </div>
         <asp:HiddenField ID="hfBusinessAreaID" runat="server" />
-        <%-- <div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div>
+        <%--<div id='MicrosoftTranslatorWidget' class='Dark' style='color:white;background-color:#555555'></div>
     <script type='text/javascript'>setTimeout(function () { { var s = document.createElement('script'); s.type = 'text/javascript'; s.charset = 'UTF-8'; s.src = ((location && location.href && location.href.indexOf('https') == 0) ? 'https://ssl.microsofttranslator.com' : 'http://www.microsofttranslator.com') + '/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ctf=True&ui=true&settings=Manual&from='; var p = document.getElementsByTagName('head')[0] || document.documentElement; p.insertBefore(s, p.firstChild); } }, 0);</script>--%>
     </form>
     <script type="text/javascript" src="Content/bootStrap/JS/jquery-1.8.3.min.js"></script>

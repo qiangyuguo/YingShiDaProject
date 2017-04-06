@@ -74,17 +74,17 @@ namespace YingShiDa
 
         protected void SC_Click(object sender, EventArgs e)
         {
-
+            Session["MenuList"] = PlatformManagment.User.GetBusinessAreaMenu();
         }
 
         protected void TC_Click(object sender, EventArgs e)
         {
-
+            Session["MenuList"] = PlatformManagment.User.GetBusinessAreaMenuTC();
         }
 
         protected void EN_Click(object sender, EventArgs e)
         {
-
+            Session["MenuList"] = PlatformManagment.User.GetBusinessAreaMenuEN();
         }
 
         /// <summary>

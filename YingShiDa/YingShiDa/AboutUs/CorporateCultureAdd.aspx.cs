@@ -48,6 +48,18 @@ namespace YingShiDa.AboutUs
                 Model.Company_Culture cp = Factory.GetExecution().SelectByID<Model.Company_Culture>(requestID);
                 if (cp != null)
                 {
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtTitle.Text = cp.Title;
                     XiangQing = cp.Content;
                     txtCreatePeople.Text = cp.CreatetPeople;
@@ -71,6 +83,7 @@ namespace YingShiDa.AboutUs
                     Model.Company_Culture cp = Factory.GetExecution().SelectByID<Model.Company_Culture>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.Content=XiangQing;
                         cp.CreatetPeople=txtCreatePeople.Text;
@@ -87,6 +100,7 @@ namespace YingShiDa.AboutUs
                 else
                 {
                     Model.Company_Culture cp = new Model.Company_Culture();
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Content = XiangQing;
                     cp.CreatetPeople = txtCreatePeople.Text;

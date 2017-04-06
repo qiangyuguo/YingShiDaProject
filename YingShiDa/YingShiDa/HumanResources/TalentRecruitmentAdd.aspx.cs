@@ -49,6 +49,18 @@ namespace YingShiDa.HumanResources
                 Model.Recruitment cp = Factory.GetExecution().SelectByID<Model.Recruitment>(requestID);
                 if (cp != null)
                 {
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtTitle.Text = cp.Title;
                     txtDepartment.Text = cp.Department;
                     txtNumber.Text = cp.Number.ToString();
@@ -86,6 +98,7 @@ namespace YingShiDa.HumanResources
                     Model.Recruitment cp = Factory.GetExecution().SelectByID<Model.Recruitment>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.Department = txtDepartment.Text;
                         cp.Number = Convert.ToInt32(txtNumber.Text);
@@ -106,6 +119,7 @@ namespace YingShiDa.HumanResources
                 else
                 {
                     Model.Recruitment cp = new Model.Recruitment();
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Department = txtDepartment.Text;
                     cp.Number = Convert.ToInt32(txtNumber.Text);

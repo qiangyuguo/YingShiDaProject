@@ -51,6 +51,18 @@ namespace YingShiDa.ProductCenter
                     Model.ProductCenter cp = Factory.GetExecution().SelectByID<Model.ProductCenter>(requestID);
                     if (cp != null)
                     {
+                        if (cp.Language == 1)
+                        {
+                            Chinese.Checked = true;
+                        }
+                        else if (cp.Language == 2)
+                        {
+                            English.Checked = true;
+                        }
+                        else if (cp.Language == 3)
+                        {
+                            Traditional.Checked = true;
+                        }
                         txtTitle.Text = cp.ProductTitle;
                         txtCreatePeople.Text = cp.CreatetPeople;
                         HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
@@ -89,6 +101,7 @@ namespace YingShiDa.ProductCenter
                     Model.ProductCenter cp = Factory.GetExecution().SelectByID<Model.ProductCenter>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.ProductTitle = txtTitle.Text;
                         cp.CreatetPeople = txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
@@ -122,6 +135,7 @@ namespace YingShiDa.ProductCenter
                 {
                     Model.ProductCenter cp = new Model.ProductCenter();
                     cp.ProductID = RuleUtility.IDsCreater.GetCreater().CreateProductID(dbm);
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.ProductType = ProductType;
                     cp.ProductTitle = txtTitle.Text;
                     cp.CreatetPeople = txtCreatePeople.Text;

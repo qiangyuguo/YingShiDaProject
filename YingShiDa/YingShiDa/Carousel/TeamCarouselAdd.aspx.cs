@@ -60,6 +60,18 @@ namespace YingShiDa.Carousel
             {
                 if (cp != null)
                 {
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtTitle.Text = cp.Title;
                     txtCreatePeople.Text = cp.CreatePeople;
                     txtContent1.Text = cp.Content1;
@@ -106,6 +118,7 @@ namespace YingShiDa.Carousel
                     Model.InTeam cp = Factory.GetExecution().SelectByID<Model.InTeam>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.Content1= txtContent1.Text;
@@ -126,6 +139,7 @@ namespace YingShiDa.Carousel
                 else
                 {
                     Model.InTeam cp = new Model.InTeam();
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Content1 = txtContent1.Text;
                     cp.COntent2 = txtContent2.Text;

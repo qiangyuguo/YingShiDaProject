@@ -23,5 +23,6 @@ namespace Model
         public string TeamPicname { get; set; }
         public Nullable<System.DateTime> CreateTime { get; set; }
         public Nullable<System.DateTime> UpdateTime { get; set; }
+        public Nullable<int> Language { get; set; }
     }
 }

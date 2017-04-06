@@ -12,6 +12,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Company_Culture">
     <Key>
@@ -24,6 +25,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Company_History">
     <Key>
@@ -36,6 +38,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Company_Honor">
     <Key>
@@ -48,6 +51,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Company_Location">
     <Key>
@@ -60,6 +64,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Company_News">
     <Key>
@@ -74,6 +79,7 @@
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="BrowseTimes" Type="Int32" />
     <Property Name="LogoUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Company_Profile">
     <Key>
@@ -87,6 +93,7 @@
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="TextUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Contact_US">
     <Key>
@@ -106,6 +113,7 @@
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="BrowseTimes" Type="Int32" />
     <Property Name="LogoUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="InBanner">
     <Key>
@@ -117,6 +125,7 @@
     <Property Name="BannerPicname" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Industry_News">
     <Key>
@@ -130,6 +139,7 @@
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="BrowseTimes" Type="Int32" />
     <Property Name="LogoUrl" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="InTeam">
     <Key>
@@ -144,6 +154,7 @@
     <Property Name="TeamPicname" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="ProductCenter">
     <Key>
@@ -157,6 +168,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="ProductCenterDetail">
     <Key>
@@ -168,13 +180,14 @@
     <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="Series" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="ClothAngle" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-    <Property Name="Advantage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Advantage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="TechnicalParameter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="FileName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="ProductCenterModel">
     <Key>
@@ -186,6 +199,7 @@
     <Property Name="ProductModel" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Recruitment">
     <Key>
@@ -203,6 +217,7 @@
     <Property Name="Responsibilities" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="JobRequirements" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Salary" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Service_Concept">
     <Key>
@@ -215,6 +230,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Staff_Presence">
     <Key>
@@ -227,6 +243,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="SysUser">
     <Key>
@@ -239,6 +256,7 @@
     <Property Name="Phone" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityType Name="Talent_Concept">
     <Key>
@@ -251,6 +269,7 @@
     <Property Name="CreateTime" Type="DateTime" Precision="3" />
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="Int32" />
   </EntityType>
   <EntityContainer Name="YingShiDaEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="CommonQuestions" EntityType="Self.CommonQuestion" />

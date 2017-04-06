@@ -12,6 +12,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Company_Culture">
     <Key>
@@ -24,6 +25,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Company_History">
     <Key>
@@ -36,6 +38,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Company_Honor">
     <Key>
@@ -48,6 +51,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Company_Location">
     <Key>
@@ -60,6 +64,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Company_News">
     <Key>
@@ -74,6 +79,7 @@
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="BrowseTimes" Type="int" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Company_Profile">
     <Key>
@@ -87,6 +93,7 @@
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
     <Property Name="TextUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Contact_US">
     <Key>
@@ -106,6 +113,7 @@
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="BrowseTimes" Type="int" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="InBanner">
     <Key>
@@ -117,6 +125,7 @@
     <Property Name="BannerPicname" Type="nvarchar" MaxLength="500" />
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Industry_News">
     <Key>
@@ -130,6 +139,7 @@
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="BrowseTimes" Type="int" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="500" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="InTeam">
     <Key>
@@ -144,6 +154,7 @@
     <Property Name="TeamPicname" Type="nvarchar" MaxLength="500" />
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="ProductCenter">
     <Key>
@@ -157,6 +168,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="ProductCenterDetail">
     <Key>
@@ -168,13 +180,14 @@
     <Property Name="Title" Type="nvarchar" MaxLength="30" />
     <Property Name="Series" Type="nvarchar" MaxLength="20" />
     <Property Name="ClothAngle" Type="nvarchar" MaxLength="20" />
-    <Property Name="Advantage" Type="nvarchar" MaxLength="100" />
+    <Property Name="Advantage" Type="ntext" />
     <Property Name="TechnicalParameter" Type="ntext" />
     <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
     <Property Name="FileName" Type="nvarchar" MaxLength="500" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="ProductCenterModel">
     <Key>
@@ -186,6 +199,7 @@
     <Property Name="ProductModel" Type="nvarchar" MaxLength="30" />
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Recruitment">
     <Key>
@@ -203,6 +217,7 @@
     <Property Name="Responsibilities" Type="ntext" />
     <Property Name="JobRequirements" Type="ntext" />
     <Property Name="Salary" Type="nvarchar" MaxLength="20" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Service_Concept">
     <Key>
@@ -215,6 +230,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Staff_Presence">
     <Key>
@@ -227,6 +243,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="SysUser">
     <Key>
@@ -239,6 +256,7 @@
     <Property Name="Phone" Type="nvarchar" MaxLength="30" />
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <EntityType Name="Talent_Concept">
     <Key>
@@ -251,6 +269,7 @@
     <Property Name="CreateTime" Type="datetime" />
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="int" />
   </EntityType>
   <Function Name="Common_FastPageList" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="sql" Type="nvarchar(max)" Mode="In" />

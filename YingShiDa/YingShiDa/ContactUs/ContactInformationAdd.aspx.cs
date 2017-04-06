@@ -47,6 +47,18 @@ namespace YingShiDa.ContactUs
                 Model.Contact_US cp = Factory.GetExecution().SelectByID<Model.Contact_US>(requestID);
                 if (cp != null)
                 {
+                    if (cp.Language == 1)
+                    {
+                        Chinese.Checked = true;
+                    }
+                    else if (cp.Language == 2)
+                    {
+                        English.Checked = true;
+                    }
+                    else if (cp.Language == 3)
+                    {
+                        Traditional.Checked = true;
+                    }
                     txtTitle.Text = cp.Title;
                     txtDepartment.Text = cp.Department;
                     txtCompany.Text = cp.Company;
@@ -70,6 +82,7 @@ namespace YingShiDa.ContactUs
                     Model.Contact_US cp = Factory.GetExecution().SelectByID<Model.Contact_US>(requestID);
                     if (cp != null)
                     {
+                        cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title= txtTitle.Text;
                         cp.Department= txtDepartment.Text;
                         cp.Company= txtCompany.Text;
@@ -92,6 +105,7 @@ namespace YingShiDa.ContactUs
                 else
                 {
                     Model.Contact_US cp = new Model.Contact_US();
+                    cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Department = txtDepartment.Text;
                     cp.Company = txtCompany.Text;
