@@ -1,0 +1,102 @@
+﻿@charset "utf-8";
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+    background-color: #ffffff;
+}
+
+.table-bordered > thead > tr > th.bc6f {
+    background-color: #ffffff;
+}
+
+.table-bordered > thead .stati-tool-item {
+    margin-bottom: 0px;
+}
+
+
+#tb_product tbody > .action {
+    color: #18a689;
+}
+#tb_product tbody tr {
+    cursor:pointer;
+}
+
+/* 对应原料样式开始 */
+.cb3 {
+    color: #d2d2d2;
+}
+
+.dyyl {
+    display: block;
+    width: 100px;
+    height: 28px;
+    background-color: rgba(254, 198, 226, 1);
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    text-align: center;
+    padding-top: 4px;
+    color: #ffffff;
+}
+/* 对应原来样式结束 */
+
+.pdr5 {
+    padding-right: 5px;
+}
+
+
+/* 动态面板 */
+.dynamic_panel {
+    position: relative;
+    font-size: 13px;
+    color: #333333;
+    line-height: normal;
+    display: inline-block;
+}
+
+    .dynamic_panel .panel_state {
+        width: 100px;
+        height: 34px;
+        visibility: visible;
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+    }
+
+    .dynamic_panel .panel_enable {
+        background-color: #ffffff;
+        /*background-color: rgba(102, 204, 221, 1);*/
+        border: 2px solid rgba(215, 235, 243, 1);
+        overflow: hidden;
+        border-radius: 5px;
+    }
+
+.panel_enable .panel_enable_content {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(102, 204, 221, 1);
+    border: 0px;
+    line-height: 34px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.dynamic_panel .panel_no {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(215, 235, 243, 1);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.panel_no .panel_no_content {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(102, 204, 221, 1);
+    border: 0px;
+    line-height: 34px;
+    text-align: center;
+    float: right;
+    color: #ffffff;
+}
+
+/* 动态面板 结束 */

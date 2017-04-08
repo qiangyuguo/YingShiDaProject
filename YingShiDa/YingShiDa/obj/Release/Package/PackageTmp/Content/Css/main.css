@@ -1,0 +1,123 @@
+﻿body
+{
+	font-size:12px;
+	font-family:华文黑体, 思源黑体;
+}
+.TheTopArea
+{
+    float:left;	
+    width:48%;
+}
+.TheTop-Right
+{
+    float:left;
+    width:48%;
+    margin-left:20px;
+}
+.TheTop-Left
+{
+    float:left;
+    }
+.title
+{
+    border-bottom:solid 1px #ccc;	
+}
+.photocontainer
+{
+	margin-top:10px;
+	/*background:url("../../Content/Css/images/UploadImages/bg_108-129.gif") no-repeat left top;   */
+	padding:4px 4px 4px 4px;
+	border:2px solid #888888;
+}  
+.uploadtooltip
+{
+	margin-top:10px;
+	color: #555;	
+	line-height:150%;
+}
+.uploaddiv
+{
+	margin-top:10px;
+	margin-right: 10px;
+}
+input
+{
+	padding:3px;  
+}
+#Step2Container
+{
+/*display:none;	*/
+height:auto;
+width:auto;
+overflow:hidden;
+margin-top:20px;
+}
+#Canvas
+{
+    position: relative;
+    border:2px solid #888888;
+    overflow:hidden;	          
+    cursor:pointer;	
+}
+.smallbig
+{
+    cursor:pointer;	
+}
+ #bar
+{
+	 width: 211px;
+     height: 18px;
+     background-image: url("../../Content/images/UploadImages/track.gif");
+     background-repeat: no-repeat;
+     position: relative;
+ }
+.child
+{
+    width: 11px;
+    height: 16px;
+    background-image: url("../../Content/images/UploadImages/grip.gif");
+    background-repeat: no-repeat;
+    left: 0;top:2px;
+    position: absolute;
+    left:100px;
+}
+.imagePhoto
+{
+	border-width:0px;
+	position:relative;
+}
+#IconContainer
+{
+	/*position:relative;    
+	left:0px;
+	top:-120px;*/      
+	   height:auto;
+	   width:auto; 	          	
+}  
+#IconContainer img
+{
+	/*FILTER:alpha(opacity=60);
+	opacity:0.6;    
+	background-color:#ccc;*/
+}
+#ImageDragContainer 
+{
+	border: 1px solid #ccc;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    position: relative;
+    top: 73px; 
+    left: 82px	;
+    overflow: hidden;
+    z-index:1;
+}  
+#headContainer
+{
+    position: relative;
+    border:2px solid #888888;
+    overflow:hidden;	          
+    cursor:pointer;	
+    height:auto;
+	   width:auto; 
+    } 

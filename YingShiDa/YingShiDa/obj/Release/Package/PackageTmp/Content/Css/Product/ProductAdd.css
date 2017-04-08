@@ -1,0 +1,38 @@
+﻿input {
+  border: 1px solid #41B883;
+  outline: none;
+  height: 35px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  height: 37px;
+  width: 100px;
+  outline: none;
+  background-color: #41B883;
+  border: 1px solid #41B883;
+  color: #fff;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #41B666
+}
+
+td {
+  text-align: center;
+}
+
+tr td:nth-child(1) {
+  width: 50px;
+}
+
+tr td:nth-child(3) {
+  min-width: 150px;
+  width: 10%;
+}
+
+#addTest {
+display: none;
+}

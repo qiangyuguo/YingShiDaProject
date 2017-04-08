@@ -1,0 +1,139 @@
+.icon-service {
+    position: fixed;
+    z-index: 9999;
+    bottom: 40px;
+    right: 40px;
+    width: 115px;
+    height: 86px;
+    overflow: hidden;
+    color: #b0b0b0;
+    font: normal 24px/26px 'Microsoft YaHei';
+    text-align: right;
+    text-decoration: none;
+}
+
+.icon-service-img {
+    display: block;
+    width: 92px;
+    height: 107px;
+    background: url(icon_service.png) no-repeat;
+    cursor: pointer;
+}
+
+.icon-service span{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    -webkit-transition: all .12s linear;
+    -moz-transition: all .12s linear;
+    -ms-transition: all .12s linear;
+    transition: all .12s linear;
+}
+
+.icon-service span:hover {
+    color: #555;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.service-mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter: alpha(opacity=60);
+    background: rgba(0, 0, 0, .6);
+}
+
+.service-pop {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 1002;
+    display: none;
+    width: 400px;
+    overflow: hidden;
+    margin: -220px 0 0 -200px;
+    font: normal 18px/20px 'Microsoft YaHei';  
+    color: #fff;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.service-title{
+    width: 100%;
+    height: 240px;
+    padding-top: 190px;
+    margin: 0;
+    font: normal 18px/20px 'Microsoft YaHei'; 
+    background: #42a9f7 url(service.png) no-repeat center 43px;
+}
+
+.btn-contact-us {
+    display: block;
+    width: 265px;
+    height: 50px;
+    margin: 35px auto;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+    text-decoration: none;
+    background-color: #42a9f7;
+    border-radius: 25px;
+    -webkit-transition: all .12s linear;
+    -moz-transition: all .12s linear;
+    -ms-transition: all .12s linear;
+    transition: all .12s linear;
+}
+
+.btn-contact-us:hover, .btn-contact-us:focus{
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a95ef;
+}
+
+.contact-us-icon {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    margin-right: 8px;
+    background: url(icon_service.png) no-repeat 0 -86px;
+    *display: inline;
+    *zoom: 1;
+}
+
+.service-pop p {
+    margin-bottom: 60px;
+    color: #42a9f7;
+}
+
+.btn-close-service {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font: normal 24px/16px 'Microsoft YaHei';
+    cursor: pointer;
+    -webkit-transition: all .12s linear;
+    -moz-transition: all .12s linear;
+    -ms-transition: all .12s linear;
+    transition: all .12s linear;
+}
+
+.btn-close-service:hover {
+    -webkit-transform:translateY(-2px);
+    -moz-transform:translateY(-2px);
+    -ms-transform:translateY(-2px);
+    transform:translateY(-2px);
+    color: #e3effb;
+}

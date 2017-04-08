@@ -1,0 +1,213 @@
+.mo, .kK, .iG, .WB3-gTop-tabs-close, .WB3-gTop-tabs-rc, .mH, .mI, .mP, .g-tab-tabs-rc, .g-toolbarTab-tabs-rc, .g-layer-contact-oprt-arr, .ico-folder-dft, .ico-btn, .ico-dialog, .g-dialogBox-hd-oprt, .g-dialogBox-hd-rc, .g-smlBtn-arr, .g-ipt-iconBtn, .g-menu-item-arr, .g-btn-arr, .g-btn-rc, .fn-bg {
+    background-image: url(/Content/Skin/img/bg.png);
+    background-repeat: no-repeat;
+}
+
+.cY, .hN, .iF .g-menu-label, .WB3-gTop-tabs-item, .g-tab-tabs-link, .g-layer-contact-oprt, .g-pro-inner, .g-dialogBox-hd, .g-table-head, .g-smlBtn-inner, .g-btn-inner, .g-toolbar, .skin-top, .gWel-ltbm, .fn-bgx {
+    background-image: url(/Content/Skin/img/bgx.png);
+    background-repeat: repeat-x;
+}
+
+.skin-logo-img {
+    visibility:;
+    background: #0090eb;
+}
+
+    .skin-logo-img img {
+        width: 92px;
+        height: 32px;
+        margin-left: 3px;
+        margin-top: 5px;
+    }
+
+.skin-topLeft {
+    background-image: url(img/top_left.jpg);
+}
+
+.skin-topRight {
+    background-image: url(img/top_right.jpg);
+    width: 550px;
+}
+
+.skin-main, .skin-mainTop {
+    background: #fff;
+}
+
+.skin-mainSide {
+    background: #e4f1fb;
+    border-color: #d6e5eb;
+}
+
+.skin-mainExt {
+    background: #f6f9fc;
+}
+
+.skin-side {
+    background: #0090EB;
+    border-color: #0090EB;
+    position: fixed;
+}
+
+.skin-sideTop { /*background-image:url(/Content/Skin/img/side_top.jpg)*/
+}
+
+.skin-sideBottom { /*background-image:url(/Content/Skin/img/side_bottom.jpg);*/
+    height: 369px;
+    background: #0090EB;
+}
+
+.gWel-ltbm-ul, .txt-link, a {
+    color: #333;
+}
+
+.mv a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.txt-sideExtLink {
+    color: #bd82b0;
+}
+
+.ico-btn-receiving {
+    background-image: url(/Content/Skin/skin_default/img/checkmail.gif);
+}
+
+.lF, .g-dialogBox-dict-result, .g-layer-contact-oprt-item, .g-layer-contact-oprt, .g-layer-inner, .g-block, .g-tips-info, .g-split, .g-split-cMedium, .g-menu-inner, .g-title, .g-seting-item, .g-selectBox, .gWel-rt-weather, .gWel-rt-ad2, .wRmdPic, .bdr-medium {
+    border-color: #9cb8cc;
+}
+
+.g-editor, .g-tab-tabs, .g-dialogBox-ft, .g-dialogBox-bd, .g-smlBtn-inner, .g-ipt, .g-split-cDark, .gWel-ltb, .gWel-ltbm, .gWel-ltbm-li, .bdr-dark {
+    border-color: #6c92ad;
+}
+
+.u, .g-contacts-result .g-contacts-link, .g-tips-popup, .fz, .g-addr-editable-hover, .g-split-cLight, .g-tips-popup, .iO, .bdr-light {
+    border-color: #c5d2da;
+}
+
+.g-layer-product .g-layer-inner, .g-layer-remark .g-layer-inner, .g-tips-inline .g-tips-inner, .bdr-tips {
+    border-color: #c6c5a8;
+}
+
+.g-table-col, .bdr-table {
+    border-color: #ccc;
+}
+
+.g-tips-inline-succ .g-tips-inner, .g-tips-popup-succ, .bdr-succ {
+    border-color: #a8bd93;
+}
+
+.g-addr-editable-errHover, .g-tips-inline-err .g-tips-inner, .g-tips-popup-err, .g-ipt-err, .bdr-err {
+    border-color: #d2aeae;
+}
+
+.g-btn-inner {
+    border-color: #969696;
+}
+
+    .g-btn-hover, .g-btn-inner:hover {
+        border-color: #656565;
+    }
+
+    .g-btn-active, .g-btn-inner:active {
+        border-color: #6a6a6a;
+    }
+
+.g-block-hd, .bg-area1 {
+    background-color: #d3e7f8;
+}
+
+.di, .g-dialogBox-ft, .fz, .g-addr-editable-hover, .g-tips-info, .gWel-ltef-hover, .bg-cont {
+    background-color: #e4f1fb;
+}
+
+.g-layer, .g-menu, .bg-shadow {
+    background-color: #dbe8f2;
+}
+
+.g-contacts-link:hover, .g-contacts-link-hover, .ed, .g-menu-noHover .g-menu-item .g-menu-link-hover:hover .g-menu-item-tips, .g-menu-noHover .g-menu-item .g-menu-link-hover:hover, .g-menu-link-hover, .g-menu-link:hover, .iC:hover, .bg-hover {
+    background-color: #5d99ce;
+    color: #fff;
+}
+
+.g-table-row-hover, .bg-rowHover {
+    background-color: #ffffe1;
+}
+
+.g-table-row-active, .bg-rowActive {
+    background-color: #ffffca;
+}
+
+.g-layer-product .g-layer-inner, .u, .eT, .eq, .fy, .g-contacts-result .g-contacts-link:hover, .g-contacts-result .g-contacts-link-hover, .g-layer-remark .g-layer-inner, .g-tips-inline .g-tips-inner, .g-tips-popup, .g-ipt-active, .bg-tips {
+    background-color: #ffffe1;
+}
+
+.g-tips-inline-succ .g-tips-inner, .g-tips-popup-succ, .bg-succ {
+    background-color: #f1ffe3;
+}
+
+.g-addr-editable-errHover, .g-tips-inline-err .g-tips-inner, .g-tips-popup-err, .g-ipt-err, .bg-err {
+    background-color: #ffeaea;
+}
+
+.g-addr-editable-active {
+    background-color: #5d99ce;
+    color: #fff;
+}
+
+.g-toolbarTab-tabs {
+    border-color: #bad2dd;
+}
+
+.g-toolbarTab-tabs-link {
+    background-color: #e3eaf0;
+}
+
+.g-toolbarTab-tabs-item-on .g-toolbarTab-tabs-link {
+    background-color: #cfe7fa;
+}
+
+.iI, .jq, .iJ, .lT {
+    color: #003567;
+}
+
+.iH .lT {
+    background-color: #9bc3e7;
+}
+
+.eU, .lf, .ke, .kM {
+    color: #bd82b0;
+}
+
+.hD .kM:hover {
+    color: #c66b9e;
+}
+
+.APP-music-mList .music-ps {
+    color: #003567;
+}
+
+    .APP-music-mList .music-gp a, .APP-music-mList .music-ps:hover, .APP-music-mList .playing {
+        color: #003567;
+    }
+
+    .APP-music-mList .music-ps:hover {
+        background-color: #e4c4d6;
+    }
+
+.APP-music-mList .playing, .APP-music-mList .music-gp .clsFd, .APP-music-mList .music-gp .opnFd, .APP-music-mList, .APP-music .screen, .APP-music .mbar, .APP-music .mbar_0, .APP-music .mbar_2, .APP-music .pcnBar0, .APP-music .btnMbar {
+    background-image: url();
+    background-repeat: no-repeat;
+}
+
+.WB3-gTop-tabs-link {
+    color: #7392a8;
+}
+
+.WB3-gTop-tabs-item-on .WB3-gTop-tabs-link {
+    color: #fff;
+}
+
+.ev, .g-block-hd {
+    background-color: #e9f0f4;
+}

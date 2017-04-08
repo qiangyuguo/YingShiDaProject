@@ -7,3 +7,8 @@ F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\bin\Debug\DataConveter.d
 F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\bin\Debug\DataConveter.pdb
 F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Debug\DataConveter.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Debug\DataConveter.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\bin\Debug\DataConveter.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\bin\Debug\DataConveter.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\obj\Debug\DataConveter.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\obj\Debug\DataConveter.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\obj\Debug\DataConveter.pdb

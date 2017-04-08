@@ -20,3 +20,14 @@ F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Debug\zh-Hans\EntityFramewo
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Debug\Model.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Debug\Model.pdb
 F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\Model.dll.config
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\Model.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\Model.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\EntityFramework.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\EntityFramework.SqlServer.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\EntityFramework.xml
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\EntityFramework.SqlServer.xml
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\obj\Debug\Model.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\obj\Debug\Model.pdb

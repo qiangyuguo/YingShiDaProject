@@ -62,6 +62,8 @@ namespace YingShiDa.Action
 
                     case "productdetailbyid": GetProductDetailByID(context); break;//根据详情ID得到产品的详情
 
+                    case "productmodelandname": GetProductModelAndName(context); break;//根据产品型号和产品名称得到产品列表
+
                 }
 
             }
@@ -455,12 +457,13 @@ namespace YingShiDa.Action
         public string GetProductPhoto(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    DataTable dt = DAL.GetDataTable.GetAllProduct(dbm);
+                    DataTable dt = DAL.GetDataTable.GetAllProduct(Language,dbm);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
                     context.Response.Write(jsonStr);
                 }
@@ -505,13 +508,41 @@ namespace YingShiDa.Action
         public string GetProductDetailByID(HttpContext context)
         {
             string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
             string ProductID = context.Request.Params["ProductID"];
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 if (dbm.Open())
                 {
-                    DataTable dt = DAL.GetDataTable.GetProductDetailByID(ProductID,dbm);
+                    DataTable dt = DAL.GetDataTable.GetProductDetailByID(Language,ProductID, dbm);
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetProductModelAndName(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
+            string ProductModel = context.Request.Params["ProductModel"];
+            string ProductTitle = context.Request.Params["ProductTitle"];
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    DataTable dt = DAL.GetDataTable.GetProductModelAndName(Language, ProductModel, ProductTitle, dbm);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
                     context.Response.Write(jsonStr);
                 }

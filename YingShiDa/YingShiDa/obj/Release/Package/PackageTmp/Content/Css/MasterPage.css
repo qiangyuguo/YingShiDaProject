@@ -1,0 +1,361 @@
+﻿/* 管理后台右侧网站链接CSS定义：可定义内容为链接字体颜色、样式等。链接无下划线为none，有为underline */
+a
+{
+	text-decoration: none;
+	cursor: pointer;
+}
+/* 未访问/已访问/点击激活的链接 */
+a:link, a:visited, a:active
+{
+	/*color: #3366CC;*/
+}
+/* 鼠标在链接上 */
+a:hover
+{
+	color: #cc0000; text-decoration: underline;
+}
+/* FF中无链接翻页颜色定义 */
+a[disabled=disabled]
+{
+	color: #aca899;
+}
+body
+{
+	background: #ffffff;
+	padding: 0px;
+	margin: 0px;
+}
+body, th, td, input, button, textarea
+{
+	font-family: "宋体";
+	font-size: 12px;
+}
+select
+{
+	font-family: "Tahoma";
+	font-size: 12px;
+}
+
+th
+{
+	font-weight: normal;
+}
+td
+{
+	line-height: 150%;
+}
+input, select,img
+{
+	vertical-align: middle;
+}
+input[type=checkbox]
+{
+	vertical-align: text-bottom; 
+}
+input[type=radio]
+{
+	vertical-align: text-bottom;
+}
+* + html input[type=radio]
+{
+	vertical-align: middle;
+}
+.t_input,.inputtext { padding: 0px 2px; border:#ccc 1px solid; line-height: 20px; height:20px;}
+.button { margin-left: 2px; padding: 0 3px; height: 22px; border: 1px solid; border-color: #EEE; background: #DDD; color: #333; line-height: 20px; cursor: pointer; }
+.submit { padding: 0 5px; height: 24px; border: 1px solid; border-color: #FCF9E6; background: #669bb4; line-height: 20px; letter-spacing: 1px; cursor: pointer; }
+.navli{ color: #333; border-bottom:1px #669bb4 solid; line-height:25px; padding: 5px 0 0 10px; margin-bottom:10px; }
+.container { overflow:hidden; width:auto; padding: 2px 10px 0px 10px;	margin: 0px; text-decoration: none;line-height: 150%;}
+.bor { border:1px #F9DA2E solid; background:#FFFFCC; overflow:hidden; clear:both; padding:10px; margin:10px 10px 0 10px;}
+.bor h2 { font-size:14px; font-weight:bold; color:#333; border-bottom: 1px #ddd solid; line-height:20px; margin-bottom:10px;}
+.bor h2 p {font-size:12px; font-weight:normal;}
+.btnNT {
+    background-color: #0095f3;
+    background-image: url('img/bgx.png');
+    background-position: 0 -397px;
+    color: #fff;
+    border: 1px solid #0095f3;
+    font-weight: normal;
+     height: 30px; 
+     line-height: 30px; 
+    font-size: 12px;
+    padding: 1px 5px;
+    margin-top: 2px;
+}
+.m-form-title {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: #333;
+    border-bottom: #e6e6e6 1px solid;
+}
+.m-form-title strong {
+    float: left;
+    padding: 0px 10px;
+    border-bottom: #0095f3 1px solid;
+    font-weight: bold;
+}
+.m-toolbar-expand {
+    float:right;
+}
+.inputbutton, .inputbutton_hover
+{
+	background: url(../images/btn_bgs.gif) repeat-x scroll 0 -5px;
+	padding: 0px 14px 0px 13px;
+	margin: 2px;
+	overflow: visible;
+	border: 1px solid #7FB5E1;
+	height: 20px;
+	cursor: pointer; *padding-top:2px;
+}
+.inputbutton_hover
+{
+	background-position: 0 -35px;
+	border: 1px solid #95C1FF;
+	color: #306FB6;
+}
+.buttonspacing
+{
+	padding: 0px 6px 0px 6px;
+	letter-spacing: 6px;
+}
+
+/* --强制DIV换行-- */
+.DivWordBreak
+{
+	word-break: break-all;
+	overflow: hidden;
+}
+
+/* --工作台模块边框定义-- */
+.WebPart
+{
+	background: #d5e9ff;
+	border: 1px solid #afd0f1;
+}
+
+#container
+{
+	width: 100%;
+}
+.column
+{
+	width: 49%;
+	background: #D4E4F6;
+	float: left;
+	margin-left: 2px;
+}
+.item
+{
+	padding: 0px;
+	margin: 4px;
+	background: #D5E9FF;
+	border: solid 1px #afd0f1;
+	background: white;
+	width: auto;
+}
+.Header
+{
+	background-image: url(../images/title.gif );
+	line-height: 25px;
+	height: 25px;
+	color: #113d74;
+	font-weight: bold;
+	cursor: move;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.Header h3
+{
+	float: left;
+	margin: 0px;
+	height: 20px;
+	font-size: 12px;
+}
+.Header h3 a
+{
+	float: left;
+	margin: 0px;
+	height: 20px;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.Header a
+{
+	float: right;
+	margin-left: 5px; /*line-height: 25px;*/
+	margin-top: 5px;
+}
+
+#WidTitle
+{
+}
+.content
+{
+	padding: 5px;
+	background-color: #D5E9FF;
+}
+.widget_delete
+{
+}
+
+/* 管理后台右侧body样式定义 */
+#MasterPagebody
+{
+	/*background: url(../images/main_bg.gif) #d4e4f6 repeat-x fixed left top;*/
+	padding: 2px 8px 0px 8px;
+	margin: 0px;
+	text-decoration: none;
+	line-height: 150%;
+}
+#aspnetForm
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+/* 管理后台右侧通用表格样式定义 */
+/*.border, .TableWrap
+{
+	border: #e6e6e6 1px solid;
+}*/
+/*.container .m-form-title strong {
+    border-bottom:#0095f3 1px solid;
+}*/
+
+.title, .gridtitle, .spacingtitle, th
+{
+	background: #ddd repeat-x left top;
+	line-height: 120%;
+	color: #0074ab;
+	font-weight: bold;
+}
+.title
+{
+	line-height: 22px;
+}
+.spacingtitle
+{
+	line-height: 22px;
+	letter-spacing: 8px;
+}
+
+.tdbg
+{
+	background: #fff;
+	line-height: 150%;	
+}
+.tdbg td {border-top:1px #0074ab solid; padding:2px 0;}
+.tdbgleft
+{
+	background: #d5e9ff;
+	line-height: 120%;
+}
+.tdbgbottom
+{
+	background: #e6eff8;
+	height: 40px;
+	text-align: center;
+}
+.tdbg li
+{
+	margin-left: 15px !important;
+}
+.tdbg:hover
+{
+	background: #feeec0;
+	line-height: 120%;
+}
+.tdbgselected
+{
+	background: #f5f5f5;
+	line-height: 120%;
+}
+
+
+/* 输入检测报警色 */
+.highlight
+{
+	background-color: #fcd147;
+}
+
+.modalPopup
+{
+	background-color: #ddddff;
+	border-width: 3px;
+	border-style: solid;
+	border-color: gray;
+	padding: 3px;
+}
+
+.modalBackground
+{
+	background-color: gray;
+	filter: alpha(opacity=70);
+	opacity: 0.7;
+}
+
+/* txtarea编辑器显示行用CSS */
+.RomNumber
+{
+	overflow: hidden;
+	height: 365px;
+	background-color: highlight;
+	border-right: 0px;
+	text-align: right;
+	font-family: tahoma; /*font-family: Fixedsys;*/
+	font-size: 12px;
+	font-weight: bold;
+	color: highlighttext;
+	cursor: default;
+}
+.txtmain
+{
+	height: 365px;
+	width: 92%;
+	font-family: tahoma;
+	color: highlight;
+	font-size: 12px;
+	font-weight: bold;
+	border-left: 0px;
+}
+
+/* LoadMask Begin*/
+#loadMask
+{
+    position : absolute;
+    top: 10px; 
+    LEFT: 10px;
+    border:solid 1px #4a6b84;
+    z-index:65535;
+    display:block;
+}
+#loadMask span
+{
+    border: solid 1px #D5E9FF;
+    text-align: center;
+    padding: 0px 20px 0px 30px;
+    margin:0px;
+    line-height:29px;
+    display:block;
+    background: url(../images/Pageloading.gif) #D5E9FF no-repeat 5px 50%; 
+    color: #113D74; 
+    font-size: 12px; 
+    font-weight: bold;
+}
+
+/* LoadMask End*/
+.cnim_input_blueN
+{
+    border-left: 1px solid #DDD;
+	border-right: 1px solid #8D6132;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #8D6132;
+	padding: 0 2px;
+	background-color:#777777;
+	color: #fff;
+    	line-height: 20px;
+    	cursor: pointer;
+    margin-left: 2px;
+    	margin: 2px 0;
+    	font-size: 12px;
+}

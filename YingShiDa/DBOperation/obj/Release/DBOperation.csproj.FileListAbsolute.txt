@@ -1,0 +1,10 @@
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\DBOperation.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\DBOperation.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\DBUtility.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\log4net.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\LogTool.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\DBUtility.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\LogTool.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\obj\Release\DBOperation.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\obj\Release\DBOperation.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\obj\Release\DBOperation.pdb

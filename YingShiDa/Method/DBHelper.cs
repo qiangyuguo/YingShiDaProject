@@ -173,7 +173,7 @@ namespace Method
         {
             PropertyInfo[] propertyInfos = typeof(T).GetProperties();
             T model = new T();//返回的结果集
-            string sql = string.Format("   Select {0}   From   {1} "
+            string sql = string.Format("   Select {0}   From   {1} order by UpdateTime desc "
                 , string.Join(",", propertyInfos.Select(x => " [" + x.Name + "] "))
                 , model.GetType().Name
                 );

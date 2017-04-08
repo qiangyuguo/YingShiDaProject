@@ -1,0 +1,16 @@
+拼音插件有博主：小茗同学提供
+博客地址：http://www.cnblogs.com/liuxianan/archive/2016/10/18/pinyinjs.html
+
+项目地址：
+https://github.com/liuxianan/pinyinjs
+
+
+
+
+
+
+
+
+
+						备注时间：2016-10-31
+						备 注 人：郑开金

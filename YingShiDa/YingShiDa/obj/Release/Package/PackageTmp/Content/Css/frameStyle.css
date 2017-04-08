@@ -1,0 +1,296 @@
+﻿@charset "utf-8";
+
+/* * 通用样式文件*/
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+select,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font: 12px/1.5 Microsoft YaHei,Helvitica,Verdana,Arial,san-serif;
+    font-style: normal;
+}
+
+a {
+    color: #669;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+/*h1 {
+	font: bold 14px/1.5 Arial, Helvetica, sans-serif;
+}*/
+
+input, select, textarea {
+    border:1px solid #CBCBCB;
+}
+
+.text-overflow {
+    display: block;
+    width: 31em;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* * 结构文件 CSS文件 * 页面框架*/
+.yy-bg-Frame {
+    width: 100%;
+    font: 12px/1.5 Microsoft YaHei,Helvitica,Verdana,Arial,san-serif;
+    font-style: normal;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+    .yy-bg-Frame .yy-content {
+        width: 100%;
+        z-index: 2;
+        overflow: hidden;
+        background-color: #fff;
+    }
+/* * 标题样式*/
+.yy-content .c-tit {
+    z-index: 3;
+    width: 100%;
+    height: 40px;
+    padding: 10px 0;
+    position: relative;
+    border-bottom: 2px solid #dddddd;
+}
+
+.c-tit .c-tit-container {
+    z-index: 4;
+    width: 100%;
+    height: 52px;
+    overflow: hidden;
+}
+
+.c-tit-container a {
+    z-index: 4;
+    width: auto;
+    height: 50px;
+    display: inline-block;
+    color: #333;
+    border-bottom: 2px solid #0090eb;
+    text-decoration: none;
+    cursor: default;
+}
+
+.c-tit-container > a > img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 0px 15px;
+}
+
+.c-tit-container > a > em {
+    font-size: 2.4em;
+}
+/* * 搜素区域/input区域样式*/
+.yy-content .c-container {
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+
+.yy-content .c-item-container {
+    margin: 0px 10px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.yy-content .c-table-imte {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+}
+/*从此处开始设置（1680像素以上）样式，开始可以进行媒体查询*/
+.yy-content .c-timte-i {
+    float: left;
+    width: 25%;
+    height: 40px;
+    margin-top: 10px;
+    line-height: 35px;
+    color: red;
+    overflow: hidden;
+}
+
+.c-titem-title {
+    width: 124px;
+    height:40px;
+    display:block;
+    float: left;
+    line-height: 34px;
+    color: #333333;
+
+}
+
+.yy-content .c-timte-i > input, .yy-content .c-timte-i > textarea {
+    width: 245px;
+    height: 30px;
+}
+
+.yy-content .c-timte-i select {
+    width: 245px;
+    height: 34px;
+}
+
+.yy-content .c-item-Important {
+    width: 13px;
+    height: auto;
+    color: red;
+}
+
+.yy-content .c-timte-i .c-textarea-bak {
+    resize: none;
+    overflow-y: auto;
+}
+/*分隔符*/
+.yy-content .c-em-tit {
+    color: #333;
+}
+
+.yy-content .c-container .c-em-tit {
+    font: 12px/1.5 Microsoft YaHei,Helvitica,Verdana,Arial,san-serif;
+}
+
+.yy-content .c-input-time {
+    width: 125px;
+}
+/*提交按钮样式*/
+.yy-content .btn-input, .yy-content .c-timte-i > .btn-input {
+    width: 70px;
+    background-color: #0095f3;
+    border: 1px solid #0095f3;
+    font-weight: normal;
+    height: 32px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #F3F4F5;
+}
+
+
+/*其他样式*/
+.-mgt10 {
+    margin-top: -10px;
+}
+
+.-mgt4 {
+    margin-top: -4px;
+}
+
+/* * 媒体查询*/
+@media only screen and (min-width: 980px) and (max-width: 1999px) {
+    .yy-content .c-titem-title {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 0px) and ( max-width:979px) {
+    .yy-content .c-titem-title {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width:10000px) {
+    .yy-content .c-timte-i input, .yy-content .c-timte-i .c-textarea-bak,.yy-content .c-timte-i select {
+        width: 65%;
+    }
+        .yy-content .c-timte-i select.c-select-ob2 {
+            width: 47%;
+        }
+
+    .yy-content .c-timte-i input.btn-input-ob2 {
+        width: 17%;
+    }
+
+    .yy-content .c-timte-i .c-input-time {
+        width: 33%;
+        margin-top:-4px;
+    }
+
+    .yy-content .c-timte-i .c-input-han1, .yy-content .c-timte-i .c-select-option2 {
+        width: 32%;
+    }
+}
+
+@media only screen and (min-width:1999px) and (max-width:5000px) {
+    .yy-content .c-timte-i .c-input-time {
+        width: 32%;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1999px) {
+    .yy-content .c-table-imte .c-timte-i {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1399px) {
+    .yy-content .c-table-imte .c-timte-i {
+        width: 33%;
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 979px) {
+    .yy-content .c-table-imte .c-timte-i {
+        width: 50%;
+    }
+
+    .yy-content .c-titem-title {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 400px) and ( max-width:699px) {
+    .yy-content .c-table-imte .c-timte-i {
+        width: 100%;
+    }
+
+    .yy-content .c-titem-title {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 0px) and ( max-width:399px) {
+    .yy-content .c-table-imte .c-timte-i {
+        width: 100%;
+    }
+
+    .yy-content .c-titem-title {
+        width: 20%;
+    }
+}
