@@ -49,7 +49,7 @@
       <publishTime>04/08/2017 17:16:41</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>04/08/2017 17:16:41</publishTime>
+      <publishTime>04/08/2017 17:46:59</publishTime>
     </File>
     <File Include="bin/DataConveter.dll">
       <publishTime>04/08/2017 17:16:40</publishTime>
@@ -145,7 +145,7 @@
       <publishTime>04/08/2017 17:16:41</publishTime>
     </File>
     <File Include="bin/YingShiDa.dll">
-      <publishTime>04/08/2017 17:16:49</publishTime>
+      <publishTime>04/08/2017 17:47:06</publishTime>
     </File>
     <File Include="bin/zh-Hans/EntityFramework.resources.dll">
       <publishTime>04/07/2017 22:28:49</publishTime>
