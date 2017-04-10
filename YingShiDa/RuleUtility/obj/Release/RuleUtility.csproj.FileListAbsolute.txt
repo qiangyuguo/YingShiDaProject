@@ -12,3 +12,17 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Release\LogTool.pdb
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\obj\Release\RuleUtility.csprojResolveAssemblyReference.cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\obj\Release\RuleUtility.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\obj\Release\RuleUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\RuleUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\RuleUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\DataConveter.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\DBOperation.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\DBUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\DataConveter.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\DBOperation.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\DBUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Release\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\obj\Release\RuleUtility.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\obj\Release\RuleUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\obj\Release\RuleUtility.pdb
