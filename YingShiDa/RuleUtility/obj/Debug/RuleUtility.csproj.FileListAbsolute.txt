@@ -26,3 +26,17 @@ F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\bin\Debug\LogTool.pdb
 F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\obj\Debug\RuleUtility.csprojResolveAssemblyReference.cache
 F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\obj\Debug\RuleUtility.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\RuleUtility\obj\Debug\RuleUtility.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\RuleUtility.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\RuleUtility.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\DataConveter.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\DBOperation.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\DBUtility.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\LogTool.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\log4net.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\DataConveter.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\DBOperation.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\DBUtility.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\bin\Debug\LogTool.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\obj\Debug\RuleUtility.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\obj\Debug\RuleUtility.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\RuleUtility\obj\Debug\RuleUtility.pdb

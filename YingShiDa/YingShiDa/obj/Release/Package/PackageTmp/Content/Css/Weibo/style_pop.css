@@ -1,0 +1,136 @@
+﻿/* 全局控制 */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,table,tr,td{ margin: 0; padding: 0; border: 0; outline: 0;  font-size: 100%; background: transparent; }  
+
+body {background:url(http://file.141cn.cn/AladadaBlue/System/top_bg.jpg) #f8f8f8 repeat-x left top; }  
+ol, ul { list-style:none; }  
+blockquote, q { quotes:none; }  
+blockquote:before, blockquote:after,q:before, q:after { content: ''; content: none; }  
+imgs { vertical-align:middle; }
+img{border:none;}
+.isImage{margin-left:10px;}
+
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}
+caption,th{text-align:left;}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,textarea,select{*font-size:100%;}
+
+/* remember to define focus styles! */ 
+:focus { outline:0; }  
+
+    
+/* remember to highlight inserts somehow! */ 
+ins { text-decoration:none; }  
+del { text-decoration:line-through; }  
+    
+
+/* tables still need 'cellspacing="0"' in the markup */ 
+table { border-collapse:collapse; border-spacing:0; } 
+
+
+/* 左右悬浮 */
+.left {float:left;}
+.right {float:right;}
+
+
+/* 清除悬浮 */
+.clear { clear:both; background:none!important; } /* 用于清除背景图 */
+.clearBgColor { clear:both; visibility:hidden; height:1px; font-size:1px; margin:-1px; } /* 用于清除背景色 */
+
+
+/* 居中 */
+.auto,.auto ul { margin-right:auto; margin-left:auto; }
+
+
+/* 文本对齐 */
+.txtLeft {text-align:left;}
+.txtCenter {text-align:center;}
+.txtRight {text-align:right;}
+
+
+/* 文字尺寸 */
+.f12 {font-size:12px;}
+.f13 {font-size:13px;}
+.f14 {font-size:14px;}
+.f16 {font-size:16px;}
+.f18 {font-size:18px;}
+.f20 {font-size:20px;}
+.f22 {font-size:22px;}
+.f24 {font-size:24px;}
+.f26 {font-size:26px;}
+.f28 {font-size:28px;}
+
+
+/* 文字颜色 */
+.red,.red a {color:#FE1200;}				         /* 红色 */
+.red2,.red2 a {color:#dd0202;}                       /* 暗红 */
+.darkGray,.darkGray a {color:#424242;}			     /* 深灰 */
+.tintGray,.tintGray a {color:#B7B7B7;}			     /* 浅灰 */
+.generalGray,.generalGray a {color:#565656;}		 /* 中灰 */
+.black,.black a {color:#000;}				         /* 黑色 */
+.blue,.blue a {color:#00f;}				             /* 蓝色 */
+.deepBlue,.deepBlue a {color:#01317E;}				 /* 深蓝 */
+.white,.white a {color:#fff;}				         /* 白色 */
+.purple,.purple a {color:#606;}				         /* 紫色 */
+.blue_hui,.blue_hui a {color:#5681ac;}               /* 蓝灰 */
+.greenGray,.greenGray a {color:#024e59;}             /* 绿灰 */
+.orange,.orange a {color:#ff5500;}                   /* 橘红 */
+/* 文字加粗 */
+.fb {font-weight:bold;}
+
+.fs {font-size:0;}
+
+/* 下划线 */
+.underline,.underline a {text-decoration:underline;}
+
+/*外部居上*/
+.m3{margin-top:3px;}
+.m5{margin-top:5px;}
+.m8{margin-top:8px;}
+.m10{margin-top:10px;}
+
+/*内部居上*/
+.p3{padding-top:3px;}
+.p5{padding-top:5px;}
+.p8{padding-top:8px;}
+.p10{padding-top:10px;}
+.BF4482{color:#4482BF}
+.CC9900{color:#CC9900}
+/*内部居左*/
+.pl10{padding-left:10px;}
+
+/* 全局字体控制 */
+body{ font-family: 微软雅黑,Microsoft YaHei,Arial, Helvetica, sans-serif,宋体 ;	font-size: 12px;color: #000;}
+a:focus{ outline:1px dotted; }
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+/* 全局默认链接 */
+a { color:#009; text-decoration:none; outline: none; }  /* 链接颜色 */
+a:hover { color:#939; text-decoration:underline; }      /* 鼠标经过时状态 */
+/* 全局宽度 */
+.nomalwidth { width:650px;}
+/* zoom */
+.zoom { zoom:1; }
+
+/**弹出个人信息*/
+.personal{display:none;position: absolute;z-index: 99999;background:url(/My/ImagesV184/grzlbg.png) no-repeat;width:320px;height:161px;padding:15px 10px 0 10px;}
+.personal_c{width:320px;line-height:17px;margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.personal_r{width:257px;padding-left:2px;}
+.personal_r1{width:259px;}
+.personal_r ul li{float:left;width:85px;}
+.imgs img{border:1px solid #CCC;padding:1px; width:50px; height:60px; margin:1px;}
+.height2{height:18px;overflow:hidden; }
+
+/**新增加："我的首页"-“个人信息”-“关注、粉丝、微博”下划线去掉*/
+.numsty a:hover{text-decoration:none;}
+img{display:inline;}
+#hideFansAttent ul{overflow:hidden;}
+#hideFansAttent ul li{float:left;width:126px;margin-right:12px;text-align:center;float:left;height:146px;color:#555;margin-bottom:16px;}
+#hideFansAttent ul li img{border:1px solid #ccc;padding:1px;margin-bottom:4px;}
+.hide_gzp{margin-top:10px;text-align:right;}

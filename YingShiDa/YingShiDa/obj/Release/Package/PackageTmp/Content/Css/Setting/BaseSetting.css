@@ -1,0 +1,28 @@
+﻿@charset "utf-8";
+
+.nav-tabs > li > a {
+    overflow: hidden;
+    text-align: center;
+    height: 76px;
+    max-height: 76px;
+    overflow-y: auto;
+}
+
+    .nav-tabs > li > a > p {
+        font-size: 12px;
+        font-weight: normal;
+        display: inline-block;
+        margin-right: 5px;
+        float: left;
+        max-width: 175px;
+    }
+
+.nav > li > a i {
+    margin-right: 0px;
+}
+
+#iframePage {
+    z-index: 3;
+    width: 100%;
+    visibility: inherit;
+}

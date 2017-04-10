@@ -1,0 +1,278 @@
+.form-control::-moz-placeholder{
+	color:#ccc;
+	opacity:1;
+}
+.form-control:-ms-input-placeholder{
+	color:#ccc;
+}
+.form-control::-webkit-input-placeholder{
+	color:#ccc;
+}
+/** 红色（*****） **/
+.red-xing{
+	color:#ec323d;
+	display:inline-block;
+	font-size: 1.5em;
+    margin-left: -10px;
+    margin-top: 6px;
+}
+.red-xings{
+	color:#ec323d;
+	display:inline-block;
+	font-size: 1.5em;
+	vertical-align:middle;
+}
+/* 按钮样式*/
+.btn_default_primary{
+	color: #999;
+	background: #fff;
+	border:1px solid #ccc;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin:0 0.5em;
+}
+.btn_default_primary_lv{
+	color: #1ab394;
+	background: #fff;
+	border:1px solid #1ab394;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin:0 0.5em;
+}
+.btn_lv_primary{
+	color: #fff;
+	background: #1ab394;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin:0 0.5em;
+}
+.btn_reds_primary{
+	color:#ed5564;
+	background: #fff;
+	border:1px solid #ed5564;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin:0 0.5em;
+}
+.btn_oranges_primary{
+	color:#fff;
+	background: #f8ab5b;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin:0 0.5em;
+}
+.btn_reds_all{
+	color: #fff;
+	background: #ed5564;
+	border:1px solid #ed5564;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin:0 0.5em;
+}
+.btn_green_primary {
+	margin:0 0.5em;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	background: #1ab394;
+	color: #fff;
+}
+.btn_ccc_primary{
+	color: #999;
+	background: #ccc;
+	border:none;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	margin:0 0.5em;
+}
+/*单独一个按钮的增加长度 star*/
+.one_ok{
+	padding-left:2em;
+	padding-right:2em;
+}
+/*单独一个按钮的增加长度 end*/
+.btn_reds_all:hover,.btn_reds_all:focus{
+	color:#fff;
+}
+.btn_lv_primary:hover,.btn_lv_primary:focus{
+	color: #fff;
+}
+.btn_default_primary:hover,.btn_default_primary:focus{
+	color: #999;
+}
+.btn_reds_primary:hover,.btn_reds_primary:focus{
+	color: #ed5564;
+}
+.btn_oranges_primary:hover,.btn_oranges_primary:focus{
+	color:#fff;
+}
+.btn_default_primary_lv:hover,.btn_default_primary_lv:focus{
+	color: #1ab394;
+}
+/*弹出框样式*/
+/*弹出框样式*/
+.rDialog {
+    position: fixed;
+    min-width:300px;
+}
+.rDialog-wrap{
+	position: relative;
+	overflow: hidden;
+	border-radius: 4px;
+}
+/*绿色弹出头部*/
+.rDialog-header{
+	height:36px;
+	line-height:36px;
+	text-indent:1em;
+	color:#fff;
+	border-top-left-radius:4px;
+	border-top-right-radius:4px;
+}
+/*绿色弹出头部*/
+.rDialog-header-green{
+	background:#1ab394;	
+}
+/*红色弹出头部*/
+.rDialog-header-red{
+	background:#ed5564;	
+}
+.dialog-border-red{
+	border:1px solid #ed5564;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+/*橙色色弹出头部*/
+.rDialog-header-orange{
+	background:#f8ab59;
+}
+.dialog-border-orange{
+	border:1px solid #f8ab59;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.rDialog-content {
+	background:#fff;
+    color: #000;
+    overflow: hidden;  
+    font-size: 14px; 
+}
+.rDialog-footer{
+	background:#fff;
+	padding-bottom: 1em;
+	text-align: center;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.rDialog-content>p{
+	text-align:center;
+	padding: 2em 4em 1em;
+}
+.rDialog-content>p>a{
+	color: #bbb;
+	text-decoration: underline;
+}
+
+.alert_tishi .close_icon{
+	color:#aa7f5f;
+	cursor: pointer;
+}
+
+.close_icon{
+	float:right;
+	display:inline-block;
+	padding-right:0.5em;
+	margin-top: -0.2em;  
+	font-size:1.5em;
+	color:#999;
+	cursor: pointer;
+}
+.rDialog-mask {
+    position: fixed;
+    _position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    filter: alpha(opacity=30);
+    opacity: .3;
+}
+/*弹出框样式end*/
+
+/*两秒弹出层样式*/
+.alert-card-dialog{
+	background: none repeat scroll 0 0 #000;
+    border-radius: 4px;
+    color: #fff;
+    opacity: 0.7;        
+    text-align: center;	   
+	position: fixed;
+	top: 50%;
+	left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    z-index:9999;
+}
+.alert-card-dialog>p{
+	padding:15px 20px;
+	margin: 0;
+	max-width:300px;
+}
+/*两秒弹出层样式 end*/
+
+/* modal-dialog弹出层开始  star*/
+/*弹出遮造层*/
+	.operator-form .form-horizontal .form-group{
+		margin:1em 0 5px 0;
+	}
+	.operator-form .form-horizontal .form-group .red-color-top{
+		display:inline-block;
+		color:red;
+		padding:0 5px;
+		font-weight:bold;
+	}
+	.operator-form .form-horizontal .form-group .top-operator{
+		color:#33cc66;
+		padding-top:1.5em;
+		margin-left:5%;
+	}
+	/*弹出框绿色*/
+	.alert-green-dialog .alert-dialog-top{
+		background:#1ab394;
+		padding:1em 0 1em 0.8em;
+		color:#fff;
+	}
+	.alert-green-dialog .alert-dialog-content{
+		border:1px solid #1ab394;
+	}
+	.alert-green-dialog .form-horizontal .form-group label.top-operator{
+		color:#000;
+	}
+	.alert-green-dialog .form-horizontal .form-group label.top-operator-two{
+		color:#bebebe;
+		margin-left:5%;
+	}
+	/*red dialog*/
+	.alert-red-dialog .alert-dialog-top{
+		background:#ed5564;
+		border:1px solid #ff9c77;
+		padding:1em 0 1em 0.8em;
+		color:#fff;
+	}
+	.alert-red-dialog .alert-dialog-content{
+		border:1px solid #ed5564;
+	}	
+	.alert-red-dialog .alert-dialog-content .form-group{
+		margin-left:20px;
+	}
+	.alert-red-dialog .two-btn{
+		padding-top:0;
+	}
+	
+/* modal-dialog弹出层开始  end*/
+#branch_list{
+	max-height:400px;
+	overflow-y:scroll;
+	padding-right:0;
+}
+

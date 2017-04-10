@@ -1,0 +1,57 @@
+﻿@charset "utf-8";
+
+/* 设置规格 弹出层开始 */
+.layui-layer-molv .layui-layer-title {
+    background: #769ACD;
+}
+
+.layui-layer-molv .layui-layer-btn a, .layui-layer-molv .layui-layer-btn .layui-layer-btn1, .layui-layer-molv .layui-layer-btn a:hover {
+    background: #769ACD;
+    border: 1px solid #769ACD;
+    color: #fff;
+}
+
+.winPopup-content {
+    text-align: center;
+    padding-top: 50px;
+}
+
+    .winPopup-content .lists {
+        /*margin: 0 20px 20px;
+                text-align: left;*/
+    }
+
+        .winPopup-content .lists .item {
+            margin-bottom: 8px;
+        }
+
+        .winPopup-content .lists .key {
+            display: inline-block;
+            width: 100px;
+            margin-right: 6px;
+            text-align: right;
+        }
+
+        .winPopup-content .lists .key-input {
+            display: inline-block;
+            padding: 5px 7px 6px;
+            border: 1px solid #c3c3c3;
+            outline: none;
+            border-radius: 3px;
+            height: 30px;
+            width: 250px;
+        }
+
+        .winPopup-content .lists .popup-tip {
+            color: red;
+            font-family: "微软雅黑","Microsoft Yahei";
+        }
+/* 设置规格 弹出层开始 */
+
+/* 通用样式 */
+.h24 {
+    height: 24px;
+}
+.mg0 {
+    margin:0;
+}

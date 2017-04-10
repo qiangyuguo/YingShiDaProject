@@ -1,0 +1,8 @@
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\bin\Release\Method.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\bin\Release\Method.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\bin\Release\LogTool.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\bin\Release\log4net.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\bin\Release\LogTool.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\obj\Release\Method.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\obj\Release\Method.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\obj\Release\Method.pdb

@@ -1,0 +1,734 @@
+.br4 {
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clear {
+    clear: both;
+}
+
+.statistics {
+    margin: 20px 0 40px;
+    padding: 0 15px;
+    background: white;
+}
+
+    .statistics .nav-tabs {
+        padding: 10px 0 0;
+        margin-bottom: 10px;
+    }
+
+.stati-content {
+    padding-bottom: 40px;
+}
+
+.stati-tool {
+    margin: 14px 0 14px;
+}
+
+.stati-tool-item {
+    float: left;
+    width: 140px;
+    height: 34px;
+    padding: 5px 6px;
+    margin: 0 30px 10px 0;
+    font-size: 14px;
+    border: 1px solid #e5e6e7;
+    outline: 0;
+}
+
+.stati-company {
+    width: 188px;
+    color: #333;
+}
+
+.stati-time {
+    float: left;
+    width: 310px\9 \0;
+    margin-right: 30px;
+}
+
+    .stati-time input {
+        margin-right: 0;
+        cursor: pointer;
+        /*background: #eee; 郑开金 2016-11-11 注销 */ 
+        background:none;
+    }
+
+    .stati-time .tip {
+        float: left;
+        margin: 8px 6px 0;
+    }
+
+.stati-check {
+    width: 67px;
+    margin-right: 10px;
+    background: #769ACD;
+    color: white;
+    border: 1px solid #769ACD;
+}
+
+.stati-derived {
+    width: 67px;
+    margin-right: 10px;
+    background: #769ACD;
+    color: white;
+    border: 1px solid #769ACD;
+}
+
+    .stati-check:hover, .stati-derived:hover {
+        background: #769ACD;
+        border-color: #769ACD;
+    }
+
+.label-parent {
+    float: left;
+    width: 218px;
+    height: 34px;
+    margin: 0 30px 10px 0;
+}
+
+    .label-parent .select {
+        position: relative;
+        float: left;
+        margin-right: -1px;
+        padding: 5px 6px;
+        font-size: 14px;
+        border: 1px solid #e5e6e7;
+        outline: 0;
+        z-index: 1;
+        border-top-left-radius: 4px;
+        -o-border-top-left-radius: 4px;
+        -moz-border-top-left-radius: 4px;
+        -webkit-border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+        -o-border-bottom-left-radius: 4px;
+        -moz-border-bottom-left-radius: 4px;
+        -webkit-border-bottom-left-radius: 4px;
+    }
+
+    .label-parent .select-input {
+        float: left;
+        width: 123px;
+        height: 33px;
+        padding: 5px 6px;
+        font-size: 14px;
+        border: 1px solid #e5e6e7;
+        outline: 0;
+        border-top-right-radius: 4px;
+        -o-border-top-right-radius: 4px;
+        -moz-border-top-right-radius: 4px;
+        -webkit-border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        -o-border-bottom-right-radius: 4px;
+        -moz-border-bottom-right-radius: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+    }
+
+.stati-table {
+    width: 100%;
+}
+
+    .stati-table thead tr {
+        background: #f5f5f6;
+        border-top: 1px solid #e5e6e7;
+    }
+
+    .stati-table thead th {
+        padding: 6px 0 6px 20px;
+        font-size: 14px;
+    }
+
+    .stati-table thead .pass-all {
+        margin-left: 32px;
+    }
+
+    .stati-table tbody tr {
+        border-top: 1px solid #e5e6e7;
+    }
+
+        .stati-table tbody tr:hover {
+            background: #f5f5f6;
+        }
+
+            .stati-table tbody tr:hover .fa-chevron-down {
+                visibility: visible;
+            }
+
+    .stati-table tbody td {
+        padding: 5px 0 5px 20px;
+    }
+
+        .stati-table tbody td.item-icon {
+            padding-right: 5px;
+        }
+
+    .stati-table a {
+        color: #12b78c;
+    }
+
+.fa-chevron-down {
+    visibility: hidden;
+}
+
+.item-belong {
+    display: none;
+    background: #f6f6f6;
+}
+
+.item-belong-active {
+    display: table-row;
+}
+
+.item-belong td {
+    width: 100%;
+    border: 1px solid #e5e6e7;
+}
+
+.item-detail-sub {
+    float: left;
+    width: 50%;
+}
+
+.petend-select {
+    position: relative;
+    width: 110px;
+}
+
+.petend-focus .petend-show {
+    border: 1px solid #ccc;
+    background: white;
+}
+
+    .petend-focus .petend-show:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 6px;
+        width: 0;
+        height: 0;
+        border: 3px solid transparent;
+        border-bottom: 6px solid #333;
+    }
+
+.petend-show {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 4px 0 4px 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+    .petend-show:after {
+        content: "";
+        position: absolute;
+        top: 10px;
+        right: 6px;
+        width: 0;
+        height: 0;
+        border: 3px solid transparent;
+        border-top: 6px solid #333;
+    }
+
+.petend-focus .petend-down {
+    display: block;
+}
+
+.petend-down {
+    position: absolute;
+    top: 29px;
+    display: none;
+    width: 110px;
+    max-height: 200px;
+    background: white;
+    border: 1px solid #ccc;
+    border-top-color: transparent;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+.petend-item, .petend-text {
+    display: block;
+    margin: 2px 3px;
+    padding: 1px 3px;
+    cursor: pointer;
+}
+
+.petend-item-active {
+    background-color: #3875d7;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(20%,#3875d7),color-stop(90%,#2a62bc));
+    background-image: -webkit-linear-gradient(#3875d7 20%,#2a62bc 90%);
+    background-image: -moz-linear-gradient(#3875d7 20%,#2a62bc 90%);
+    background-image: -o-linear-gradient(#3875d7 20%,#2a62bc 90%);
+    background-image: linear-gradient(#3875d7 20%,#2a62bc 90%);
+    color: #fff;
+}
+
+.reason .lists {
+    margin: 12px 20px;
+}
+
+.reason .key {
+    position: relative;
+}
+
+.reason .valid-key {
+    width: 60px;
+}
+
+.reason .value-input {
+    padding: 6px 14px;
+    border: 1px solid #e5e6e7;
+    outline: 0;
+}
+
+.reason .value-reason {
+    width: 372px;
+}
+
+.reason .value-psd {
+    width: 216px;
+}
+
+.reason .start {
+    position: absolute;
+    top: 2px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+}
+
+.reason .value-warn {
+    border: 1px solid #c00;
+}
+
+    .reason .value-warn::-webkit-input-placeholder {
+        color: #c00;
+    }
+
+    .reason .value-warn:-moz-placeholder {
+        color: #c00;
+    }
+
+    .reason .value-warn::-moz-placeholder {
+        color: #c00;
+    }
+
+    .reason .value-warn:-ms-input-placeholder {
+        color: #c00;
+    }
+
+.reason .value-psd-spe {
+    display: block;
+    width: 555px;
+}
+
+.reason .start:before {
+    position: absolute;
+    content: "*";
+    color: red;
+}
+
+.reason .text {
+    color: #a8a8a8;
+}
+
+.reason .button-sure {
+    background: none repeat scroll 0 0 #1ab394;
+    color: #fff;
+    margin-right: 1.5em;
+    padding: 6px 2em;
+    text-align: right;
+}
+
+.reason .button-back {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    padding: 6px 2em;
+    margin-right: 1.5em;
+    color: #bbb;
+}
+
+.trade .row {
+    padding-top: 20px;
+}
+
+.trade .input {
+    border: 1px solid #a1a1a1;
+}
+
+.dt_orderDetail {
+    display: none;
+}
+
+.cf:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    content: "";
+    height: 0;
+}
+
+.maskLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .6;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.orderDetail, .dt_orderDetail {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+    margin: 0 auto;
+    width: 900px;
+    height: 520px;
+    background-color: #fff;
+}
+
+.od-title {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background-color: #00af93;
+}
+
+.od-title-size {
+    float: left;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.od-title-icon {
+    margin-right: 15px;
+    float: right;
+    width: 24px;
+    height: 24px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.od-container {
+    padding: 0 10px;
+    width: 100%;
+}
+
+.tableWp .detail-od {
+    padding-top: initial;
+    margin-top: auto;
+    margin-left: -10px;
+    margin-right: 10px;
+    border: 0;
+}
+
+.od-info {
+    position: relative;
+    margin: 30px 0;
+    padding-top: 20px;
+    height: 90px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+    .od-info .od-item {
+        float: left;
+        padding-left: 20px;
+        width: 50%;
+        line-height: 25px;
+    }
+
+.od-info-title {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.od-detail {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.od-detail-title {
+    position: absolute;
+    top: -15px;
+    left: 30px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.tableWp {
+    padding: 20px 0 0 15px;
+    height: 210px;
+    overflow-y: auto;
+}
+
+    .tableWp tr th, .tableWp tr td {
+        width: 20%;
+        line-height: 30px;
+    }
+
+        .tableWp tr td:first-child {
+            font-weight: bold;
+        }
+
+            .tableWp tr td:first-child div {
+                padding-left: 15px;
+                font-weight: 100;
+            }
+
+    .tableWp thead tr {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .tableWp table {
+        width: 100%;
+    }
+
+.dt-table-wp {
+    margin-left: 2%;
+    width: 98%;
+    height: 100px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+}
+
+.od-detail .total {
+    float: right;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.dt_orderDetail .total {
+    margin-right: 40px;
+}
+
+.btnGroup {
+    margin-top: 15px;
+    text-align: center;
+}
+
+    .btnGroup button {
+        margin: 0 10px 0 10px;
+        width: 100px;
+        height: 34px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 3px;
+        background-color: #00a189;
+        border: 0;
+        color: #fff;
+    }
+
+    .btnGroup .od-close {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .btnGroup .od-print {
+        background-image: url("../images/print-icon.png");
+        background-repeat: no-repeat;
+        background-position: left 5px center;
+    }
+
+.w400 {
+    width: 400px;
+}
+
+.refund .stati-time-key {
+    float: left;
+    margin-top: 8px;
+}
+
+.refund .stati-item-spe {
+    margin-right: 10px;
+}
+
+.refund .stati-more {
+    margin-right: 14px;
+    color: #1ab394;
+}
+
+.refund .stati-table select {
+    border: 0;
+    background: transparent;
+    outline: 0;
+}
+
+#refund-reason .text {
+    color: #a8a8a8;
+}
+
+#refund-reason .button-sure {
+    background: none repeat scroll 0 0 #1ab394;
+    color: #fff;
+    margin-right: 1.5em;
+    padding: 6px 2em;
+    text-align: right;
+}
+
+#refund-reason .button-back {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    padding: 6px 2em;
+    margin-right: 1.5em;
+    color: #bbb;
+}
+
+#print {
+    display: none;
+}
+
+@media print {
+    #print {
+        display: block;
+    }
+
+    .print-sup {
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .print-wrap {
+        float: left;
+        width: 50%;
+    }
+
+    .print-wrap-sub {
+        height: 798px;
+        padding: 0 26px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .print-item {
+        padding: 5px 0 5px 0;
+    }
+
+    .print-title {
+        font-size: 14px;
+    }
+
+    .print-value {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .print-paste-wrap {
+        float: left;
+        width: 48%;
+        margin-left: 2%;
+    }
+
+    .print-paste-text {
+        height: 798px;
+        margin: 0;
+        line-height: 798px;
+        font-family: "微软雅黑";
+        font-size: 30px;
+        color: #ccc;
+        text-align: center;
+        border: 1px dashed #ccc;
+        border-radius: 4px;
+    }
+
+    .print-all-title {
+        margin-bottom: 24px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .print-sup {
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .print-wrap {
+        float: left;
+        width: 49%;
+    }
+
+    .print-wrap-sub {
+        height: 798px;
+        padding: 0 26px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .print-title {
+        font-size: 14px;
+    }
+
+    .print-value {
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .print-paste-wrap {
+        float: left;
+        width: 49%;
+        margin-left: 2%;
+    }
+
+    .print-paste-text {
+        height: 798px;
+        margin: 0;
+        line-height: 798px;
+        font-family: "微软雅黑";
+        font-size: 30px;
+        color: #ccc;
+        text-align: center;
+        border: 1px dashed #ccc;
+        border-radius: 4px;
+    }
+}
+
+/* 
+ * Scope: 添加页面统一样式
+ * Time: 2016-11-08
+ * Developer : 郑开金
+ * Remarks: 修改代码从 Begin 到 end
+*/
+/* Begin */
+
+.stati-check {
+    width: 90px;
+}
+
+/* End */

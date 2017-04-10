@@ -1,0 +1,8 @@
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\bin\Release\DBUtility.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\bin\Release\DBUtility.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\bin\Release\LogTool.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\bin\Release\log4net.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\bin\Release\LogTool.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\obj\Release\DBUtility.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\obj\Release\DBUtility.pdb

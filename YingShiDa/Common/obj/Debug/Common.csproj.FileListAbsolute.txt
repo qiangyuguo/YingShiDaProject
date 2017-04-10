@@ -14,3 +14,11 @@ F:\其他\项目\YinShiDaProject\YingShiDa\Common\bin\Debug\LogTool.pdb
 F:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 F:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\Common\obj\Debug\Common.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\bin\Debug\Common.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\bin\Debug\Common.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\bin\Debug\LogTool.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\bin\Debug\log4net.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\bin\Debug\LogTool.pdb
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\obj\Debug\Common.dll
+G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Common\obj\Debug\Common.pdb

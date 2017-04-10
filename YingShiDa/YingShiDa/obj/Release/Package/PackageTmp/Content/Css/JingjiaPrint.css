@@ -1,0 +1,71 @@
+﻿td
+{
+    text-align: center;
+    padding: 5px 0px;
+}
+.trhead1
+{
+    font-size: 17pt;
+    font-family: "宋体";
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.trhead2
+{
+    font-size: 9pt;
+    font-family: "宋体";
+}
+.tdhead1
+{
+    font-size: 18pt;
+    font-family: "宋体";
+}
+.tdhead2
+{
+    font-size: 12pt;
+    font-family: "宋体";
+    text-align: right;
+}
+.tdhead3
+{
+    font-size: 12pt;
+    font-family: "宋体";
+    text-align: left;
+}
+.tdlinel
+{
+    font-size: 10pt;
+    font-family: "宋体";
+    border: 1px solid #000;
+}
+.tdlineml
+{
+    font-size: 10pt;
+    font-family: "宋体";
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    border-left: 1px solid #000;
+}
+.tdlinem
+{
+    font-size: 10pt;
+    font-family: "宋体";
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.tdliner
+{
+    font-size: 10pt;
+    font-family: "宋体";
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+}
+.tdpp
+{
+    min-width: 250px;
+}
+.tdbottombak
+{
+    padding: 15px 0px;
+}

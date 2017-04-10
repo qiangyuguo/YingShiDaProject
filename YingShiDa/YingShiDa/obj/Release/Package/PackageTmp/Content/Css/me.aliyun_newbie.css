@@ -1,0 +1,48 @@
+/*newbie*/
+/*lte IE8*/
+.newbie{
+    background:none;
+}
+.newbie-bd{
+    height:520px;
+    background: url(images/IndexImages/newbie-bg.png) 0 -10px repeat-x;
+}
+.newbie-top,.newbie-bottom{
+    height:10px;
+    background-image: url(images/IndexImages/newbie_24.png);
+    _background:none;
+}
+*html .newbie-top{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/IndexImages/newbie-top.png", sizingMethod="image");
+}
+*html .newbie-bottom{
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src="images/IndexImages/newbie-bottom.png", sizingMethod="image");
+}
+
+.newbie-bottom{
+    background-position:0 -10px;
+}
+
+.method-usb{
+    padding:0;
+    background:none;
+}
+.usb-bd{
+    padding:0 15px;
+    background:#ececec
+}
+.usb-top,.usb-bottom{
+    height:10px;
+    background-image: url(images/IndexImages/newbie_24.png);
+    _overflow: hidden;
+}
+.usb-top{
+    background-position:460px -20px;
+}
+.usb-bottom{
+   background-position:0 -20px;
+}
+.usb-bd{
+    border:1px solid #dadada;
+    border-width:0 1px;
+}
