@@ -24,6 +24,12 @@ namespace YingShiDa.Action
             context.Response.AddHeader("cache-control", "");
             context.Response.CacheControl = "no-cache";
             context.Response.ContentEncoding = System.Text.Encoding.UTF8;
+            // 指定允许其他域名访问
+            context.Response.AddHeader("Access-Control-Allow-Origin", "*");
+            // 响应类型
+            context.Response.AddHeader("Access-Control-Allow-Methods", "POST");
+            // 响应头设置
+            context.Response.AddHeader("Access-Control-Allow-Headers", "x-requested-with,content-type");
             string action = context.Request.Params["Action"];
             HttpPostedFile _file = context.Request.Files["file_data"];
             if (string.IsNullOrEmpty(action))
