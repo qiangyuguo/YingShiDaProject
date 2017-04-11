@@ -9,6 +9,5 @@ F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Debug\LogTool.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Debug\LogTool.pdb
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\bin\Debug\LogTool.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\bin\Debug\LogTool.pdb
-G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\obj\Debug\LogTool.csprojResolveAssemblyReference.cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\obj\Debug\LogTool.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\obj\Debug\LogTool.pdb
