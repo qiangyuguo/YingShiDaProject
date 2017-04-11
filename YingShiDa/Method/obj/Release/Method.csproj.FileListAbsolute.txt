@@ -6,3 +6,11 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\bin\Release\LogTool.pdb
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\obj\Release\Method.csprojResolveAssemblyReference.cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\obj\Release\Method.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Method\obj\Release\Method.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\bin\Release\Method.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\bin\Release\Method.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\bin\Release\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\bin\Release\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\bin\Release\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\obj\Release\Method.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\obj\Release\Method.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Method\obj\Release\Method.pdb

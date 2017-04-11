@@ -70,7 +70,7 @@ namespace Method
         #endregion
 
         #region 根据ID和语言查询某一张表的数据
-        public T SelectByIDL<T>(int ID,int Language) where T : new()
+        public T SelectByIDL<T>(int ID, int Language) where T : new()
         {
             PropertyInfo[] propertyInfos = typeof(T).GetProperties();
             T model = new T();//返回的结果集
@@ -104,7 +104,7 @@ namespace Method
         #endregion
 
         #region 查询登录名是否匹配
-        public T SelectModel<T>(string UserName) where T :new()
+        public T SelectModel<T>(string UserName) where T : new()
         {
             PropertyInfo[] propertyInfos = typeof(T).GetProperties();
             T model = new T();//返回的结果集
@@ -169,7 +169,7 @@ namespace Method
         #endregion
 
         #region 查询某一张表的数据
-        public T SelectList<T>() where T :new()
+        public T SelectList<T>() where T : new()
         {
             PropertyInfo[] propertyInfos = typeof(T).GetProperties();
             T model = new T();//返回的结果集
@@ -236,7 +236,7 @@ namespace Method
         #endregion
 
         #region 查询某一张表最新的数据
-        public T SelectTopList<T>(int Language) where T :new()
+        public T SelectTopList<T>(int Language) where T : new()
         {
             PropertyInfo[] propertyInfos = typeof(T).GetProperties();
             T model = new T();//返回的结果集
@@ -305,7 +305,7 @@ namespace Method
         #endregion
 
         #region 增加一个实体
-        public bool Add<T>(T t) where T :new()
+        public bool Add<T>(T t) where T : new()
         {
             int result = 0;
             PropertyInfo[] propertyInfos = typeof(T).GetProperties();
@@ -326,7 +326,7 @@ namespace Method
                     result = comm.ExecuteNonQuery();
                 }
             }
-            return result>0;
+            return result > 0;
             //try
             //{
             //    // 插入到数据库中
@@ -387,7 +387,7 @@ namespace Method
                     result = comm.ExecuteNonQuery();
                 }
             }
-            return result>0;
+            return result > 0;
             //try
             //{
             //    //更新数据库
@@ -434,7 +434,7 @@ namespace Method
         #endregion
 
         #region 删除一个实体
-        public bool Delete<T>(int ID) where T:new()
+        public bool Delete<T>(int ID) where T : new()
         {
             Type type = typeof(T);
             object obj = Activator.CreateInstance(type);
@@ -451,7 +451,7 @@ namespace Method
                     result = comm.ExecuteNonQuery();
                 }
             }
-            return result>0;
+            return result > 0;
 
 
             //try
@@ -479,6 +479,32 @@ namespace Method
             //    LogTool.LogWriter.WriteError("查询失败：" + ex.ToString());
             //}
             //return true;
+        }
+        #endregion
+
+        #region 根据条件查询单表或视图多条记录
+        public List<T> GetByWhereSqlList<T>(string whereSql, string orderSql) where T : class, new()
+        {
+            List<T> list = new List<T>();
+            string sql = string.Empty;
+            try
+            {
+                T t = new T();
+                sql = " select * from " + t.GetType().Name + " where 1=1 ";
+                if (!string.IsNullOrEmpty(whereSql))
+                    sql += whereSql + " ";
+
+                if (!string.IsNullOrEmpty(orderSql))
+                    sql += " order by " + orderSql + " ";
+                list = SqlHelper.ExecuteList<T>(SqlHelper.DBConnection, CommandType.Text, sql, null);
+                if (list == null)
+                    list = new List<T>();
+            }
+            catch (Exception ex)
+            {
+                LogTool.LogWriter.WriteError(sql,ex);
+            }
+            return list;
         }
         #endregion
     }

@@ -8,3 +8,13 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\bin\Release\LogTool.pdb
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\obj\Release\DBOperation.csprojResolveAssemblyReference.cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\obj\Release\DBOperation.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBOperation\obj\Release\DBOperation.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\bin\Release\DBOperation.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\bin\Release\DBOperation.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\bin\Release\DBUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\bin\Release\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\bin\Release\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\bin\Release\DBUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\bin\Release\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\obj\Release\DBOperation.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\obj\Release\DBOperation.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBOperation\obj\Release\DBOperation.pdb

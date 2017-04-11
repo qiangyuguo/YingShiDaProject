@@ -12,3 +12,17 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\PlatformManagment\bin\Release\DBUtil
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\PlatformManagment\obj\Release\PlatformManagment.csprojResolveAssemblyReference.cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\PlatformManagment\obj\Release\PlatformManagment.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\PlatformManagment\obj\Release\PlatformManagment.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\PlatformManagment.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\PlatformManagment.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\Common.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\DBOperation.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\DBUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\Common.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\DBOperation.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\bin\Release\DBUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\obj\Release\PlatformManagment.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\obj\Release\PlatformManagment.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\PlatformManagment\obj\Release\PlatformManagment.pdb

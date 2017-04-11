@@ -6,3 +6,11 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\bin\Release\LogTool.pdb
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\obj\Release\DBUtility.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DBUtility\obj\Release\DBUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Release\DBUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Release\DBUtility.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Release\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Release\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\bin\Release\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Release\DBUtility.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Release\DBUtility.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DBUtility\obj\Release\DBUtility.pdb
