@@ -49,7 +49,7 @@
       <publishTime>04/10/2017 14:16:50</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>04/10/2017 14:16:52</publishTime>
+      <publishTime>04/10/2017 16:16:38</publishTime>
     </File>
     <File Include="bin/DataConveter.dll">
       <publishTime>04/10/2017 14:11:30</publishTime>
@@ -70,7 +70,7 @@
       <publishTime>04/10/2017 14:11:30</publishTime>
     </File>
     <File Include="bin/Method.dll">
-      <publishTime>04/10/2017 14:16:50</publishTime>
+      <publishTime>04/10/2017 16:16:38</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>03/31/2017 10:48:22</publishTime>
@@ -145,7 +145,7 @@
       <publishTime>04/10/2017 14:16:52</publishTime>
     </File>
     <File Include="bin/YingShiDa.dll">
-      <publishTime>04/10/2017 14:17:02</publishTime>
+      <publishTime>04/11/2017 22:27:02</publishTime>
     </File>
     <File Include="bin/zh-Hans/EntityFramework.resources.dll">
       <publishTime>04/10/2017 14:11:36</publishTime>
@@ -7299,6 +7299,93 @@
     <File Include="Content/umeditor1_2_2-utf8-net/umeditor.min.js">
       <publishTime>03/31/2017 10:47:54</publishTime>
     </File>
+    <File Include="File/HomePage/6c62bd0f-f8e9-40f6-bd43-921a8c569472.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/HomePage/b11d97fd-f721-40a3-9473-590140347356.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/HomePage/ba49ded6-c3ff-494c-9e91-bb98a8d1e05e.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/HomePage/eede34dc-28ae-415d-b6a5-8f4b2e01bef5.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/Product/0e7e2185-ef87-4145-b166-40973b48227a.pdf">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/Product/25adcf81-99f4-4998-9d0c-42390aa8830a.pdf">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/Product/438306e709264d6fae0bd66919b81d66.pdf">
+      <publishTime>03/31/2017 17:10:24</publishTime>
+    </File>
+    <File Include="File/Product/870d493308554ec3b4065aa251d00138.pdf">
+      <publishTime>03/31/2017 16:57:30</publishTime>
+    </File>
+    <File Include="File/Product/8d3da1d55a87497ab790810f2509cf73.pdf">
+      <publishTime>03/31/2017 17:19:52</publishTime>
+    </File>
+    <File Include="File/Product/8ef9f499611f47acaa658ce9281bc995.pdf">
+      <publishTime>03/31/2017 17:25:46</publishTime>
+    </File>
+    <File Include="File/Product/8eff817a96af46479a5a652eb1f17914.pdf">
+      <publishTime>03/31/2017 18:38:12</publishTime>
+    </File>
+    <File Include="File/Product/98f691f10b1947a68a85b5173e7fa353.pdf">
+      <publishTime>03/31/2017 17:24:42</publishTime>
+    </File>
+    <File Include="File/Product/99c8bfa5cca24dfca2243f5a131069b9.pdf">
+      <publishTime>04/06/2017 15:14:38</publishTime>
+    </File>
+    <File Include="File/Product/9a3b71a2577f498da03ba5010a47f989.pdf">
+      <publishTime>03/31/2017 17:09:58</publishTime>
+    </File>
+    <File Include="File/Product/b173655c2c874ab794a86e07f223c2e6.pdf">
+      <publishTime>03/31/2017 17:34:18</publishTime>
+    </File>
+    <File Include="File/Product/d366ded309d244bdab0bc1fa281407eb.pdf">
+      <publishTime>03/31/2017 17:11:50</publishTime>
+    </File>
+    <File Include="File/Product/de0ec6d95aec4b3cbe4d4dbe374e8e2f.pdf">
+      <publishTime>03/31/2017 17:01:38</publishTime>
+    </File>
+    <File Include="File/Product/eb5f2a248bac4bce99fc4c214cc3c46d.pdf">
+      <publishTime>03/31/2017 18:37:30</publishTime>
+    </File>
+    <File Include="File/Product/ff7edc7dc3854f5e82ec10ddf1469b9b.pdf">
+      <publishTime>03/31/2017 17:32:20</publishTime>
+    </File>
+    <File Include="File/Store/Photo/13caa511ced041dba6fd6f9021b624fd.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/Store/Photo/3ed92bb2c78c4ac29b1991d6fe5b313b.jpeg">
+      <publishTime>03/31/2017 18:36:02</publishTime>
+    </File>
+    <File Include="File/Store/Photo/4f20f2a4a6f144c99a0bdea021b6733f.jpg">
+      <publishTime>03/31/2017 17:12:14</publishTime>
+    </File>
+    <File Include="File/Store/Photo/786e703ceaf84e0ba810eb07e4f78311.jpg">
+      <publishTime>03/31/2017 16:56:24</publishTime>
+    </File>
+    <File Include="File/Store/Photo/8f1d8e3b637a4bb8bd77f6004843fa8b.jpg">
+      <publishTime>03/31/2017 22:37:52</publishTime>
+    </File>
+    <File Include="File/Store/Photo/dbf5e60331e94b81b7cb780dc26f2c44.jpeg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/TeamPage/174361a0-6707-44ad-b840-2383e9db849e.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/TeamPage/3ae2fd07-d57b-4332-9c6f-df19d1b6bd4b.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/TeamPage/6d08d6fd-d1e2-433c-b37b-7effe68438c0.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
+    <File Include="File/TeamPage/a7b7d075-cf35-41f4-aec1-e7d59092c8cd.jpg">
+      <publishTime>03/31/2017 10:47:54</publishTime>
+    </File>
     <File Include="Global.asax">
       <publishTime>03/31/2017 10:47:54</publishTime>
     </File>
@@ -7320,6 +7407,105 @@
     <File Include="HumanResources/TalentRecruitmentAdd.aspx">
       <publishTime>04/06/2017 14:40:38</publishTime>
     </File>
+    <File Include="Images/NetPager/0n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/0r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/1n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/1r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/2n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/2r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/3n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/3r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/4n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/4r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/5n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/5r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/6n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/6r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/7n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/7r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/8n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/8r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/9n.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/9r.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/firstg.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/firstg1.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/firstn.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/firstn1.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/lastg.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/lastg2.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/lastn.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/lastn2.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/moren.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/nextg.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/nextn.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/prevg.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Images/NetPager/prevn.gif">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
     <File Include="Login.aspx">
       <publishTime>04/01/2017 11:29:38</publishTime>
     </File>
@@ -7331,6 +7517,24 @@
     </File>
     <File Include="packages.config">
       <publishTime>03/31/2017 10:48:14</publishTime>
+    </File>
+    <File Include="Photo/AddFile.jpg">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Photo/AddImg.png">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Photo/default.jpg">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="Photo/default_small.jpg">
+      <publishTime>03/31/2017 10:47:58</publishTime>
+    </File>
+    <File Include="Photo/UploadFile.png">
+      <publishTime>03/31/2017 10:47:56</publishTime>
+    </File>
+    <File Include="PlatFormTemplates/Default/bg.jpg">
+      <publishTime>07/11/2014 22:22:46</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriver.aspx">
       <publishTime>04/01/2017 10:59:38</publishTime>
@@ -7372,7 +7576,7 @@
       <publishTime>03/31/2017 10:47:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/10/2017 14:18:02</publishTime>
+      <publishTime>04/11/2017 22:27:24</publishTime>
     </File>
   </ItemGroup>
 </Project>

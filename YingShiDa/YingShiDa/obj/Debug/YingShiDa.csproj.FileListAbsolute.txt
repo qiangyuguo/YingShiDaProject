@@ -114,7 +114,6 @@ F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\zh-Hans\EntityFramework
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\obj\Debug\YingShiDa.Main.resources
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\obj\Debug\YingShiDa.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\obj\Debug\YingShiDa.pdb
-F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Newtonsoft.Json.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\YingShiDa\bin\ApplicationInsights.config
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\YingShiDa\bin\roslyn\csc.exe
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\YingShiDa\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
