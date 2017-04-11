@@ -46,17 +46,17 @@
             }
             var txtPurchaseStart = $.trim($("#txtPurchaseStart").val());
             var txtPurchaseEnd = $.trim($("#txtPurchaseEnd").val());
-            if (txtPurchaseStart != "" && txtPurchaseEnd != "") {
-                var day = Math.floor((new Date(txtPurchaseEnd.replace(/-/g, "/")).getTime() - new Date(txtPurchaseStart.replace(/-/g, "/")).getTime()) / (24 * 3600 * 1000));
-                if (day > 30) {
-                    layer.msg("只允许查询31天内的数据", {
-                        time: 2000,
-                        icon: 5,
-                        offset: '20%'
-                    });
-                    return false;
-                }
-            }
+            //if (txtPurchaseStart != "" && txtPurchaseEnd != "") {
+            //    var day = Math.floor((new Date(txtPurchaseEnd.replace(/-/g, "/")).getTime() - new Date(txtPurchaseStart.replace(/-/g, "/")).getTime()) / (24 * 3600 * 1000));
+            //    if (day > 30) {
+            //        layer.msg("只允许查询31天内的数据", {
+            //            time: 2000,
+            //            icon: 5,
+            //            offset: '20%'
+            //        });
+            //        return false;
+            //    }
+            //}
             var timeStart = new Date($("#txtPurchaseStart").val()).format("yyyy-MM-dd");
             var timeTo = new Date($("#txtPurchaseEnd").val()).format("yyyy-MM-dd");
             if (timeStart > timeTo) {

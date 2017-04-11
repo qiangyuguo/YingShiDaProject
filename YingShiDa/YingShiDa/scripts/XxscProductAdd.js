@@ -21,25 +21,21 @@ function ProductAdd()
     var html = "";
     var i = 0;
     var txtProductModel = $("#txtProductModel").val();
-    if (txtProductModel != null)
-    {
-        if (txtProductModel.length > 6)
-        {
-            layer.alert("产品型号长度不能超过6个字符", {
+    if (txtProductModel != "") {
+        if (txtProductModel.length > 10) {
+            layer.alert("产品型号长度不能超过10个字符", {
                 icon: 2,
-                offset:'10%'
+                offset: '10%'
             });
             return false;
         }
         $("#AddProductModel tr:eq(0)").nextAll().each(function (index, item) {
             var productModel = $(item).find("td:eq(0)").text();
-            if (txtProductModel == productModel)
-            {
+            if (txtProductModel == productModel) {
                 i++;
             }
         });
-        if (i > 0)
-        {
+        if (i > 0) {
             layer.alert('产品型号不能重复', {
                 icon: 2,
                 offset: '10%'
@@ -54,6 +50,13 @@ function ProductAdd()
         } else {
             $("#hfHtml").val(txtProductModel);
         }
+    }
+    else {
+        layer.alert('产品型号不能为空', {
+            icon: 2,
+            offset: '10%'
+        });
+        return false;
     }
     return false;
 }
