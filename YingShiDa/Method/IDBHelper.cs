@@ -30,7 +30,7 @@ namespace Method
         /// <param name="dictionary">要筛选的条件</param>
         /// <param name="orderSql">要进行排序的条件，如( name desc,id)</param>
         /// <returns>返回实体对象集</returns>
-        List<T> GetByWhereSqlList<T>(string whereSql, string orderSql) where T : class, new();
+        List<T> GetByWhereSqlList<T>(string whereSql, string orderSql,string field="") where T : class, new();
             #endregion
     }
 }

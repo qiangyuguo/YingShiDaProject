@@ -47,7 +47,9 @@ namespace YingShiDa.Action
                     case "enterprisehonor": GetEnterpriseHonor(context); break;//企业荣誉
 
                     case "companynews": GetCompanyNews(context); break;//公司新闻
+                    case "companynewsdetail": GetCompanyNewsDetail(context); break;//公司新闻详情
                     case "industryinformation": GetIndustryInformation(context); break;//行业资讯
+                    case "industryinformationdetail": GetIndustryInformationDetail(context); break;//行业资讯详情
 
                     case "memberlist": GetMemberList(context); break;//服务理念
                     case "membertogrouplist": GetMemberToGroupList(context); break;//常见问题答疑
@@ -194,7 +196,36 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Company_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_News>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Company_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_News>(" and Language=" + Language, " UpdateTime desc", " ID,Title,UpdateTime ");
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetCompanyNewsDetail(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            int ID = Convert.ToInt32(context.Request.Params["ID"]);
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Company_News cn = Factory.GetExecution().SelectByID<Model.Company_News>(ID);
+                    cn.BrowseTimes += 1;
+                    bool flag = Factory.GetExecution().Update<Model.Company_News>(cn);
+                    List<Model.Company_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_News>(" and ID="+ ID + " and Language=" + Language, " UpdateTime desc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -219,7 +250,36 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Industry_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Industry_News>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Industry_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Industry_News>(" and Language=" + Language, " UpdateTime desc", " ID,Title,UpdateTime ");
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetIndustryInformationDetail(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            int ID = Convert.ToInt32(context.Request.Params["ID"]);
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    Model.Industry_News iNew = Factory.GetExecution().SelectByID<Model.Industry_News>(ID);
+                    iNew.BrowseTimes += 1;
+                    bool flag = Factory.GetExecution().Update<Model.Industry_News>(iNew);
+                    List<Model.Industry_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Industry_News>(" and ID=" + ID + " and Language=" + Language, " UpdateTime desc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }

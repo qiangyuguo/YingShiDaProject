@@ -483,14 +483,21 @@ namespace Method
         #endregion
 
         #region 根据条件查询单表或视图多条记录
-        public List<T> GetByWhereSqlList<T>(string whereSql, string orderSql) where T : class, new()
+        public List<T> GetByWhereSqlList<T>(string whereSql, string orderSql, string field = "") where T : class, new()
         {
             List<T> list = new List<T>();
             string sql = string.Empty;
             try
             {
                 T t = new T();
-                sql = " select * from " + t.GetType().Name + " where 1=1 ";
+                if (String.IsNullOrEmpty(field))
+                {
+                    sql = " select * from " + t.GetType().Name + " where 1=1 ";
+                }
+                else
+                {
+                    sql = " select "+ field + " from " + t.GetType().Name + " where 1=1 ";
+                }
                 if (!string.IsNullOrEmpty(whereSql))
                     sql += whereSql + " ";
 
