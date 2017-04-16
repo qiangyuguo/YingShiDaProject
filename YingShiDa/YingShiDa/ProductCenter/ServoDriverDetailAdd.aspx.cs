@@ -43,6 +43,7 @@ namespace YingShiDa.ProductCenter
         /// 图片上传格式
         /// </summary>
         public static string[] limitExtension = { ".jpg", ".gif", ".png", ".bmp", ".jpeg" };
+        public static string[] fileFormat = ConfigurationManager.AppSettings["FileFormat"].Split(',');
         public static int requestID = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -388,6 +389,25 @@ namespace YingShiDa.ProductCenter
             return isImages;
         }
 
+        public bool IsFile(string str)
+        {
+            bool isFiles = false;
+
+            //将字符串格式全部转换为小写
+            string thestr = str.ToLower();
+
+            //循环图片格式
+            for (int i = 0, j = fileFormat.Length; i < j; i++)
+            {
+                if (thestr == fileFormat[i])
+                {
+
+                    isFiles = true;
+                    break;
+                }
+            }
+            return isFiles;
+        }
         /// <summary>
         /// 文件名称
         /// </summary>
@@ -536,12 +556,19 @@ namespace YingShiDa.ProductCenter
         {
             string fullFileName = fu.PostedFile.FileName;//获取文件名称
             string type = fullFileName.Substring(fullFileName.LastIndexOf(".") + 1).ToLower();//图片格式
-            if (type == "pdf" || type == "dwg" || type == "dxf")//判断是否为图片类型
+            if (IsFile(type))
             {
+
             }
             else
             {
-                Common.MessageBox.ShowLayer(this, "上传文件类型不正确",2);
+                string geshi = string.Empty;
+                foreach (var item in fileFormat)
+                {
+                    geshi += item + ",";
+                }
+                geshi = geshi.TrimEnd(',');
+                Common.MessageBox.ShowLayer(this, "上传文件类型不正确，只支持以下类型"+ geshi, 2);
                 return string.Empty;
             }
             //Stream stream = fu.PostedFile.InputStream;
