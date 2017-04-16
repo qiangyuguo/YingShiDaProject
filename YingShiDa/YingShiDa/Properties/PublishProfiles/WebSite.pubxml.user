@@ -49,7 +49,7 @@
       <publishTime>04/10/2017 14:16:50</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>04/11/2017 22:45:48</publishTime>
+      <publishTime>04/12/2017 23:08:30</publishTime>
     </File>
     <File Include="bin/DataConveter.dll">
       <publishTime>04/10/2017 14:11:30</publishTime>
@@ -70,7 +70,7 @@
       <publishTime>04/10/2017 14:11:30</publishTime>
     </File>
     <File Include="bin/Method.dll">
-      <publishTime>04/10/2017 16:16:38</publishTime>
+      <publishTime>04/12/2017 23:08:28</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>03/31/2017 10:48:22</publishTime>
@@ -145,7 +145,7 @@
       <publishTime>04/10/2017 14:16:52</publishTime>
     </File>
     <File Include="bin/YingShiDa.dll">
-      <publishTime>04/11/2017 22:51:20</publishTime>
+      <publishTime>04/12/2017 23:08:50</publishTime>
     </File>
     <File Include="bin/zh-Hans/EntityFramework.resources.dll">
       <publishTime>04/10/2017 14:11:36</publishTime>
@@ -7558,7 +7558,7 @@
       <publishTime>03/31/2017 10:48:14</publishTime>
     </File>
     <File Include="scripts/XxscProductAdd.js">
-      <publishTime>04/11/2017 22:48:34</publishTime>
+      <publishTime>04/11/2017 22:58:26</publishTime>
     </File>
     <File Include="TechnicalSupport/MemberList.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
