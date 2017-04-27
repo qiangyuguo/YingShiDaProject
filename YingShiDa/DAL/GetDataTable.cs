@@ -217,6 +217,36 @@ where 1=1 ");
         }
         #endregion
 
+
+        #region 根据产品详情ID得到关联的产品列表
+        public static DataTable GetProductRelation(string ProductDetailID, DBOperationManagment dbm)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append(@" select pc.* from ProductCenterDetail pcd
+inner join ProductRelation pr on pcd.ProductDetailID=pr.ProductDetailID
+inner join ProductCenter pc on pr.ProductID=pc.ProductID where 1=1 ");
+           
+            if (!string.IsNullOrEmpty(ProductDetailID))
+            {
+                strSql.AppendFormat(" AND pr.ProductDetailID = '{0}' ", ProductDetailID);
+            }
+
+            QueryData exec = new QueryData();
+            exec.SqlCommand = strSql.ToString();
+            exec.Parameters = null;
+
+            dbm.Execute(exec);
+            if (exec.ResultData != null && exec.ResultData.Tables != null && exec.ResultData.Tables.Count > 0)
+            {
+                return exec.ResultData.Tables[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+        #endregion
+
         #region 得到产品详情列表
         public static DataTable GetProductDetailList(string Title, int ProductType, string startDate, string endDate, int pageNumber, int pageSize, out int pageCount, out int rowCount, DBOperationManagment dbm)
         {

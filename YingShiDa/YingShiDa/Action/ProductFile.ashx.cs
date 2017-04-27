@@ -72,6 +72,8 @@ namespace YingShiDa.Action
 
                     case "productmodelandname": GetProductModelAndName(context); break;//根据产品型号和产品名称得到产品列表
 
+                    case "productrelation": GetProductRelation(context); break;//根据产品详情ID得到关联的产品
+
                 }
 
             }
@@ -609,6 +611,31 @@ namespace YingShiDa.Action
                 if (dbm.Open())
                 {
                     DataTable dt = DAL.GetDataTable.GetProductModelAndName(Language, ProductModel, ProductTitle, dbm);
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetProductRelation(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            string ProductDetailID = context.Request.Params["ProductDetailID"];
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    DataTable dt = DAL.GetDataTable.GetProductRelation(ProductDetailID, dbm);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
                     context.Response.Write(jsonStr);
                 }

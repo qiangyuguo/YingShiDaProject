@@ -245,11 +245,12 @@ namespace YingShiDa.ProductCenter
                         bool flag = Factory.GetExecution().Update<Model.ProductCenterDetail>(cp);
 
                         bool prFlag = false;
+                        bool isDelete = DAL.GetDataTable.DeleteProductRelation<Model.ProductRelation>(cp.ProductDetailID);
                         foreach (ListItem item in lbMemberGroupID.Items)
                         {
                             if (!string.IsNullOrEmpty(item.Value))
                             {
-                                if (DAL.GetDataTable.DeleteProductRelation<Model.ProductRelation>(cp.ProductDetailID))
+                                if (isDelete)
                                 {
                                     Model.ProductRelation pr = new Model.ProductRelation();
                                     pr.ProductDetailID = cp.ProductDetailID;
