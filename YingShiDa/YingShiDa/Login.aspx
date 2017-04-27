@@ -20,6 +20,20 @@
         .loginSet {
             bottom: 5%;
         }
+
+        input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0 1000px #646361 inset;
+            border: none;
+            color: white;
+            -webkit-appearance: none; /*for chrome*/
+        }
+
+        input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus, input[type=button] {
+            -webkit-box-shadow: 0 0 0 1000px #646361 inset;
+            border: none;
+            color: white;
+            -webkit-appearance: none; /*for chrome*/
+        }
     </style>
     <script type="text/javascript">
         function check() {
@@ -30,7 +44,7 @@
             if (account == "" || account == "请输入账号") {
                 layer.alert("请输入账号", {
                     icon: 5,
-                    offset:'10%'
+                    offset: '10%'
                 });
                 return false;
             }

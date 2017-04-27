@@ -52,7 +52,7 @@ namespace YingShiDa.ProductCenter
             {
                 Int32.TryParse(Request["ID"], out requestID);
                 BindProductModel();
-                //UpFile();
+                BindRelation();
                 BindData();
             }
         }
@@ -60,11 +60,12 @@ namespace YingShiDa.ProductCenter
         private void BindProductModel()
         {
             int ProductType = Convert.ToInt32(Request["ProductType"]);
+            int Language = Convert.ToInt32(Request.Form["language"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
                 dbm.Open();
-                DataTable productModelDT = DAL.GetDataTable.GetProductModel(ProductType, dbm);
+                DataTable productModelDT = DAL.GetDataTable.GetProductModel(Language, ProductType, dbm);
                 ddlProductModel.DataTextField = "ProductModel";
                 ddlProductModel.DataValueField = "ProductModelID";
                 ddlProductModel.DataSource = productModelDT;
@@ -80,60 +81,113 @@ namespace YingShiDa.ProductCenter
             }
         }
 
+        private void BindRelation()
+        {
+            int ProductType = Convert.ToInt32(Request["ProductType"]);
+            int Language = Convert.ToInt32(Request.Form["language"]);
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                dbm.Open();
+                DataTable productRelation = DAL.GetDataTable.GetProductRelation(Language, dbm);
+                ddlProductRelation.DataTextField = "ProductTitle";
+                ddlProductRelation.DataValueField = "ProductID";
+                ddlProductRelation.DataSource = productRelation;
+                ddlProductRelation.DataBind();
+            }
+            catch (Exception e)
+            {
+                LogTool.LogWriter.WriteError("绑定门店出错", e);
+            }
+            finally
+            {
+                dbm.Close();
+            }
+        }
+
         public void BindData()
         {
-            Model.ProductCenterDetail cp = Factory.GetExecution().SelectByID<Model.ProductCenterDetail>(requestID);
-            if (view_action == "notify")
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
             {
-                if (cp != null)
+                if (dbm.Open())
                 {
-                    if (cp.Language == 1)
+                    Model.ProductCenterDetail cp = Factory.GetExecution().SelectByID<Model.ProductCenterDetail>(requestID);
+                    if (view_action == "notify")
                     {
-                        Chinese.Checked = true;
-                    }
-                    else if (cp.Language == 2)
-                    {
-                        English.Checked = true;
-                    }
-                    else if (cp.Language == 3)
-                    {
-                        Traditional.Checked = true;
-                    }
-                    txtTitle.Text = cp.Title;
-                    ddlProductModel.SelectedValue = cp.ProductModelID;
-                    txtSeries.Text = cp.Series;
-                    txtClothAngle.Text = cp.ClothAngle;
-                    Advantage = cp.Advantage;
-                    TechnicalParameter = cp.TechnicalParameter;
-                    txtCreatePeople.Text = cp.CreatetPeople;
-                    HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
-                    HomePageUploadFileName.Text = cp.LogoUrl;
-                    //修改过
-                    List<string> sp = new List<string>();
-                    var photolist = cp.FileName;
-                    if (!string.IsNullOrEmpty(photolist))
-                    {
-                        for (int i = 0; i < photolist.Split(',').Length; i++)
+                        if (cp != null)
                         {
-                            sp.Add(WebSite.IMAGESERVER_WEBPATH + FilePath + photolist.Split(',')[i]);
+                            if (cp.Language == 1)
+                            {
+                                Chinese.Checked = true;
+                            }
+                            else if (cp.Language == 2)
+                            {
+                                English.Checked = true;
+                            }
+                            else if (cp.Language == 3)
+                            {
+                                Traditional.Checked = true;
+                            }
+                            txtTitle.Text = cp.Title;
+                            ddlProductModel.SelectedValue = cp.ProductModelID;
+                            txtSeries.Text = cp.Series;
+                            txtClothAngle.Text = cp.ClothAngle;
+                            Advantage = cp.Advantage;
+                            TechnicalParameter = cp.TechnicalParameter;
+                            txtCreatePeople.Text = cp.CreatetPeople;
+                            HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
+                            HomePageUploadFileName.Text = cp.LogoUrl;
+                            //修改过
+                            List<string> sp = new List<string>();
+                            var photolist = cp.FileName;
+                            if (!string.IsNullOrEmpty(photolist))
+                            {
+                                for (int i = 0; i < photolist.Split(',').Length; i++)
+                                {
+                                    sp.Add(WebSite.IMAGESERVER_WEBPATH + FilePath + photolist.Split(',')[i]);
+                                }
+                            }
+                            //如果是只读状态，不需要显示默认图片
+                            if (sp.Count < ProductShowMaxCount)
+                            {
+                                sp.Add(defaultPhoto);
+                            }
+                            rptShowPhotoes.DataSource = sp;
+                            rptShowPhotoes.DataBind();
+
+                            #region 绑定关联产品
+                            DataTable dt = DAL.GetDataTable.GetProductDetailRelation(cp.ProductDetailID, dbm);
+                            if (dt != null)
+                            {
+                                foreach (System.Data.DataRow dr in dt.Rows)
+                                {
+                                    ListItem li = new ListItem(dr["ProductTitle"].ToString(), dr["ProductID"].ToString());
+                                    lbMemberGroupID.Items.Add(li);
+                                    lbMemberGroupID.ToolTip = li.Text;
+                                }
+                            }
+                            #endregion
                         }
                     }
-                    //如果是只读状态，不需要显示默认图片
-                    if (sp.Count < ProductShowMaxCount)
+                    else
                     {
-                        sp.Add(defaultPhoto);
+                        List<string> showPhotos = new List<string>();
+                        showPhotos.Add(defaultPhoto);
+                        rptShowPhotoes.DataSource = showPhotos;
+                        rptShowPhotoes.DataBind();
                     }
-                    rptShowPhotoes.DataSource = sp;
-                    rptShowPhotoes.DataBind();
                 }
             }
-            else
+            catch (Exception ex)
             {
-                List<string> showPhotos = new List<string>();
-                showPhotos.Add(defaultPhoto);
-                rptShowPhotoes.DataSource = showPhotos;
-                rptShowPhotoes.DataBind();
+                Common.MessageBox.ShowLayer(this, "添加失败!" + ex.Message, 2);
             }
+            finally
+            {
+                dbm.Close();
+            }
+
         }
         protected void btnSave_Click(object sender, EventArgs e)
         {
@@ -152,7 +206,7 @@ namespace YingShiDa.ProductCenter
                     Common.MessageBox.ShowLayer(this, "特点和优点不能为空", 2);
                     return;
                 }
-                if (Advantage.Length>100)
+                if (Advantage.Length > 100)
                 {
                     Common.MessageBox.ShowLayer(this, "特点和优点长度不能超过100个字符", 2);
                     return;
@@ -189,7 +243,23 @@ namespace YingShiDa.ProductCenter
                             cp.FileName = photo_list[0].Trim(',');
                         }
                         bool flag = Factory.GetExecution().Update<Model.ProductCenterDetail>(cp);
-                        if (flag)
+
+                        bool prFlag = false;
+                        foreach (ListItem item in lbMemberGroupID.Items)
+                        {
+                            if (!string.IsNullOrEmpty(item.Value))
+                            {
+                                if (DAL.GetDataTable.DeleteProductRelation<Model.ProductRelation>(cp.ProductDetailID))
+                                {
+                                    Model.ProductRelation pr = new Model.ProductRelation();
+                                    pr.ProductDetailID = cp.ProductDetailID;
+                                    pr.ProductID = item.Value;
+                                    prFlag = Factory.GetExecution().Add<Model.ProductRelation>(pr);
+                                }
+                            }
+                        }
+
+                        if (flag&& prFlag)
                         {
                             Common.MessageBox.ShowRedirect(this, "/ProductCenter/ServoDriver.aspx?ProductType=" + ProductType);
                         }
@@ -220,7 +290,18 @@ namespace YingShiDa.ProductCenter
                         cp.FileName = "";
                     }
                     bool flag = Factory.GetExecution().Add<Model.ProductCenterDetail>(cp);
-                    if (flag)
+                    bool prFlag = false;
+                    foreach (ListItem item in lbMemberGroupID.Items)
+                    {
+                        if (!string.IsNullOrEmpty(item.Value))
+                        {
+                            Model.ProductRelation pr = new Model.ProductRelation();
+                            pr.ProductDetailID = cp.ProductDetailID;
+                            pr.ProductID = item.Value;
+                            prFlag=Factory.GetExecution().Add<Model.ProductRelation>(pr);
+                        }
+                    }
+                    if (flag&& prFlag)
                     {
                         Common.MessageBox.ShowRedirect(this, "/ProductCenter/ServoDriver.aspx?ProductType=" + ProductType);
                     }
@@ -228,7 +309,7 @@ namespace YingShiDa.ProductCenter
             }
             catch (Exception ex)
             {
-                Common.MessageBox.ShowLayer(this, "添加失败!" + ex.Message,2);
+                Common.MessageBox.ShowLayer(this, "添加失败!" + ex.Message, 2);
             }
             finally
             {
@@ -278,7 +359,7 @@ namespace YingShiDa.ProductCenter
                     }
                     else
                     {
-                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择",2);
+                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择", 2);
                         Advantage = hfAdvantage.Value;
                         TechnicalParameter = hfTechnicalParameter.Value;
                         return;
@@ -294,7 +375,7 @@ namespace YingShiDa.ProductCenter
             }
             else
             {
-                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件",2);
+                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件", 2);
                 Advantage = hfAdvantage.Value;
                 TechnicalParameter = hfTechnicalParameter.Value;
                 return;
@@ -345,7 +426,7 @@ namespace YingShiDa.ProductCenter
                     }
                     else
                     {
-                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择",2);
+                        Common.MessageBox.ShowLayer(this, "上传文件必须小于1M ！请重新选择", 2);
                         return;
                     }
                 }
@@ -357,7 +438,7 @@ namespace YingShiDa.ProductCenter
             }
             else
             {
-                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件",2);
+                Common.MessageBox.ShowLayer(this, "请选择需要上传的文件", 2);
                 return;
             }
         }
@@ -426,15 +507,15 @@ namespace YingShiDa.ProductCenter
                 Directory.CreateDirectory(webPath);
             }
             var files = Request.Files;
-            if (files != null && files.Count > 0&&files.AllKeys.Length==1&&files.AllKeys[0]== "fileInput")
+            if (files != null && files.Count > 0 && files.AllKeys.Length == 1 && files.AllKeys[0] == "fileInput")
             {
                 for (int i = 0; i < files.Count; i++)
                 {
                     int startIndex = files[i].FileName.LastIndexOf('.');
-                    var strs = files[i].FileName.Substring(startIndex+1, files[i].FileName.Length- startIndex-1);
+                    var strs = files[i].FileName.Substring(startIndex + 1, files[i].FileName.Length - startIndex - 1);
                     string FileName = Guid.NewGuid().ToString("N") + "." + strs.ToLower();
                     files[i].SaveAs(webPath + FileName);
-                    string pf= ProductFile;
+                    string pf = ProductFile;
                     if (!string.IsNullOrEmpty(pf))
                     {
                         ProductFile = pf + "," + FileName;
@@ -446,6 +527,65 @@ namespace YingShiDa.ProductCenter
                 }
             }
         }
+
+        #region 添加关联产品
+        protected void btnAddProductRelation_Click(object sender, EventArgs e)
+        {
+            Advantage = hfAdvantage.Value;
+            TechnicalParameter = hfTechnicalParameter.Value;
+            if (ddlProductRelation.Items.Count <= 0)
+            {
+                Common.MessageBox.Show(this, "不存在关联产品！");
+                return;
+            }
+            foreach (ListItem item in lbMemberGroupID.Items)
+            {
+                if (item.Value == ddlProductRelation.SelectedItem.Value)
+                {
+                    Common.MessageBox.Show(this, "不允许添加重复的关联产品！");
+                    return;
+                }
+            };
+            if (!lbMemberGroupID.Items.Contains(new ListItem("-全部-", "")))
+            {
+                if (!string.IsNullOrEmpty(ddlProductRelation.SelectedValue))
+                {
+                    lbMemberGroupID.Items.Add(new ListItem { Text = ddlProductRelation.SelectedItem.Text, Value = ddlProductRelation.SelectedItem.Value });
+                }
+                else
+                {
+                    for (int i = 0; i < lbMemberGroupID.Items.Count; i++)
+                    {
+                        lbMemberGroupID.Items.Remove(lbMemberGroupID.Items[i]);
+                    }
+                    lbMemberGroupID.Items.Add(new ListItem { Text = ddlProductRelation.SelectedItem.Text, Value = ddlProductRelation.SelectedItem.Value });
+                    ddlProductRelation.Enabled = false;
+                    ddlProductRelation.BackColor = System.Drawing.Color.LightSlateGray;
+                }
+            }
+
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            Advantage = hfAdvantage.Value;
+            TechnicalParameter = hfTechnicalParameter.Value;
+            if (lbMemberGroupID.SelectedIndex > -1)
+            {
+                lbMemberGroupID.Items.Remove(lbMemberGroupID.SelectedItem);
+                if (!lbMemberGroupID.Items.Contains(new ListItem("-全部-", "")))
+                {
+                    ddlProductRelation.Enabled = true;
+                    ddlProductRelation.BackColor = System.Drawing.Color.White;
+                }
+
+            }
+            else
+            {
+                Common.MessageBox.Show(this, "请选择要删除的关联产品！");
+            }
+        }
+        #endregion
 
         #region 上传文件
         private string[] UpdateLogo(out string code)
@@ -568,7 +708,7 @@ namespace YingShiDa.ProductCenter
                     geshi += item + ",";
                 }
                 geshi = geshi.TrimEnd(',');
-                Common.MessageBox.ShowLayer(this, "上传文件类型不正确，只支持以下类型"+ geshi, 2);
+                Common.MessageBox.ShowLayer(this, "上传文件类型不正确，只支持以下类型" + geshi, 2);
                 return string.Empty;
             }
             //Stream stream = fu.PostedFile.InputStream;
@@ -587,7 +727,7 @@ namespace YingShiDa.ProductCenter
             {
                 Directory.CreateDirectory(WebSite.IMAGESERVER_LOCALPATH + FileTempPath);
             }
-            string fileName = Guid.NewGuid().ToString("N") +"."+ type;
+            string fileName = Guid.NewGuid().ToString("N") + "." + type;
             fu.SaveAs(WebSite.IMAGESERVER_LOCALPATH + FileTempPath + fileName);
             return WebSite.IMAGESERVER_WEBPATH + FileTempPath + fileName;
         }
@@ -629,6 +769,25 @@ namespace YingShiDa.ProductCenter
             }
         }
         #endregion
+
         #endregion
+
+        protected void Chinese_CheckedChanged(object sender, EventArgs e)
+        {
+            BindProductModel();
+            BindRelation();
+        }
+
+        protected void English_CheckedChanged(object sender, EventArgs e)
+        {
+            BindProductModel();
+            BindRelation();
+        }
+
+        protected void Traditional_CheckedChanged(object sender, EventArgs e)
+        {
+            BindProductModel();
+            BindRelation();
+        }
     }
 }

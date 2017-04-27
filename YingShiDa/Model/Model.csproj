@@ -93,6 +93,9 @@
     <Compile Include="ProductCenterModel.cs">
       <DependentUpon>YingShiDa.tt</DependentUpon>
     </Compile>
+    <Compile Include="ProductRelation.cs">
+      <DependentUpon>YingShiDa.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recruitment.cs">
       <DependentUpon>YingShiDa.tt</DependentUpon>

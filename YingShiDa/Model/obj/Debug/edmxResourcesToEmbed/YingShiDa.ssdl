@@ -201,6 +201,14 @@
     <Property Name="UpdateTime" Type="datetime" />
     <Property Name="Language" Type="int" />
   </EntityType>
+  <EntityType Name="ProductRelation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductDetailID" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="ProductID" Type="nvarchar" MaxLength="30" Nullable="false" />
+  </EntityType>
   <EntityType Name="Recruitment">
     <Key>
       <PropertyRef Name="ID" />
@@ -293,6 +301,7 @@
     <EntitySet Name="ProductCenter" EntityType="Self.ProductCenter" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductCenterDetail" EntityType="Self.ProductCenterDetail" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ProductCenterModel" EntityType="Self.ProductCenterModel" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductRelation" EntityType="Self.ProductRelation" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Recruitment" EntityType="Self.Recruitment" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Service_Concept" EntityType="Self.Service_Concept" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Staff_Presence" EntityType="Self.Staff_Presence" Schema="dbo" store:Type="Tables" />

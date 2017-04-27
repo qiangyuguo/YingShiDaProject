@@ -41,6 +41,7 @@ namespace Model
         public virtual DbSet<ProductCenter> ProductCenters { get; set; }
         public virtual DbSet<ProductCenterDetail> ProductCenterDetails { get; set; }
         public virtual DbSet<ProductCenterModel> ProductCenterModels { get; set; }
+        public virtual DbSet<ProductRelation> ProductRelations { get; set; }
         public virtual DbSet<Recruitment> Recruitments { get; set; }
         public virtual DbSet<Service_Concept> Service_Concept { get; set; }
         public virtual DbSet<Staff_Presence> Staff_Presence { get; set; }

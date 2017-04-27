@@ -216,6 +216,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ProductRelations">
+      <EntityTypeMapping TypeName="YingShiDaModel.ProductRelation">
+        <MappingFragment StoreEntitySet="ProductRelation">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductDetailID" ColumnName="ProductDetailID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Recruitments">
       <EntityTypeMapping TypeName="YingShiDaModel.Recruitment">
         <MappingFragment StoreEntitySet="Recruitment">

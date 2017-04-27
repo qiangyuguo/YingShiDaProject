@@ -14,13 +14,13 @@ namespace DAL
     public static class GetDataTable
     {
         #region 单表datatable
-        public static DataTable GetList<T>(string Title,string startDate, string endDate, int pageNumber, int pageSize, out int pageCount, out int rowCount, DBOperationManagment dbm)
+        public static DataTable GetList<T>(string Title, string startDate, string endDate, int pageNumber, int pageSize, out int pageCount, out int rowCount, DBOperationManagment dbm)
         {
             Type type = typeof(T);
             object obj = Activator.CreateInstance(type);
             string tableName = obj.GetType().Name;
             StringBuilder strSql = new StringBuilder();
-            strSql.Append(@"select * from "+ tableName + " t1 where 1=1 ");
+            strSql.Append(@"select * from " + tableName + " t1 where 1=1 ");
 
             if (!string.IsNullOrEmpty(Title))
             {
@@ -63,7 +63,7 @@ namespace DAL
         #endregion
 
         #region 得到产品中心列表
-        public static DataTable GetProductList(string Title,int ProductType, string startDate, string endDate, int pageNumber, int pageSize, out int pageCount, out int rowCount, DBOperationManagment dbm)
+        public static DataTable GetProductList(string Title, int ProductType, string startDate, string endDate, int pageNumber, int pageSize, out int pageCount, out int rowCount, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append(@" select distinct pc.*,stuff((select ','+pcm.ProductModel from 
@@ -180,7 +180,7 @@ where 1=1 ");
         #endregion
 
         #region 根据产品名称和型号得到产品列表
-        public static DataTable GetProductModelAndName(int Language, string ProductModel,string ProductTitle, DBOperationManagment dbm)
+        public static DataTable GetProductModelAndName(int Language, string ProductModel, string ProductTitle, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append(@" select pcm.ProductModel,pcD.*,pc.ProductTitle
@@ -221,7 +221,12 @@ where 1=1 ");
         public static DataTable GetProductDetailList(string Title, int ProductType, string startDate, string endDate, int pageNumber, int pageSize, out int pageCount, out int rowCount, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append(@" select pcd.*,pcm.ProductModel from ProductCenterDetail pcd
+            strSql.Append(@" select pcd.*,pcm.ProductModel,
+stuff((select ','+pc.ProductTitle from 
+ProductRelation pr
+inner join ProductCenter pc on pr.ProductID=pc.ProductID
+where pr.ProductDetailID=pcd.ProductDetailID for xml path('')),1,1,'') 
+ProductRelation from ProductCenterDetail pcd
 inner join ProductCenterModel pcm on pcd.ProductModelID=pcm.ProductModelID
 inner join ProductCenter pc on pcm.ProductID=pc.ProductID where 1=1 ");
 
@@ -270,17 +275,39 @@ inner join ProductCenter pc on pcm.ProductID=pc.ProductID where 1=1 ");
         #endregion
 
         #region 得到指定产品的产品型号
-        public static DataTable GetProductModel(int ProductType, DBOperationManagment dbm)
+        public static DataTable GetProductModel(int Language, int ProductType, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
             strSql.Append(@"select MAX(pc.UpdateTime),pcm.ProductModelID,pcm.ProductModel from ProductCenter pc
 inner join ProductCenterModel pcm on pc.ProductID=pcm.ProductID
 where 1=1  ");
-            if (ProductType!=0)
+            if (ProductType != 0)
             {
-                strSql.Append(" and pc.ProductType ="+ ProductType);
+                strSql.AppendFormat(" and pc.ProductType={0} and pc.Language={1} ", ProductType, Language == 0 ? 1 : Language);
             }
             strSql.Append(" group by pcm.ProductModelID,pcm.ProductModel ");
+            QueryData exec = new QueryData();
+            exec.SqlCommand = strSql.ToString();
+            exec.Parameters = null;
+
+            dbm.Execute(exec);
+            if (exec.ResultData != null && exec.ResultData.Tables != null && exec.ResultData.Tables.Count > 0)
+            {
+                return exec.ResultData.Tables[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region 得到所有产品列表
+        public static DataTable GetProductRelation(int Language, DBOperationManagment dbm)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append(@"select * from ProductCenter pc where 1=1  ");
+            strSql.AppendFormat(" and pc.Language={0} ", Language == 0 ? 1 : Language);
             QueryData exec = new QueryData();
             exec.SqlCommand = strSql.ToString();
             exec.Parameters = null;
@@ -367,6 +394,33 @@ where 1=1  ");
         #endregion
         #endregion
 
+        #region 得到与产品详情ID关联的产品
+        public static DataTable GetProductDetailRelation(string ProductDetailID, DBOperationManagment dbm)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append(@"select pr.ProductID,pc.ProductTitle from ProductCenterDetail pcd
+inner join ProductRelation pr on pcd.ProductDetailID=pr.ProductDetailID
+inner join ProductCenter pc on pr.ProductID=pc.ProductID where 1=1  ");
+            if (!string.IsNullOrEmpty(ProductDetailID))
+            {
+                strSql.AppendFormat(" and pcd.ProductDetailID='{0}' ", ProductDetailID);
+            }
+            QueryData exec = new QueryData();
+            exec.SqlCommand = strSql.ToString();
+            exec.Parameters = null;
+
+            dbm.Execute(exec);
+            if (exec.ResultData != null && exec.ResultData.Tables != null && exec.ResultData.Tables.Count > 0)
+            {
+                return exec.ResultData.Tables[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+        #endregion
+
         #region 根据产品ID删除产品型号
         public static bool Delete<T>(string ProductID)
         {
@@ -379,6 +433,37 @@ where 1=1  ");
                 strSql.Append("delete from [" + obj.GetType().Name + "] where ProductID=@ProductID");
                 SqlParameter[] sqlParameter = {
                 new SqlParameter("@ProductID",SqlDbType.NVarChar,30) {Value=ProductID }
+            };
+                int val = ExecutionMethod.ExecuteNonQuery(strSql.ToString(), sqlParameter);
+                if (val > 0)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogTool.LogWriter.WriteError("查询失败：" + ex.ToString());
+            }
+            return true;
+        }
+        #endregion
+
+        #region 根据产品详情ID删除所有关联产品
+        public static bool DeleteProductRelation<T>(string ProductDetailID)
+        {
+            try
+            {
+                // 插入到数据库中
+                Type type = typeof(T);
+                object obj = Activator.CreateInstance(type);
+                StringBuilder strSql = new StringBuilder();
+                strSql.Append("delete from [" + obj.GetType().Name + "] where ProductDetailID=@ProductDetailID");
+                SqlParameter[] sqlParameter = {
+                new SqlParameter("@ProductDetailID",SqlDbType.NVarChar,30) {Value=ProductDetailID }
             };
                 int val = ExecutionMethod.ExecuteNonQuery(strSql.ToString(), sqlParameter);
                 if (val > 0)

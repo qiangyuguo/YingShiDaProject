@@ -167,6 +167,17 @@
             document.getElementById(id).click();
         }
 
+        function AddRelation()
+        {
+            $("#hfAdvantage").val(um1.getContent());
+            $("#hfTechnicalParameter").val(um2.getContent());
+        }
+
+        function DeleteRelation() {
+            $("#hfAdvantage").val(um1.getContent());
+            $("#hfTechnicalParameter").val(um2.getContent());
+        }
+
         function showPhotoChange(obj) {
             var id = obj.id;
             id = id.replace('FileUpload2', 'btnUploadShowPhoto1');
@@ -356,9 +367,9 @@
                                         <label class="control-label col-md-1 ">语言</label>
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
-                                            <asp:RadioButton runat="server" ID="Chinese" GroupName="language" value="1" Checked="true" /><em class="tit">中文</em>
-                                            <asp:RadioButton ID="English" runat="server" GroupName="language" value="2" /><em class="tit">英文</em>
-                                            <asp:RadioButton ID="Traditional" runat="server" GroupName="language" value="3"/><em class="tit">繁体</em>
+                                            <asp:RadioButton runat="server" ID="Chinese" GroupName="language" value="1" Checked="true" OnCheckedChanged="Chinese_CheckedChanged" AutoPostBack="true" /><em class="tit">中文</em>
+                                            <asp:RadioButton ID="English" runat="server" GroupName="language" value="2" OnCheckedChanged="English_CheckedChanged" AutoPostBack="true" /><em class="tit">英文</em>
+                                            <asp:RadioButton ID="Traditional" runat="server" GroupName="language" value="3" OnCheckedChanged="Traditional_CheckedChanged" AutoPostBack="true" /><em class="tit">繁体</em>
                                         </div>
                                     </div>
 
@@ -415,6 +426,28 @@
                                         <span class="red-xing" style="margin-left: 6.7px"></span>
                                         <div class="col-md-10">
                                             <asp:TextBox ID="txtCreatePeople" MaxLength="15" onkeyup="value=value.replace(/[&*%$#]/g,'')" onkeypress="return keyPress()" runat="server" CssClass="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1">关联产品</label>
+                                        <span class="red-xing">*</span>
+                                        <div class="col-md-6">
+                                            <asp:DropDownList ID="ddlProductRelation" runat="server" CssClass="form-control"></asp:DropDownList>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <asp:Button ID="btnAddProductRelation" runat="server" CssClass="stati-derived br4 stati-tool-item dc-btn" Style="width: 100px; margin-bottom: 0px; margin-left: 10px;" Text="添加关联产品" OnClick="btnAddProductRelation_Click" OnClientClick="AddRelation()" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1">已选关联产品</label>
+                                        <span class="red-xing">*</span>
+                                        <div class="col-md-6">
+                                            <asp:ListBox ID="lbMemberGroupID" runat="server" CssClass="form-control"></asp:ListBox>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <asp:Button ID="btnDelete" runat="server" CssClass="stati-derived br4 stati-tool-item dc-btn" Style="margin-bottom: 0px; margin-left: 10px;" Text="删除" OnClick="btnDelete_Click" OnClientClick="DeleteRelation()" />
                                         </div>
                                     </div>
 
@@ -479,8 +512,8 @@
 
                                                                         <div class="file-preview-frame">
                                                                             <div class="kv-file-content">
-                                                                                <asp:Image runat="server" ID="Image2" CssClass="kv-preview-data file-preview-image" Style="width: auto; height: 160px;" ImageUrl="../Photo/UploadFile.png"/>
-                                                                                <asp:Image runat="server" ID="Image1" CssClass="kv-preview-data file-preview-image" Style="width: auto; height: 160px;position: absolute;top: 0px;left: 0px;opacity: -0.5;" ImageUrl="<%# Container.DataItem %>" onclick="showPhotoClick(this);" />
+                                                                                <asp:Image runat="server" ID="Image2" CssClass="kv-preview-data file-preview-image" Style="width: auto; height: 160px;" ImageUrl="../Photo/UploadFile.png" />
+                                                                                <asp:Image runat="server" ID="Image1" CssClass="kv-preview-data file-preview-image" Style="width: auto; height: 160px; position: absolute; top: 0px; left: 0px; opacity: -0.5;" ImageUrl="<%# Container.DataItem %>" onclick="showPhotoClick(this);" />
                                                                                 <asp:FileUpload runat="server" ID="FileUpload2" ToolTip="Show" CssClass="hidden" onchange="showPhotoChange(this);" />
                                                                                 <asp:Button runat="server" ID="btnUploadShowPhoto1" Text="上传" CssClass="hidden" CommandName="Upload" />
                                                                                 <asp:HiddenField ID="HiddenField1" runat="server" />
@@ -499,7 +532,7 @@
                                                                         </div>
                                                                     </ItemTemplate>
                                                                 </asp:Repeater>
-                                                                 <%
+                                                                <%
                                                                     }
                                                                 %>
                                                             </div>
@@ -560,7 +593,6 @@
                                 <script type="text/javascript" src="../Content/Js/Upload/fileinput_locale_zh.js"></script>
                                 <script type="text/javascript" src="../Content/Js/Upload/respond.js"></script>
                                 <script type="text/javascript">
-                                    alert(11);
                                     //实例化编辑器
                                     var um1 = UM.getEditor('txtAdvantage');
                                     var um2 = UM.getEditor('txtTechnicalParameter');
