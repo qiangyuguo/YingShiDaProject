@@ -160,6 +160,8 @@
         }
 
         function showPhotoClick(obj) {
+            $("#hfAdvantage").val(um1.getContent());
+            $("#hfTechnicalParameter").val(um2.getContent());
             var id = obj.id;
             id = id.replace('Image1', 'FileUpload2');
             document.getElementById(id).click();
@@ -558,6 +560,7 @@
                                 <script type="text/javascript" src="../Content/Js/Upload/fileinput_locale_zh.js"></script>
                                 <script type="text/javascript" src="../Content/Js/Upload/respond.js"></script>
                                 <script type="text/javascript">
+                                    alert(11);
                                     //实例化编辑器
                                     var um1 = UM.getEditor('txtAdvantage');
                                     var um2 = UM.getEditor('txtTechnicalParameter');
