@@ -17,7 +17,6 @@
     <Menu name="闭环步进电机" key="BHBJDJ" value="/ProductCenter/ServoDriver.aspx?ProductType=5" />
     <Menu name="直线步进电机" key="ZXBJDJ" value="/ProductCenter/ServoDriver.aspx?ProductType=6" />
     <Menu name="步进电机" key="BJDJ" value="/ProductCenter/ServoDriver.aspx?ProductType=7"/>
-    <Menu name="日本SANYO山洋步进电机" key="SYBJDJ" value="/ProductCenter/ServoDriver.aspx?ProductType=8"/>
     <Menu name="其他产品" key="QTCP" value="/ProductCenter/ServoDriver.aspx?ProductType=9" />
   </Menu>
   <Menu name="技术支持" key="JSZC" value="">

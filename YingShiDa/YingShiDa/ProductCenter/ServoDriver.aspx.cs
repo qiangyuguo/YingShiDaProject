@@ -15,8 +15,8 @@ namespace YingShiDa.ProductCenter
         {
             if (!IsPostBack)
             {
-                txtPurchaseStart.Value = DateTime.Now.ToString("yyyy-MM-dd");
-                txtPurchaseEnd.Value = DateTime.Now.ToString("yyyy-MM-dd");
+                //txtPurchaseStart.Value = DateTime.Now.ToString("yyyy-MM-dd");
+                //txtPurchaseEnd.Value = DateTime.Now.ToString("yyyy-MM-dd");
                 BindData();
             }
         }
@@ -63,6 +63,7 @@ namespace YingShiDa.ProductCenter
                             return;
                         }
                     }
+                    
                     DataTable dt = DAL.GetDataTable.GetProductList(Title, ProductType, startDate, endDate, AspNetPager2.CurrentPageIndex,AspNetPager2.PageSize, out pageCount, out rowCount, dbm);
                     if (null != dt)
                     {
@@ -113,9 +114,9 @@ namespace YingShiDa.ProductCenter
                             int ID = 0;
                             if (Int32.TryParse(IDValue, out ID))
                             {
-                                if (Factory.GetExecution().Delete<Model.ProductCenter>(ID))
+                                Model.ProductCenter pc = Factory.GetExecution().SelectByID<Model.ProductCenter>(ID);
+                                if (pc!=null&&Factory.GetExecution().Delete<Model.ProductCenter>(ID))
                                 {
-                                    Model.ProductCenter pc = Factory.GetExecution().SelectByID<Model.ProductCenter>(ID);
                                     if (DAL.GetDataTable.Delete<Model.ProductCenterModel>(pc.ProductID))
                                     {
                                         Common.MessageBox.ShowLayer(this, "删除成功！", 1);

@@ -2,3 +2,8 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\bin\Release\DataConvete
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\bin\Release\DataConveter.pdb
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\obj\Release\DataConveter.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\DataConveter\obj\Release\DataConveter.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\bin\Release\DataConveter.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\bin\Release\DataConveter.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Release\DataConveter.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Release\DataConveter.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\DataConveter\obj\Release\DataConveter.pdb

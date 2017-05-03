@@ -3,3 +3,9 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\bin\Release\LogTool.pdb
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\bin\Release\log4net.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\obj\Release\LogTool.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\LogTool\obj\Release\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\bin\Release\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\bin\Release\LogTool.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\bin\Release\log4net.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Release\LogTool.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Release\LogTool.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\LogTool\obj\Release\LogTool.pdb

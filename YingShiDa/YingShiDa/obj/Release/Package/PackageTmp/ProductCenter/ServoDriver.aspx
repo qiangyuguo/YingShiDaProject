@@ -83,7 +83,7 @@
             var ProductType = getUrlParam("ProductType");
             $.PE_FrameTab.AddNew('/ProductCenter/ServoDriverAdd.aspx?action=notify&ID=' + ID + "&ProductType=" + ProductType, "修改");
         }
-        
+
         function Add() {
             var ProductType = getUrlParam("ProductType");
             $.PE_FrameTab.AddNew('/ProductCenter/ServoDriverAdd.aspx?ProductType=' + ProductType, '添加');
@@ -222,7 +222,7 @@
                                 <script type="text/javascript">
                                     $(document).ready(function () {
                                         var ProductType = getUrlParam("ProductType");
-                                        $("iframe").attr("src","/ProductCenter/ServoDriverDetail.aspx?ProductType=" + ProductType+"");
+                                        $("iframe").attr("src", "/ProductCenter/ServoDriverDetail.aspx?ProductType=" + ProductType + "");
                                     });
                                 </script>
                             </div>

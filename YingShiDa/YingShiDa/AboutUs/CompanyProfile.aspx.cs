@@ -15,8 +15,8 @@ namespace YingShiDa.AboutUs
         {
             if (!IsPostBack)
             {
-                txtPurchaseStart.Value = DateTime.Now.ToString("yyyy-MM-dd");
-                txtPurchaseEnd.Value = DateTime.Now.ToString("yyyy-MM-dd");
+                //txtPurchaseStart.Value = DateTime.Now.ToString("yyyy-MM-dd");
+                //txtPurchaseEnd.Value = DateTime.Now.ToString("yyyy-MM-dd");
                 BindData();
             }
         }

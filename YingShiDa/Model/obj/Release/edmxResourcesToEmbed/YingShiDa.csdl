@@ -201,6 +201,14 @@
     <Property Name="UpdateTime" Type="DateTime" Precision="3" />
     <Property Name="Language" Type="Int32" />
   </EntityType>
+  <EntityType Name="ProductRelation">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductDetailID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ProductID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
   <EntityType Name="Recruitment">
     <Key>
       <PropertyRef Name="ID" />
@@ -286,6 +294,7 @@
     <EntitySet Name="ProductCenters" EntityType="Self.ProductCenter" />
     <EntitySet Name="ProductCenterDetails" EntityType="Self.ProductCenterDetail" />
     <EntitySet Name="ProductCenterModels" EntityType="Self.ProductCenterModel" />
+    <EntitySet Name="ProductRelations" EntityType="Self.ProductRelation" />
     <EntitySet Name="Recruitments" EntityType="Self.Recruitment" />
     <EntitySet Name="Service_Concept" EntityType="Self.Service_Concept" />
     <EntitySet Name="Staff_Presence" EntityType="Self.Staff_Presence" />

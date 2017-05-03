@@ -63,7 +63,16 @@ function ProductAdd()
 
 function delProductModel(obj)
 {
+    $("#hfHtml").val("");
     $(obj).parent().parent().remove();
+    $("#AddProductModel tr:eq(0)").nextAll().find("td:eq(0)").each(function (index, item) {
+        var hfHtml = $("#hfHtml").val();
+        if (hfHtml != "") {
+            $("#hfHtml").val(hfHtml + "," + $(item).text());
+        } else {
+            $("#hfHtml").val($(item).text());
+        }
+    });
 }
 
 function checkSave()
@@ -72,6 +81,14 @@ function checkSave()
     var arrList = new Array();
 
     var hfHtml = $("#hfHtml").val().split(',');
+    if (hfHtml[0] == "" && aa=="")
+    {
+        layer.alert("型号不能为空!", {
+            icon: 2,
+            offset:'10%'
+        });
+        return false;
+    }
     for (var i = 0; i < hfHtml.length; i++) {
         arrList.push({ productModel: hfHtml[i] });
     }

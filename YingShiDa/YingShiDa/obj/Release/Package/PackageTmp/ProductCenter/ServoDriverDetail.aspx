@@ -167,6 +167,7 @@
                                                             <th style="min-width: 80px; width: auto">产品型号</th>
                                                             <th style="min-width: 80px; width: auto">系列</th>
                                                             <th style="min-width: 80px; width: auto">步距角</th>
+                                                            <th style="min-width: 80px; width: auto">关联产品</th>
                                                             <th style="min-width: 80px; width: auto">更新时间</th>
                                                             <th style="min-width: 80px; width: auto">操作</th>
                                                         </tr>
@@ -188,6 +189,9 @@
                                                         </td>
                                                         <td>
                                                             <asp:Literal ID="Literal4" runat="server" Text='<%#Eval("ClothAngle")%>'></asp:Literal>&nbsp;
+                                                        </td>
+                                                        <td>
+                                                            <asp:Literal ID="Literal5" runat="server" Text='<%#Eval("ProductRelation")%>'></asp:Literal>&nbsp;
                                                         </td>
                                                         <td>
                                                             <asp:Literal ID="Literal6" runat="server" Text='<%#String.Format("{0:yyyy-MM-dd HH:mm:ss}",Eval("UpdateTime"))%>'></asp:Literal>&nbsp;

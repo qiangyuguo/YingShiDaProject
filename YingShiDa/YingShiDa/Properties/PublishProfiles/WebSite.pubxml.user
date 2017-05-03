@@ -46,19 +46,19 @@
       <publishTime>03/31/2017 10:48:00</publishTime>
     </File>
     <File Include="bin/Common.dll">
-      <publishTime>04/10/2017 14:16:50</publishTime>
+      <publishTime>05/02/2017 21:49:46</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>04/12/2017 23:08:30</publishTime>
+      <publishTime>05/03/2017 11:47:58</publishTime>
     </File>
     <File Include="bin/DataConveter.dll">
-      <publishTime>04/10/2017 14:11:30</publishTime>
+      <publishTime>05/02/2017 21:49:44</publishTime>
     </File>
     <File Include="bin/DBOperation.dll">
-      <publishTime>04/10/2017 14:16:50</publishTime>
+      <publishTime>05/02/2017 21:49:46</publishTime>
     </File>
     <File Include="bin/DBUtility.dll">
-      <publishTime>04/10/2017 14:11:30</publishTime>
+      <publishTime>05/02/2017 21:49:44</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
       <publishTime>04/10/2017 14:11:34</publishTime>
@@ -67,10 +67,10 @@
       <publishTime>04/10/2017 14:11:30</publishTime>
     </File>
     <File Include="bin/LogTool.dll">
-      <publishTime>04/10/2017 14:11:30</publishTime>
+      <publishTime>05/02/2017 21:49:44</publishTime>
     </File>
     <File Include="bin/Method.dll">
-      <publishTime>04/12/2017 23:08:28</publishTime>
+      <publishTime>05/02/2017 21:49:46</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
       <publishTime>03/31/2017 10:48:22</publishTime>
@@ -97,13 +97,13 @@
       <publishTime>03/31/2017 10:48:26</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>04/10/2017 14:11:36</publishTime>
+      <publishTime>04/28/2017 11:05:40</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>11/18/2016 09:27:44</publishTime>
     </File>
     <File Include="bin/PlatformManagment.dll">
-      <publishTime>04/10/2017 14:16:56</publishTime>
+      <publishTime>05/02/2017 21:49:46</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
       <publishTime>03/31/2017 10:48:28</publishTime>
@@ -142,10 +142,10 @@
       <publishTime>03/31/2017 10:48:28</publishTime>
     </File>
     <File Include="bin/RuleUtility.dll">
-      <publishTime>04/10/2017 14:16:52</publishTime>
+      <publishTime>05/02/2017 21:49:46</publishTime>
     </File>
     <File Include="bin/YingShiDa.dll">
-      <publishTime>04/16/2017 12:38:14</publishTime>
+      <publishTime>05/03/2017 11:48:02</publishTime>
     </File>
     <File Include="bin/zh-Hans/EntityFramework.resources.dll">
       <publishTime>04/10/2017 14:11:36</publishTime>
@@ -175,7 +175,7 @@
       <publishTime>04/06/2017 14:36:26</publishTime>
     </File>
     <File Include="Config/BusinessAreaMenu.xml">
-      <publishTime>03/31/2017 15:42:20</publishTime>
+      <publishTime>05/03/2017 11:47:18</publishTime>
     </File>
     <File Include="Config/BusinessAreaMenuEN.xml">
       <publishTime>04/06/2017 12:52:56</publishTime>
@@ -211,7 +211,7 @@
       <publishTime>03/31/2017 10:46:48</publishTime>
     </File>
     <File Include="Content/bootStrap/CSS/common.css">
-      <publishTime>04/06/2017 13:59:56</publishTime>
+      <publishTime>04/27/2017 11:41:22</publishTime>
     </File>
     <File Include="Content/bootStrap/CSS/datatables.css">
       <publishTime>03/31/2017 10:46:48</publishTime>
@@ -7507,7 +7507,7 @@
       <publishTime>03/31/2017 10:47:56</publishTime>
     </File>
     <File Include="Login.aspx">
-      <publishTime>04/01/2017 11:29:38</publishTime>
+      <publishTime>04/27/2017 11:42:06</publishTime>
     </File>
     <File Include="Main.aspx">
       <publishTime>04/06/2017 13:48:28</publishTime>
@@ -7537,16 +7537,16 @@
       <publishTime>07/11/2014 22:22:46</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriver.aspx">
-      <publishTime>04/11/2017 22:45:40</publishTime>
+      <publishTime>05/03/2017 10:42:32</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriverAdd.aspx">
-      <publishTime>04/06/2017 14:41:16</publishTime>
+      <publishTime>05/03/2017 11:42:46</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriverDetail.aspx">
-      <publishTime>04/11/2017 22:45:40</publishTime>
+      <publishTime>04/27/2017 12:25:22</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriverDetailAdd.aspx">
-      <publishTime>04/06/2017 14:42:20</publishTime>
+      <publishTime>05/03/2017 10:15:44</publishTime>
     </File>
     <File Include="scripts/ai.0.15.0-build58334.js">
       <publishTime>03/31/2017 10:48:14</publishTime>
@@ -7558,7 +7558,7 @@
       <publishTime>03/31/2017 10:48:14</publishTime>
     </File>
     <File Include="scripts/XxscProductAdd.js">
-      <publishTime>04/11/2017 22:58:26</publishTime>
+      <publishTime>05/03/2017 11:40:50</publishTime>
     </File>
     <File Include="TechnicalSupport/MemberList.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
@@ -7576,7 +7576,7 @@
       <publishTime>03/31/2017 10:47:58</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>04/16/2017 12:38:28</publishTime>
+      <publishTime>05/03/2017 11:48:20</publishTime>
     </File>
   </ItemGroup>
 </Project>

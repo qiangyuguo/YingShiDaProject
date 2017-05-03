@@ -101,6 +101,7 @@
                 $('#HomePageUpload').click();
             });
 
+
             //正文图片上传
             $('#TextUploadImg').click(function () {
                 $('#TextUpload').click();
@@ -172,8 +173,15 @@
             $("#hfAdvantage").val(um1.getContent());
             $("#hfTechnicalParameter").val(um2.getContent());
         }
-
+        //删除附件
         function DeleteRelation() {
+            $("#hfAdvantage").val(um1.getContent());
+            $("#hfTechnicalParameter").val(um2.getContent());
+        }
+
+
+        function DelFile()
+        {
             $("#hfAdvantage").val(um1.getContent());
             $("#hfTechnicalParameter").val(um2.getContent());
         }
@@ -521,7 +529,7 @@
                                                                             <div class="file-thumbnail-footer">
                                                                                 <div class="file-actions">
                                                                                     <div class="file-footer-buttons">
-                                                                                        <asp:ImageButton runat="server" ID="showdel" CommandName="Del" ImageUrl="../Content/images/HeigthDelete.jpg" />
+                                                                                        <asp:ImageButton runat="server" ID="showdel" OnClientClick="DelFile()" CommandName="Del" ImageUrl="../Content/images/HeigthDelete.jpg" />
                                                                                         <%--<button type="button" class="kv-file-remove btn btn-xs btn-default" title="删除文件">
                                                                                             <i class="glyphicon glyphicon-trash text-danger"></i>
                                                                                         </button>--%>

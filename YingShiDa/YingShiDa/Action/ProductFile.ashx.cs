@@ -64,11 +64,11 @@ namespace YingShiDa.Action
                     case "homepagecarousel": GetHomePageCarousel(context); break;//首页轮播图片
                     case "teamcarousel": GetTeamCarousel(context); break;//团队轮播图片
 
-                    case "productphoto": GetProductPhoto(context); break;//得到所有产品图片
+                    case "productphoto": GetProductPhoto(context); break;//得到所有产品列表
 
-                    case "productdetail": GetProductDetail(context); break;//得到指定产品的详情
+                    case "productdetail": GetProductDetail(context); break;//根据ID字段得到产品详情
 
-                    case "productdetailbyid": GetProductDetailByID(context); break;//根据详情ID得到产品的详情
+                    case "productdetailbyid": GetProductDetailByID(context); break;//根据ProductID得到产品分类的产品详情
 
                     case "productmodelandname": GetProductModelAndName(context); break;//根据产品型号和产品名称得到产品列表
 

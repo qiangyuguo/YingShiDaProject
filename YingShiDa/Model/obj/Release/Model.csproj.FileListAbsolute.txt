@@ -9,3 +9,14 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\bin\Release\zh-Hans\EntityFram
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\obj\Release\Model.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\Model\obj\Release\Model.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\Model.dll.config
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\Model.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\Model.pdb
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\EntityFramework.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\EntityFramework.SqlServer.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\EntityFramework.xml
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\EntityFramework.SqlServer.xml
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\bin\Release\zh-Hans\EntityFramework.resources.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Release\Model.dll
+F:\其他\项目\YinShiDaProject\YingShiDa\Model\obj\Release\Model.pdb

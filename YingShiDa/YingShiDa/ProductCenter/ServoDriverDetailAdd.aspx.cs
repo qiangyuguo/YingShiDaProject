@@ -206,11 +206,6 @@ namespace YingShiDa.ProductCenter
                     Common.MessageBox.ShowLayer(this, "特点和优点不能为空", 2);
                     return;
                 }
-                if (Advantage.Length > 100)
-                {
-                    Common.MessageBox.ShowLayer(this, "特点和优点长度不能超过100个字符", 2);
-                    return;
-                }
                 if (string.IsNullOrEmpty(TechnicalParameter))
                 {
                     Common.MessageBox.ShowLayer(this, "技术参数不能为空", 2);

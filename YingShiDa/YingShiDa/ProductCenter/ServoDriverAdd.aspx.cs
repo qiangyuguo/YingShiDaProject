@@ -92,6 +92,7 @@ namespace YingShiDa.ProductCenter
         protected void btnSave_Click(object sender, EventArgs e)
         {
             int ProductType = Convert.ToInt32(Request["ProductType"]);
+            int Language = Convert.ToInt32(Request.Form["language"]);
             DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
             try
             {
@@ -101,14 +102,19 @@ namespace YingShiDa.ProductCenter
                     Model.ProductCenter cp = Factory.GetExecution().SelectByID<Model.ProductCenter>(requestID);
                     if (cp != null)
                     {
-                        cp.Language = Convert.ToInt32(Request.Form["language"]);
+                        List<Model.ProductCenter> pcList = Factory.GetExecution().GetByWhereSqlList<Model.ProductCenter>(" and ProductType=" + ProductType + " and Language=" + Language, " UpdateTime desc");
+                        if (pcList != null && pcList.Count > 0&&cp.Language!= Language)
+                        {
+                            Common.MessageBox.ShowLayer(this, "同一种语言只能新建一个产品分类!", 2);
+                            return;
+                        }
+                        cp.Language = Language;
                         cp.ProductTitle = txtTitle.Text;
                         cp.CreatetPeople = txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.CreatetPeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
-                        bool flag = Factory.GetExecution().Update<Model.ProductCenter>(cp);
-                        bool flag2 = false;
+                        bool flag2 = true;
                         //flag2 = DAL.GetDataTable.Delete<Model.ProductCenterModel>(cp.ProductID);
 
                         if (!string.IsNullOrEmpty(hfArrList.Value))
@@ -116,15 +122,20 @@ namespace YingShiDa.ProductCenter
                             List<Prm> list = JsonConvert.DeserializeObject<List<Prm>>(hfArrList.Value);
                             foreach (Prm item in list)
                             {
-                                Model.ProductCenterModel pcm = new Model.ProductCenterModel();
-                                pcm.ProductModelID = RuleUtility.IDsCreater.GetCreater().CreateProductModelID(dbm);
-                                pcm.ProductID = cp.ProductID;
-                                pcm.ProductModel = item.ProductModel;
-                                pcm.CreateTime = DateTime.Now;
-                                pcm.UpdateTime = DateTime.Now;
-                                flag2 = Factory.GetExecution().Add<Model.ProductCenterModel>(pcm);
+                                if (!string.IsNullOrEmpty(item.ProductModel))
+                                {
+                                    Model.ProductCenterModel pcm = new Model.ProductCenterModel();
+                                    pcm.ProductModelID = RuleUtility.IDsCreater.GetCreater().CreateProductModelID(dbm);
+                                    pcm.Language = Language;
+                                    pcm.ProductID = cp.ProductID;
+                                    pcm.ProductModel = item.ProductModel;
+                                    pcm.CreateTime = DateTime.Now;
+                                    pcm.UpdateTime = DateTime.Now;
+                                    flag2 = Factory.GetExecution().Add<Model.ProductCenterModel>(pcm);
+                                }
                             }
                         }
+                        bool flag = Factory.GetExecution().Update<Model.ProductCenter>(cp);
                         if (flag && flag2)
                         {
                             Common.MessageBox.ShowRedirect(this, "/ProductCenter/ServoDriver.aspx?ProductType="+ ProductType);
@@ -133,9 +144,15 @@ namespace YingShiDa.ProductCenter
                 }
                 else
                 {
+                    List<Model.ProductCenter> pcList = Factory.GetExecution().GetByWhereSqlList<Model.ProductCenter>(" and ProductType=" + ProductType+ " and Language="+ Language, " UpdateTime desc");
+                    if (pcList != null && pcList.Count > 0)
+                    {
+                        Common.MessageBox.ShowLayer(this, "同一种语言只能新建一个产品分类!", 2);
+                        return;
+                    }
                     Model.ProductCenter cp = new Model.ProductCenter();
                     cp.ProductID = RuleUtility.IDsCreater.GetCreater().CreateProductID(dbm);
-                    cp.Language = Convert.ToInt32(Request.Form["language"]);
+                    cp.Language = Language;
                     cp.ProductType = ProductType;
                     cp.ProductTitle = txtTitle.Text;
                     cp.CreatetPeople = txtCreatePeople.Text;
@@ -144,19 +161,23 @@ namespace YingShiDa.ProductCenter
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     bool flag1 = Factory.GetExecution().Add<Model.ProductCenter>(cp);
-                    bool flag2 = false;
+                    bool flag2 = true;
                     if (!string.IsNullOrEmpty(hfArrList.Value))
                     {
                         List<Prm> list = JsonConvert.DeserializeObject<List<Prm>>(hfArrList.Value);
                         foreach (Prm item in list)
                         {
-                            Model.ProductCenterModel pcm = new Model.ProductCenterModel();
-                            pcm.ProductModelID = RuleUtility.IDsCreater.GetCreater().CreateProductModelID(dbm);
-                            pcm.ProductID = cp.ProductID;
-                            pcm.ProductModel = item.ProductModel;
-                            pcm.CreateTime = DateTime.Now;
-                            pcm.UpdateTime = DateTime.Now;
-                            flag2 = Factory.GetExecution().Add<Model.ProductCenterModel>(pcm);
+                            if (!string.IsNullOrEmpty(item.ProductModel))
+                            {
+                                Model.ProductCenterModel pcm = new Model.ProductCenterModel();
+                                pcm.ProductModelID = RuleUtility.IDsCreater.GetCreater().CreateProductModelID(dbm);
+                                pcm.Language = Language;
+                                pcm.ProductID = cp.ProductID;
+                                pcm.ProductModel = item.ProductModel;
+                                pcm.CreateTime = DateTime.Now;
+                                pcm.UpdateTime = DateTime.Now;
+                                flag2 = Factory.GetExecution().Add<Model.ProductCenterModel>(pcm);
+                            }
                         }
                     }
                     if (flag1 && flag2)
