@@ -8,7 +8,7 @@
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="ContentQuestion" ColumnName="ContentQuestion" />
           <ScalarProperty Name="ContentAnswer" ColumnName="ContentAnswer" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -22,7 +22,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -36,7 +36,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -50,7 +50,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -64,7 +64,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -78,7 +78,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateCompany" ColumnName="CreateCompany" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
@@ -94,7 +94,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -115,7 +115,7 @@
           <ScalarProperty Name="Fax" ColumnName="Fax" />
           <ScalarProperty Name="Postcode" ColumnName="Postcode" />
           <ScalarProperty Name="mailbox" ColumnName="mailbox" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
@@ -143,7 +143,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
@@ -158,7 +158,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content1" ColumnName="Content1" />
-          <ScalarProperty Name="COntent2" ColumnName="COntent2" />
+          <ScalarProperty Name="Content2" ColumnName="Content2" />
           <ScalarProperty Name="Content3" ColumnName="Content3" />
           <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="TeamPicname" ColumnName="TeamPicname" />
@@ -175,7 +175,7 @@
           <ScalarProperty Name="ProductID" ColumnName="ProductID" />
           <ScalarProperty Name="ProductTitle" ColumnName="ProductTitle" />
           <ScalarProperty Name="ProductType" ColumnName="ProductType" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -194,7 +194,7 @@
           <ScalarProperty Name="ClothAngle" ColumnName="ClothAngle" />
           <ScalarProperty Name="Advantage" ColumnName="Advantage" />
           <ScalarProperty Name="TechnicalParameter" ColumnName="TechnicalParameter" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -230,7 +230,7 @@
         <MappingFragment StoreEntitySet="Recruitment">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
@@ -250,7 +250,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -264,7 +264,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -292,7 +292,7 @@
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="Title" ColumnName="Title" />
           <ScalarProperty Name="Content" ColumnName="Content" />
-          <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+          <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
           <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
           <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
           <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />

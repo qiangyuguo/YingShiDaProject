@@ -62,7 +62,7 @@ namespace YingShiDa.TechnicalSupport
                     txtTitle.Text = cp.Title;
                     txtContentQuestion.Text = cp.ContentQuestion;
                     txtContentAnswer.Text = cp.ContentAnswer;
-                    txtCreatePeople.Text = cp.CreatetPeople;
+                    txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text= cp.LogoUrl;
                 }
@@ -91,9 +91,9 @@ namespace YingShiDa.TechnicalSupport
                         cp.Title = txtTitle.Text;
                         cp.ContentQuestion= txtContentQuestion.Text;
                         cp.ContentAnswer= txtContentAnswer.Text;
-                        cp.CreatetPeople=txtCreatePeople.Text;
+                        cp.CreatePeople=txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         bool flag = Factory.GetExecution().Update<Model.CommonQuestion>(cp);
                         if (flag)
@@ -109,9 +109,9 @@ namespace YingShiDa.TechnicalSupport
                     cp.Title = txtTitle.Text;
                     cp.ContentQuestion = txtContentQuestion.Text;
                     cp.ContentAnswer = txtContentAnswer.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     bool flag = Factory.GetExecution().Add<Model.CommonQuestion>(cp);

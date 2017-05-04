@@ -17,7 +17,7 @@ namespace Model
         public int ID { get; set; }
         public string Title { get; set; }
         public string Content1 { get; set; }
-        public string COntent2 { get; set; }
+        public string Content2 { get; set; }
         public string Content3 { get; set; }
         public string CreatePeople { get; set; }
         public string TeamPicname { get; set; }

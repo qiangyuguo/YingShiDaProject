@@ -62,7 +62,7 @@ namespace YingShiDa.BusinessConsulting
                     }
                     txtTitle.Text = cp.Title;
                     XiangQing = cp.Content;
-                    txtCreatePeople.Text = cp.CreatetPeople;
+                    txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text= cp.LogoUrl;
                 }
@@ -86,9 +86,9 @@ namespace YingShiDa.BusinessConsulting
                         cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.Content=XiangQing;
-                        cp.CreatetPeople=txtCreatePeople.Text;
+                        cp.CreatePeople=txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         bool flag = Factory.GetExecution().Update<Model.Industry_News>(cp);
                         if (flag)
@@ -103,9 +103,9 @@ namespace YingShiDa.BusinessConsulting
                     cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Content = XiangQing;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.BrowseTimes = 0;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;

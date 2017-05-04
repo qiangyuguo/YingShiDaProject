@@ -135,7 +135,7 @@ namespace YingShiDa.ProductCenter
                             txtClothAngle.Text = cp.ClothAngle;
                             Advantage = cp.Advantage;
                             TechnicalParameter = cp.TechnicalParameter;
-                            txtCreatePeople.Text = cp.CreatetPeople;
+                            txtCreatePeople.Text = cp.CreatePeople;
                             HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                             HomePageUploadFileName.Text = cp.LogoUrl;
                             //修改过
@@ -216,6 +216,11 @@ namespace YingShiDa.ProductCenter
                     Common.MessageBox.ShowLayer(this, "附件不能为空", 2);
                     return;
                 }
+                if (string.IsNullOrEmpty(ddlProductModel.SelectedValue))
+                {
+                    Common.MessageBox.ShowLayer(this, "产品型号不能为空", 2);
+                    return;
+                }
                 if (view_action == "notify")
                 {
                     Model.ProductCenterDetail cp = Factory.GetExecution().SelectByID<Model.ProductCenterDetail>(requestID);
@@ -229,9 +234,9 @@ namespace YingShiDa.ProductCenter
                         cp.Advantage = Advantage;
                         cp.FileName = ProductFile;
                         cp.TechnicalParameter = TechnicalParameter;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         if (!string.IsNullOrEmpty(photo_list[0]))
                         {
@@ -239,13 +244,13 @@ namespace YingShiDa.ProductCenter
                         }
                         bool flag = Factory.GetExecution().Update<Model.ProductCenterDetail>(cp);
 
-                        bool prFlag = false;
+                        bool prFlag = true;
                         bool isDelete = DAL.GetDataTable.DeleteProductRelation<Model.ProductRelation>(cp.ProductDetailID);
-                        foreach (ListItem item in lbMemberGroupID.Items)
+                        if (lbMemberGroupID.Items.Count > 0)
                         {
-                            if (!string.IsNullOrEmpty(item.Value))
+                            foreach (ListItem item in lbMemberGroupID.Items)
                             {
-                                if (isDelete)
+                                if (!string.IsNullOrEmpty(item.Value))
                                 {
                                     Model.ProductRelation pr = new Model.ProductRelation();
                                     pr.ProductDetailID = cp.ProductDetailID;
@@ -255,7 +260,7 @@ namespace YingShiDa.ProductCenter
                             }
                         }
 
-                        if (flag&& prFlag)
+                        if (flag && prFlag)
                         {
                             Common.MessageBox.ShowRedirect(this, "/ProductCenter/ServoDriver.aspx?ProductType=" + ProductType);
                         }
@@ -272,9 +277,9 @@ namespace YingShiDa.ProductCenter
                     cp.ClothAngle = txtClothAngle.Text;
                     cp.Advantage = Advantage;
                     cp.TechnicalParameter = TechnicalParameter;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     if (!string.IsNullOrEmpty(photo_list[0]))
@@ -286,18 +291,21 @@ namespace YingShiDa.ProductCenter
                         cp.FileName = "";
                     }
                     bool flag = Factory.GetExecution().Add<Model.ProductCenterDetail>(cp);
-                    bool prFlag = false;
-                    foreach (ListItem item in lbMemberGroupID.Items)
+                    bool prFlag = true;
+                    if (lbMemberGroupID.Items.Count > 0)
                     {
-                        if (!string.IsNullOrEmpty(item.Value))
+                        foreach (ListItem item in lbMemberGroupID.Items)
                         {
-                            Model.ProductRelation pr = new Model.ProductRelation();
-                            pr.ProductDetailID = cp.ProductDetailID;
-                            pr.ProductID = item.Value;
-                            prFlag=Factory.GetExecution().Add<Model.ProductRelation>(pr);
+                            if (!string.IsNullOrEmpty(item.Value))
+                            {
+                                Model.ProductRelation pr = new Model.ProductRelation();
+                                pr.ProductDetailID = cp.ProductDetailID;
+                                pr.ProductID = item.Value;
+                                prFlag = Factory.GetExecution().Add<Model.ProductRelation>(pr);
+                            }
                         }
                     }
-                    if (flag&& prFlag)
+                    if (flag && prFlag)
                     {
                         Common.MessageBox.ShowRedirect(this, "/ProductCenter/ServoDriver.aspx?ProductType=" + ProductType);
                     }
@@ -770,18 +778,36 @@ namespace YingShiDa.ProductCenter
 
         protected void Chinese_CheckedChanged(object sender, EventArgs e)
         {
+            Advantage = hfAdvantage.Value;
+            TechnicalParameter = hfTechnicalParameter.Value;
+            for (int i = 0; i < lbMemberGroupID.Items.Count; i++)
+            {
+                lbMemberGroupID.Items.Remove(lbMemberGroupID.Items[i]);
+            }
             BindProductModel();
             BindRelation();
         }
 
         protected void English_CheckedChanged(object sender, EventArgs e)
         {
+            Advantage = hfAdvantage.Value;
+            TechnicalParameter = hfTechnicalParameter.Value;
+            for (int i = 0; i < lbMemberGroupID.Items.Count; i++)
+            {
+                lbMemberGroupID.Items.Remove(lbMemberGroupID.Items[i]);
+            }
             BindProductModel();
             BindRelation();
         }
 
         protected void Traditional_CheckedChanged(object sender, EventArgs e)
         {
+            Advantage = hfAdvantage.Value;
+            TechnicalParameter = hfTechnicalParameter.Value;
+            for (int i = 0; i < lbMemberGroupID.Items.Count; i++)
+            {
+                lbMemberGroupID.Items.Remove(lbMemberGroupID.Items[i]);
+            }
             BindProductModel();
             BindRelation();
         }

@@ -75,7 +75,7 @@ namespace YingShiDa.Carousel
                     txtTitle.Text = cp.Title;
                     txtCreatePeople.Text = cp.CreatePeople;
                     txtContent1.Text = cp.Content1;
-                    txtContent2.Text = cp.COntent2;
+                    txtContent2.Text = cp.Content2;
                     txtContent3.Text = cp.Content3;
                     //修改过
                     List<string> sp = new List<string>();
@@ -122,7 +122,7 @@ namespace YingShiDa.Carousel
                         cp.Title = txtTitle.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.Content1= txtContent1.Text;
-                        cp.COntent2= txtContent2.Text;
+                        cp.Content2= txtContent2.Text;
                         cp.Content3= txtContent3.Text;
                         cp.UpdateTime = DateTime.Now;
                         if (!string.IsNullOrEmpty(photo_list[0]))
@@ -142,7 +142,7 @@ namespace YingShiDa.Carousel
                     cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Content1 = txtContent1.Text;
-                    cp.COntent2 = txtContent2.Text;
+                    cp.Content2 = txtContent2.Text;
                     cp.Content3 = txtContent3.Text;
                     cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;

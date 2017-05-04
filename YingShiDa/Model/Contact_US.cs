@@ -23,7 +23,7 @@ namespace Model
         public string Fax { get; set; }
         public string Postcode { get; set; }
         public string mailbox { get; set; }
-        public string CreatetPeople { get; set; }
+        public string CreatePeople { get; set; }
         public Nullable<System.DateTime> CreateTime { get; set; }
         public Nullable<System.DateTime> UpdateTime { get; set; }
         public Nullable<int> BrowseTimes { get; set; }

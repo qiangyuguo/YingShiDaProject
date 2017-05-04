@@ -10,10 +10,10 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="ContentQuestion" Type="ntext" />
           <Property Name="ContentAnswer" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -24,9 +24,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -37,9 +37,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -50,9 +50,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -63,9 +63,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -76,9 +76,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateCompany" Type="nvarchar" MaxLength="30" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
@@ -91,9 +91,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -105,7 +105,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Department" Type="nvarchar" MaxLength="30" />
           <Property Name="Company" Type="nvarchar" MaxLength="30" />
           <Property Name="Address" Type="nvarchar" MaxLength="50" />
@@ -113,7 +113,7 @@
           <Property Name="Fax" Type="nvarchar" MaxLength="30" />
           <Property Name="Postcode" Type="nvarchar" MaxLength="20" />
           <Property Name="mailbox" Type="nvarchar" MaxLength="20" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="BrowseTimes" Type="int" />
@@ -125,8 +125,8 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
-          <Property Name="CreatePeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="150" />
           <Property Name="BannerPicname" Type="nvarchar" MaxLength="500" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
@@ -137,9 +137,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="BrowseTimes" Type="int" />
@@ -151,11 +151,11 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content1" Type="nvarchar" MaxLength="30" />
-          <Property Name="COntent2" Type="nvarchar" MaxLength="30" />
+          <Property Name="Content2" Type="nvarchar" MaxLength="30" />
           <Property Name="Content3" Type="nvarchar" MaxLength="30" />
-          <Property Name="CreatePeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="TeamPicname" Type="nvarchar" MaxLength="500" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
@@ -167,9 +167,9 @@
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ProductID" Type="nvarchar" MaxLength="30" />
-          <Property Name="ProductTitle" Type="nvarchar" MaxLength="30" />
+          <Property Name="ProductTitle" Type="nvarchar" MaxLength="150" />
           <Property Name="ProductType" Type="int" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -182,12 +182,12 @@
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="ProductDetailID" Type="nvarchar" MaxLength="30" />
           <Property Name="ProductModelID" Type="nvarchar" MaxLength="30" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Series" Type="nvarchar" MaxLength="20" />
           <Property Name="ClothAngle" Type="nvarchar" MaxLength="20" />
           <Property Name="Advantage" Type="ntext" />
           <Property Name="TechnicalParameter" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -219,8 +219,8 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="BrowseTimes" Type="int" />
@@ -237,9 +237,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -250,9 +250,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -276,9 +276,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Title" Type="nvarchar" MaxLength="30" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
           <Property Name="Content" Type="ntext" />
-          <Property Name="CreatetPeople" Type="nvarchar" MaxLength="30" />
+          <Property Name="CreatePeople" Type="nvarchar" MaxLength="50" />
           <Property Name="CreateTime" Type="datetime" />
           <Property Name="UpdateTime" Type="datetime" />
           <Property Name="LogoUrl" Type="nvarchar" MaxLength="50" />
@@ -323,10 +323,10 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="ContentQuestion" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="ContentAnswer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -337,9 +337,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -350,9 +350,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -363,9 +363,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -376,9 +376,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -389,9 +389,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateCompany" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
@@ -404,9 +404,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -418,7 +418,7 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Department" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Company" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -426,7 +426,7 @@
           <Property Name="Fax" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Postcode" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="mailbox" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="BrowseTimes" Type="Int32" />
@@ -438,8 +438,8 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="CreatePeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="BannerPicname" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
@@ -450,9 +450,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="BrowseTimes" Type="Int32" />
@@ -464,11 +464,11 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content1" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="COntent2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Content2" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="Content3" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="CreatePeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="TeamPicname" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
@@ -480,9 +480,9 @@
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ProductID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="ProductTitle" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="ProductTitle" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="ProductType" Type="Int32" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -495,12 +495,12 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="ProductDetailID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
           <Property Name="ProductModelID" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Series" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="ClothAngle" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="Advantage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
           <Property Name="TechnicalParameter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -532,8 +532,8 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="BrowseTimes" Type="Int32" />
@@ -550,9 +550,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -563,9 +563,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -589,9 +589,9 @@
             <PropertyRef Name="ID" />
           </Key>
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Title" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
           <Property Name="Content" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="CreatetPeople" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+          <Property Name="CreatePeople" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CreateTime" Type="DateTime" Precision="3" />
           <Property Name="UpdateTime" Type="DateTime" Precision="3" />
           <Property Name="LogoUrl" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
@@ -639,7 +639,7 @@
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="ContentQuestion" ColumnName="ContentQuestion" />
                 <ScalarProperty Name="ContentAnswer" ColumnName="ContentAnswer" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -653,7 +653,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -667,7 +667,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -681,7 +681,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -695,7 +695,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -709,7 +709,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateCompany" ColumnName="CreateCompany" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
@@ -725,7 +725,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -746,7 +746,7 @@
                 <ScalarProperty Name="Fax" ColumnName="Fax" />
                 <ScalarProperty Name="Postcode" ColumnName="Postcode" />
                 <ScalarProperty Name="mailbox" ColumnName="mailbox" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
@@ -774,7 +774,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
@@ -789,7 +789,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content1" ColumnName="Content1" />
-                <ScalarProperty Name="COntent2" ColumnName="COntent2" />
+                <ScalarProperty Name="Content2" ColumnName="Content2" />
                 <ScalarProperty Name="Content3" ColumnName="Content3" />
                 <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="TeamPicname" ColumnName="TeamPicname" />
@@ -806,7 +806,7 @@
                 <ScalarProperty Name="ProductID" ColumnName="ProductID" />
                 <ScalarProperty Name="ProductTitle" ColumnName="ProductTitle" />
                 <ScalarProperty Name="ProductType" ColumnName="ProductType" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -825,7 +825,7 @@
                 <ScalarProperty Name="ClothAngle" ColumnName="ClothAngle" />
                 <ScalarProperty Name="Advantage" ColumnName="Advantage" />
                 <ScalarProperty Name="TechnicalParameter" ColumnName="TechnicalParameter" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -861,7 +861,7 @@
               <MappingFragment StoreEntitySet="Recruitment">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="BrowseTimes" ColumnName="BrowseTimes" />
@@ -881,7 +881,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -895,7 +895,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />
@@ -923,7 +923,7 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="Title" ColumnName="Title" />
                 <ScalarProperty Name="Content" ColumnName="Content" />
-                <ScalarProperty Name="CreatetPeople" ColumnName="CreatetPeople" />
+                <ScalarProperty Name="CreatePeople" ColumnName="CreatePeople" />
                 <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
                 <ScalarProperty Name="UpdateTime" ColumnName="UpdateTime" />
                 <ScalarProperty Name="LogoUrl" ColumnName="LogoUrl" />

@@ -16,7 +16,7 @@ namespace Model
     {
         public int ID { get; set; }
         public string Title { get; set; }
-        public string CreatetPeople { get; set; }
+        public string CreatePeople { get; set; }
         public Nullable<System.DateTime> CreateTime { get; set; }
         public Nullable<System.DateTime> UpdateTime { get; set; }
         public Nullable<int> BrowseTimes { get; set; }

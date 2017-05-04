@@ -22,7 +22,7 @@ namespace Model
         public string ClothAngle { get; set; }
         public string Advantage { get; set; }
         public string TechnicalParameter { get; set; }
-        public string CreatetPeople { get; set; }
+        public string CreatePeople { get; set; }
         public Nullable<System.DateTime> CreateTime { get; set; }
         public Nullable<System.DateTime> UpdateTime { get; set; }
         public string LogoUrl { get; set; }

@@ -67,7 +67,7 @@ namespace YingShiDa.ContactUs
                     txtFax.Text = cp.Fax;
                     txtPostcode.Text = cp.Postcode;
                     txtmailbox.Text = cp.mailbox;
-                    txtCreatePeople.Text = cp.CreatetPeople;
+                    txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text= cp.LogoUrl;
                 }
@@ -91,9 +91,9 @@ namespace YingShiDa.ContactUs
                         cp.Fax= txtFax.Text;
                         cp.Postcode= txtPostcode.Text;
                         cp.mailbox= txtmailbox.Text;
-                        cp.CreatetPeople=txtCreatePeople.Text;
+                        cp.CreatePeople=txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         bool flag = Factory.GetExecution().Update<Model.Contact_US>(cp);
                         if (flag)
@@ -115,9 +115,9 @@ namespace YingShiDa.ContactUs
                     cp.Postcode = txtPostcode.Text;
                     cp.mailbox = txtmailbox.Text;
                     cp.BrowseTimes = 0;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     bool flag = Factory.GetExecution().Add<Model.Contact_US>(cp);

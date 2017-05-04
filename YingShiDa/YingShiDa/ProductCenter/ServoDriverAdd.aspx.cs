@@ -64,7 +64,7 @@ namespace YingShiDa.ProductCenter
                             Traditional.Checked = true;
                         }
                         txtTitle.Text = cp.ProductTitle;
-                        txtCreatePeople.Text = cp.CreatetPeople;
+                        txtCreatePeople.Text = cp.CreatePeople;
                         HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                         HomePageUploadFileName.Text = cp.LogoUrl;
                         Model.ProductCenterModel[] pcList = DAL.GetDataTable.GetProductModel(cp.ProductID, dbm);
@@ -110,9 +110,9 @@ namespace YingShiDa.ProductCenter
                         }
                         cp.Language = Language;
                         cp.ProductTitle = txtTitle.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         bool flag2 = true;
                         //flag2 = DAL.GetDataTable.Delete<Model.ProductCenterModel>(cp.ProductID);
@@ -155,9 +155,9 @@ namespace YingShiDa.ProductCenter
                     cp.Language = Language;
                     cp.ProductType = ProductType;
                     cp.ProductTitle = txtTitle.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     bool flag1 = Factory.GetExecution().Add<Model.ProductCenter>(cp);

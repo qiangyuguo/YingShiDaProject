@@ -18,7 +18,7 @@ namespace Model
         public string Title { get; set; }
         public string ContentQuestion { get; set; }
         public string ContentAnswer { get; set; }
-        public string CreatetPeople { get; set; }
+        public string CreatePeople { get; set; }
         public Nullable<System.DateTime> CreateTime { get; set; }
         public Nullable<System.DateTime> UpdateTime { get; set; }
         public string LogoUrl { get; set; }

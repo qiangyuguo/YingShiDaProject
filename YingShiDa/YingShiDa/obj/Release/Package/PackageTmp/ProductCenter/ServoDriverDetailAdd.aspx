@@ -191,6 +191,14 @@
             id = id.replace('FileUpload2', 'btnUploadShowPhoto1');
             document.getElementById(id).click();
         }
+
+        function SwitchLanguage(obj)
+        {
+            //$('input[name="language"]').attr("checked", false);
+            //$(obj).attr("checked", true);
+            $("#hfAdvantage").val(um1.getContent());
+            $("#hfTechnicalParameter").val(um2.getContent());
+        }
     </script>
     <style type="text/css">
         .cssHide {
@@ -375,9 +383,9 @@
                                         <label class="control-label col-md-1 ">语言</label>
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
-                                            <asp:RadioButton runat="server" ID="Chinese" GroupName="language" value="1" Checked="true" OnCheckedChanged="Chinese_CheckedChanged" AutoPostBack="true" /><em class="tit">中文</em>
-                                            <asp:RadioButton ID="English" runat="server" GroupName="language" value="2" OnCheckedChanged="English_CheckedChanged" AutoPostBack="true" /><em class="tit">英文</em>
-                                            <asp:RadioButton ID="Traditional" runat="server" GroupName="language" value="3" OnCheckedChanged="Traditional_CheckedChanged" AutoPostBack="true" /><em class="tit">繁体</em>
+                                            <asp:RadioButton runat="server" onclick="SwitchLanguage(this)" ID="Chinese" GroupName="language" value="1" Checked="true" OnCheckedChanged="Chinese_CheckedChanged" AutoPostBack="true" /><em class="tit">中文</em>
+                                            <asp:RadioButton ID="English" onclick="SwitchLanguage(this)" runat="server" GroupName="language" value="2" OnCheckedChanged="English_CheckedChanged" AutoPostBack="true" /><em class="tit">英文</em>
+                                            <asp:RadioButton ID="Traditional" onclick="SwitchLanguage(this)" runat="server" GroupName="language" value="3" OnCheckedChanged="Traditional_CheckedChanged" AutoPostBack="true" /><em class="tit">繁体</em>
                                         </div>
                                     </div>
 

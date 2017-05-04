@@ -62,7 +62,7 @@ namespace YingShiDa.TechnicalSupport
                     }
                     txtTitle.Text = cp.Title;
                     XiangQing = cp.Content;
-                    txtCreatePeople.Text = cp.CreatetPeople;
+                    txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text= cp.LogoUrl;
                 }
@@ -86,9 +86,9 @@ namespace YingShiDa.TechnicalSupport
                         cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Title = txtTitle.Text;
                         cp.Content=XiangQing;
-                        cp.CreatetPeople=txtCreatePeople.Text;
+                        cp.CreatePeople=txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         bool flag = Factory.GetExecution().Update<Model.Service_Concept>(cp);
                         if (flag)
@@ -103,9 +103,9 @@ namespace YingShiDa.TechnicalSupport
                     cp.Language = Convert.ToInt32(Request.Form["language"]);
                     cp.Title = txtTitle.Text;
                     cp.Content = XiangQing;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     bool flag = Factory.GetExecution().Add<Model.Service_Concept>(cp);

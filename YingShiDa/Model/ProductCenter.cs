@@ -18,7 +18,7 @@ namespace Model
         public string ProductID { get; set; }
         public string ProductTitle { get; set; }
         public Nullable<int> ProductType { get; set; }
-        public string CreatetPeople { get; set; }
+        public string CreatePeople { get; set; }
         public Nullable<System.DateTime> CreateTime { get; set; }
         public Nullable<System.DateTime> UpdateTime { get; set; }
         public string LogoUrl { get; set; }

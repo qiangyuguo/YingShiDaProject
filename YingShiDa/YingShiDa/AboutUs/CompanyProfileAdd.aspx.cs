@@ -62,7 +62,7 @@ namespace YingShiDa.AboutUs
                     {
                         Traditional.Checked = true;
                     }
-                    txtCreatePeople.Text = cp.CreatetPeople;
+                    txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text = cp.LogoUrl;
                     TextUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.TextUrl;
@@ -88,10 +88,10 @@ namespace YingShiDa.AboutUs
                         cp.Title = txtTitle.Text;
                         cp.Language = Convert.ToInt32(Request.Form["language"]);
                         cp.Content = XiangQing;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.TextUrl = TextUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         bool flag = Factory.GetExecution().Update<Model.Company_Profile>(cp);
                         if (flag)
@@ -106,10 +106,10 @@ namespace YingShiDa.AboutUs
                     cp.Title = txtTitle.Text;
                     cp.Content = XiangQing;
                     cp.Language = Convert.ToInt32(Request.Form["language"]);
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
                     cp.TextUrl = TextUploadFileName.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     bool flag = Factory.GetExecution().Add<Model.Company_Profile>(cp);

@@ -67,7 +67,7 @@ namespace YingShiDa.HumanResources
                     Responsibilities = cp.Responsibilities;
                     JobRequirements = cp.JobRequirements;
                     txtSalary.Text = cp.Salary;
-                    txtCreatePeople.Text = cp.CreatetPeople;
+                    txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text = cp.LogoUrl;
                 }
@@ -105,9 +105,9 @@ namespace YingShiDa.HumanResources
                         cp.Responsibilities = Responsibilities;
                         cp.JobRequirements = JobRequirements;
                         cp.Salary = txtSalary.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.LogoUrl = HomePageUploadFileName.Text;
-                        cp.CreatetPeople = txtCreatePeople.Text;
+                        cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
                         bool flag = Factory.GetExecution().Update<Model.Recruitment>(cp);
                         if (flag)
@@ -126,10 +126,10 @@ namespace YingShiDa.HumanResources
                     cp.Responsibilities = Responsibilities;
                     cp.JobRequirements = JobRequirements;
                     cp.Salary = txtSalary.Text;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.LogoUrl = HomePageUploadFileName.Text;
                     cp.BrowseTimes = 0;
-                    cp.CreatetPeople = txtCreatePeople.Text;
+                    cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
                     bool flag = Factory.GetExecution().Add<Model.Recruitment>(cp);
