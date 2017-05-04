@@ -251,7 +251,7 @@
                                         <label class="control-label col-md-1 ">招聘岗位</label>
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
-                                            <asp:TextBox ID="txtTitle" MaxLength="30" onkeyup="value=value.replace(/[&*%$#]/g,'')" onkeypress="return keyPress()" runat="server" CssClass="form-control" />
+                                            <asp:TextBox ID="txtTitle" MaxLength="150" onkeyup="value=value.replace(/[&*%$#]/g,'')" onkeypress="return keyPress()" runat="server" CssClass="form-control" />
                                         </div>
                                     </div>
 
@@ -299,7 +299,7 @@
                                         <label class="control-label col-md-1 ">创建人</label>
                                         <span class="red-xing" style="margin-left: 6.7px"></span>
                                         <div class="col-md-10">
-                                            <asp:TextBox ID="txtCreatePeople" MaxLength="30" onkeyup="value=value.replace(/[&*%$#]/g,'')" onkeypress="return keyPress()" runat="server" CssClass="form-control" />
+                                            <asp:TextBox ID="txtCreatePeople" MaxLength="50" onkeyup="value=value.replace(/[&*%$#]/g,'')" onkeypress="return keyPress()" runat="server" CssClass="form-control" />
                                         </div>
                                     </div>
 

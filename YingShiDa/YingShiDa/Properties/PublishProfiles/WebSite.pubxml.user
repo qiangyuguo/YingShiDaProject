@@ -10,28 +10,28 @@
   </PropertyGroup>
   <ItemGroup>
     <File Include="AboutUs/CompanyProfile.aspx">
-      <publishTime>04/11/2017 22:45:40</publishTime>
+      <publishTime>05/04/2017 13:54:38</publishTime>
     </File>
     <File Include="AboutUs/CompanyProfileAdd.aspx">
-      <publishTime>04/06/2017 14:08:12</publishTime>
+      <publishTime>05/04/2017 13:56:02</publishTime>
     </File>
     <File Include="AboutUs/CorporateCulture.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="AboutUs/CorporateCultureAdd.aspx">
-      <publishTime>04/06/2017 14:10:44</publishTime>
+      <publishTime>05/04/2017 13:56:08</publishTime>
     </File>
     <File Include="AboutUs/DevelopmentHistory.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="AboutUs/DevelopmentHistoryAdd.aspx">
-      <publishTime>04/06/2017 14:24:54</publishTime>
+      <publishTime>05/04/2017 13:58:28</publishTime>
     </File>
     <File Include="AboutUs/EnterpriseHonor.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="AboutUs/EnterpriseHonorAdd.aspx">
-      <publishTime>04/06/2017 14:32:34</publishTime>
+      <publishTime>05/04/2017 13:58:28</publishTime>
     </File>
     <File Include="Action/ProductFile.ashx">
       <publishTime>03/31/2017 10:45:40</publishTime>
@@ -49,7 +49,7 @@
       <publishTime>05/02/2017 21:49:46</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>05/03/2017 11:47:58</publishTime>
+      <publishTime>05/04/2017 14:09:32</publishTime>
     </File>
     <File Include="bin/DataConveter.dll">
       <publishTime>05/02/2017 21:49:44</publishTime>
@@ -97,7 +97,7 @@
       <publishTime>03/31/2017 10:48:26</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>04/28/2017 11:05:40</publishTime>
+      <publishTime>05/04/2017 14:09:30</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>11/18/2016 09:27:44</publishTime>
@@ -145,7 +145,7 @@
       <publishTime>05/02/2017 21:49:46</publishTime>
     </File>
     <File Include="bin/YingShiDa.dll">
-      <publishTime>05/03/2017 21:23:26</publishTime>
+      <publishTime>05/04/2017 14:09:42</publishTime>
     </File>
     <File Include="bin/zh-Hans/EntityFramework.resources.dll">
       <publishTime>04/10/2017 14:11:36</publishTime>
@@ -154,25 +154,25 @@
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="BusinessConsulting/CompanyNewsAdd.aspx">
-      <publishTime>04/06/2017 14:33:36</publishTime>
+      <publishTime>05/04/2017 13:56:40</publishTime>
     </File>
     <File Include="BusinessConsulting/IndustryInformation.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="BusinessConsulting/IndustryInformationAdd.aspx">
-      <publishTime>04/06/2017 14:34:24</publishTime>
+      <publishTime>05/04/2017 13:56:50</publishTime>
     </File>
     <File Include="Carousel/HomePageCarousel.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="Carousel/HomePageCarouselAdd.aspx">
-      <publishTime>04/06/2017 14:34:54</publishTime>
+      <publishTime>05/04/2017 13:56:58</publishTime>
     </File>
     <File Include="Carousel/TeamCarousel.aspx">
-      <publishTime>04/11/2017 22:45:40</publishTime>
+      <publishTime>05/04/2017 13:53:16</publishTime>
     </File>
     <File Include="Carousel/TeamCarouselAdd.aspx">
-      <publishTime>04/06/2017 14:36:26</publishTime>
+      <publishTime>05/04/2017 14:01:22</publishTime>
     </File>
     <File Include="Config/BusinessAreaMenu.xml">
       <publishTime>05/03/2017 11:47:18</publishTime>
@@ -187,13 +187,13 @@
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="ContactUs/CompanyLocationAdd.aspx">
-      <publishTime>04/06/2017 14:37:00</publishTime>
+      <publishTime>05/04/2017 13:58:06</publishTime>
     </File>
     <File Include="ContactUs/ContactInformation.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="ContactUs/ContactInformationAdd.aspx">
-      <publishTime>04/06/2017 14:37:28</publishTime>
+      <publishTime>05/04/2017 14:02:44</publishTime>
     </File>
     <File Include="Content/bootStrap/CSS/alertDialog_button.css">
       <publishTime>03/31/2017 10:46:48</publishTime>
@@ -7393,19 +7393,19 @@
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="HumanResources/StaffStyleAdd.aspx">
-      <publishTime>04/06/2017 14:38:52</publishTime>
+      <publishTime>05/04/2017 14:03:04</publishTime>
     </File>
     <File Include="HumanResources/TalentConcept.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="HumanResources/TalentConceptAdd.aspx">
-      <publishTime>04/06/2017 14:39:18</publishTime>
+      <publishTime>05/04/2017 14:04:30</publishTime>
     </File>
     <File Include="HumanResources/TalentRecruitment.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="HumanResources/TalentRecruitmentAdd.aspx">
-      <publishTime>04/06/2017 14:40:38</publishTime>
+      <publishTime>05/04/2017 14:03:52</publishTime>
     </File>
     <File Include="Images/NetPager/0n.gif">
       <publishTime>03/31/2017 10:47:56</publishTime>
@@ -7540,13 +7540,13 @@
       <publishTime>05/03/2017 10:42:32</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriverAdd.aspx">
-      <publishTime>05/03/2017 11:42:46</publishTime>
+      <publishTime>05/04/2017 14:04:30</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriverDetail.aspx">
       <publishTime>04/27/2017 12:25:22</publishTime>
     </File>
     <File Include="ProductCenter/ServoDriverDetailAdd.aspx">
-      <publishTime>05/03/2017 21:22:10</publishTime>
+      <publishTime>05/04/2017 14:04:32</publishTime>
     </File>
     <File Include="scripts/ai.0.15.0-build58334.js">
       <publishTime>03/31/2017 10:48:14</publishTime>
@@ -7564,13 +7564,13 @@
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="TechnicalSupport/MemberListAdd.aspx">
-      <publishTime>04/06/2017 14:42:56</publishTime>
+      <publishTime>05/04/2017 14:04:30</publishTime>
     </File>
     <File Include="TechnicalSupport/MemberToGroupList.aspx">
       <publishTime>04/11/2017 22:45:40</publishTime>
     </File>
     <File Include="TechnicalSupport/MemberToGroupListAdd.aspx">
-      <publishTime>04/06/2017 14:43:54</publishTime>
+      <publishTime>05/04/2017 14:05:40</publishTime>
     </File>
     <File Include="ValiCode.aspx">
       <publishTime>03/31/2017 10:47:58</publishTime>

@@ -317,8 +317,19 @@ namespace YingShiDa.ProductCenter
             }
             finally
             {
+                //if (English.Checked)
+                //{
+                //    Chinese.Checked = false;
+                //    Chinese.AutoPostBack = true;
+                //    Traditional.Checked = false;
+                //}
+                //else if (Traditional.Checked)
+                //{
+                //    Chinese.Checked = false;
+                //    Chinese.AutoPostBack = true;
+                //    English.Checked = false;
+                //}
                 dbm.Close();
-                BindData();
             }
         }
 
