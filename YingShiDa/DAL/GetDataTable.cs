@@ -367,11 +367,12 @@ where 1=1  ");
         #endregion
 
         #region 得到所有产品列表
-        public static DataTable GetProductRelation(int Language, DBOperationManagment dbm)
+        public static DataTable GetProductRelation(int Language,int ID, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append(@"select * from ProductCenterDetail pcd where 1=1  ");
-            strSql.AppendFormat(" and pcd.Language={0} ", Language == 0 ? 1 : Language);
+            strSql.Append(@"select pcd.ProductDetailID RelatinProductDetailID,(pcd.Title+'+'+pcm.ProductModel) Title from ProductCenterDetail pcd
+inner join ProductCenterModel pcm on pcd.ProductModelID=pcm.ProductModelID where 1=1  ");
+            strSql.AppendFormat(" and pcd.Language={0} and pcd.ID!={1} ", Language == 0 ? 1 : Language,ID);
             QueryData exec = new QueryData();
             exec.SqlCommand = strSql.ToString();
             exec.Parameters = null;
@@ -462,12 +463,13 @@ where 1=1  ");
         public static DataTable GetProductDetailRelation(string ProductDetailID, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append(@"select pr.ProductID,pc.ProductTitle from ProductCenterDetail pcd
-inner join ProductRelation pr on pcd.ProductDetailID=pr.ProductDetailID
-inner join ProductCenter pc on pr.ProductID=pc.ProductID where 1=1  ");
+            strSql.Append(@"select pr.RelatinProductDetailID,(pcd.Title+'+'+pcm.ProductModel) Title from ProductCenterDetail pcd
+inner join ProductRelation pr on pcd.ProductDetailID=pr.RelatinProductDetailID
+inner join ProductCenterModel pcm on pcd.ProductModelID=pcm.ProductModelID
+where 1=1  ");
             if (!string.IsNullOrEmpty(ProductDetailID))
             {
-                strSql.AppendFormat(" and pcd.ProductDetailID='{0}' ", ProductDetailID);
+                strSql.AppendFormat(" and pr.ProductDetailID='{0}' ", ProductDetailID);
             }
             QueryData exec = new QueryData();
             exec.SqlCommand = strSql.ToString();

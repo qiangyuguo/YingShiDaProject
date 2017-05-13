@@ -89,9 +89,9 @@ namespace YingShiDa.ProductCenter
             try
             {
                 dbm.Open();
-                DataTable productRelation = DAL.GetDataTable.GetProductRelation(Language, dbm);
+                DataTable productRelation = DAL.GetDataTable.GetProductRelation(Language,requestID, dbm);
                 ddlProductRelation.DataTextField = "Title";
-                ddlProductRelation.DataValueField = "ProductDetailID";
+                ddlProductRelation.DataValueField = "RelatinProductDetailID";
                 ddlProductRelation.DataSource = productRelation;
                 ddlProductRelation.DataBind();
             }
@@ -164,7 +164,7 @@ namespace YingShiDa.ProductCenter
                             {
                                 foreach (System.Data.DataRow dr in dt.Rows)
                                 {
-                                    ListItem li = new ListItem(dr["Title"].ToString(), dr["ProductDetailID"].ToString());
+                                    ListItem li = new ListItem(dr["Title"].ToString(), dr["RelatinProductDetailID"].ToString());
                                     lbMemberGroupID.Items.Add(li);
                                     lbMemberGroupID.ToolTip = li.Text;
                                 }
@@ -336,6 +336,7 @@ namespace YingShiDa.ProductCenter
                 //    English.Checked = false;
                 //}
                 dbm.Close();
+                //BindData();//这句话不能加，加了之后会把checkbox重新赋值。如果我选择了英文语言，那么就会有两种语言。这时候就冲突了。
             }
         }
 
