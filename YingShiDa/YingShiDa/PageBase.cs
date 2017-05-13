@@ -58,7 +58,7 @@ namespace YingShiDa
                     return "";
             }
         }
-        
+
         protected List<Common.WebSite.Menu> MenuList
         {
             get

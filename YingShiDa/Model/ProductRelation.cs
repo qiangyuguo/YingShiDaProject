@@ -16,6 +16,6 @@ namespace Model
     {
         public int ID { get; set; }
         public string ProductDetailID { get; set; }
-        public string ProductID { get; set; }
+        public string RelatinProductDetailID { get; set; }
     }
 }

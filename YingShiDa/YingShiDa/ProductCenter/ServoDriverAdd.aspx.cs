@@ -67,6 +67,8 @@ namespace YingShiDa.ProductCenter
                         txtCreatePeople.Text = cp.CreatePeople;
                         HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                         HomePageUploadFileName.Text = cp.LogoUrl;
+                        txtKeywords.Text = cp.Keywords;
+                        txtDescription.Text = cp.Description;
                         Model.ProductCenterModel[] pcList = DAL.GetDataTable.GetProductModel(cp.ProductID, dbm);
                         foreach (var item in pcList)
                         {
@@ -114,6 +116,8 @@ namespace YingShiDa.ProductCenter
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
+                        cp.Keywords = txtKeywords.Text.Trim();
+                        cp.Description = txtDescription.Text.Trim();
                         bool flag2 = true;
                         //flag2 = DAL.GetDataTable.Delete<Model.ProductCenterModel>(cp.ProductID);
 
@@ -160,6 +164,8 @@ namespace YingShiDa.ProductCenter
                     cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
+                    cp.Keywords = txtKeywords.Text.Trim();
+                    cp.Description = txtDescription.Text.Trim();
                     bool flag1 = Factory.GetExecution().Add<Model.ProductCenter>(cp);
                     bool flag2 = true;
                     if (!string.IsNullOrEmpty(hfArrList.Value))

@@ -21,5 +21,7 @@ namespace Model
         public Nullable<System.DateTime> CreateTime { get; set; }
         public Nullable<System.DateTime> UpdateTime { get; set; }
         public Nullable<int> Language { get; set; }
+        public string Keywords { get; set; }
+        public string Description { get; set; }
     }
 }

@@ -77,6 +77,8 @@ namespace YingShiDa.Carousel
                     txtContent1.Text = cp.Content1;
                     txtContent2.Text = cp.Content2;
                     txtContent3.Text = cp.Content3;
+                    txtKeywords.Text = cp.Keywords;
+                    txtDescription.Text = cp.Description;
                     //修改过
                     List<string> sp = new List<string>();
                     var photolist = cp.TeamPicname;
@@ -125,6 +127,8 @@ namespace YingShiDa.Carousel
                         cp.Content2= txtContent2.Text;
                         cp.Content3= txtContent3.Text;
                         cp.UpdateTime = DateTime.Now;
+                        cp.Keywords = txtKeywords.Text.Trim();
+                        cp.Description = txtDescription.Text.Trim();
                         if (!string.IsNullOrEmpty(photo_list[0]))
                         {
                             cp.TeamPicname = photo_list[0].Trim(',');
@@ -147,6 +151,8 @@ namespace YingShiDa.Carousel
                     cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
+                    cp.Keywords = txtKeywords.Text.Trim();
+                    cp.Description = txtDescription.Text.Trim();
                     if (!string.IsNullOrEmpty(photo_list[0]))
                     {
                         cp.TeamPicname = photo_list[0].Trim(',');

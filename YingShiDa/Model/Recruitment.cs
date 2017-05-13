@@ -27,5 +27,7 @@ namespace Model
         public string JobRequirements { get; set; }
         public string Salary { get; set; }
         public Nullable<int> Language { get; set; }
+        public string Keywords { get; set; }
+        public string Description { get; set; }
     }
 }

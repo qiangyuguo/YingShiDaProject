@@ -116,4 +116,3 @@ F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\obj\Release\YingShiDa.Main.
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\obj\Release\YingShiDa.csproj.GenerateResource.Cache
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\obj\Release\YingShiDa.dll
 F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\obj\Release\YingShiDa.pdb
-F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Newtonsoft.Json.dll

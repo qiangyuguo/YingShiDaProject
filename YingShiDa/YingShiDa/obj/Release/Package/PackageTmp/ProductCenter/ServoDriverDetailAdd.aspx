@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>伺服驱动器详情新增</title>
+    <title><%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %>详情新增</title>
     <%--<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Content/bootStrap/CSS/lato-font.css" media="all" rel="stylesheet" type="text/css">
     <link type="text/css" href="../Content/jq/themes/ui-bulestart/jquery-ui-1.8.7.custom.css" rel="stylesheet" />
@@ -157,7 +157,7 @@
         }
         function firstForm() {
             var ProductType = getUrlParam("ProductType");
-            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriver.aspx?ProductType=' + ProductType, '伺服驱动器详情列表');
+            $.PE_FrameTab.AddNew('/ProductCenter/ServoDriver.aspx?ProductType=' + ProductType, '<%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %>详情列表');
         }
 
         function showPhotoClick(obj) {
@@ -365,7 +365,7 @@
                     <div class="col-lg-12">
                         <ol class="breadcrumb">
                             <li><strong>产品中心</strong></li>
-                            <li><strong>编辑伺服驱动器详情</strong></li>
+                            <li><strong>编辑<%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %>详情</strong></li>
                         </ol>
                     </div>
                 </div>
@@ -596,6 +596,21 @@
                                         </div>
                                     </div>
 
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 ">SEO关键字</label>
+                                        <span class="red-xing" style="margin-left: 6.7px"></span>
+                                        <div class="col-md-10">
+                                            <asp:TextBox ID="txtKeywords" TextMode="MultiLine" Rows="9" onkeyup="value=value.replace(/[&*%$#]/g,'')"  runat="server" CssClass="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 ">SEO内容</label>
+                                        <span class="red-xing" style="margin-left: 6.7px"></span>
+                                        <div class="col-md-10">
+                                            <asp:TextBox ID="txtDescription" TextMode="MultiLine" Rows="9" onkeyup="value=value.replace(/[&*%$#]/g,'')" runat="server" CssClass="form-control" />
+                                        </div>
+                                    </div>
 
                                     <div class="modal-footer" style="border: 0px; padding-left: 4.9%">
                                         <asp:Button ID="btnSave" runat="server" class="stati-check br4 stati-tool-item" Text="保存" OnClick="btnSave_Click" OnClientClick="return checkSave()" />

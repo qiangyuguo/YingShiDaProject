@@ -70,6 +70,8 @@ namespace YingShiDa.ContactUs
                     txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text= cp.LogoUrl;
+                    txtKeywords.Text = cp.Keywords;
+                    txtDescription.Text = cp.Description;
                 }
             }
         }
@@ -95,6 +97,8 @@ namespace YingShiDa.ContactUs
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
+                        cp.Keywords = txtKeywords.Text.Trim();
+                        cp.Description = txtDescription.Text.Trim();
                         bool flag = Factory.GetExecution().Update<Model.Contact_US>(cp);
                         if (flag)
                         {
@@ -120,6 +124,8 @@ namespace YingShiDa.ContactUs
                     cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
+                    cp.Keywords = txtKeywords.Text.Trim();
+                    cp.Description = txtDescription.Text.Trim();
                     bool flag = Factory.GetExecution().Add<Model.Contact_US>(cp);
                     if (flag)
                     {

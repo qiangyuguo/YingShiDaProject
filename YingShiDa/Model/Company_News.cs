@@ -24,5 +24,7 @@ namespace Model
         public Nullable<int> BrowseTimes { get; set; }
         public string LogoUrl { get; set; }
         public Nullable<int> Language { get; set; }
+        public string Keywords { get; set; }
+        public string Description { get; set; }
     }
 }

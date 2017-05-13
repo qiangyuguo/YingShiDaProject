@@ -179,6 +179,40 @@ where 1=1 ");
         }
         #endregion
 
+        #region 根据产品类型得到产品详情
+        public static DataTable GetProductDetailByPType(int Language, string ProductType, DBOperationManagment dbm)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append(@" select pcm.ProductModel,pcD.*
+from ProductCenter pc
+inner join ProductCenterModel pcm on pc.ProductID=pcm.ProductID
+inner join ProductCenterDetail pcd on pcm.ProductModelID=pcd.ProductModelID
+where 1=1 ");
+
+            if (!string.IsNullOrEmpty(ProductType))
+            {
+                strSql.AppendFormat(" AND pc.ProductType = '{0}' ", ProductType);
+            }
+            if (Language != 0)
+            {
+                strSql.AppendFormat(" AND pc.Language = '{0}' ", Language);
+            }
+            QueryData exec = new QueryData();
+            exec.SqlCommand = strSql.ToString();
+            exec.Parameters = null;
+
+            dbm.Execute(exec);
+            if (exec.ResultData != null && exec.ResultData.Tables != null && exec.ResultData.Tables.Count > 0)
+            {
+                return exec.ResultData.Tables[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+        #endregion
+
         #region 根据产品名称和型号得到产品列表
         public static DataTable GetProductModelAndName(int Language, string ProductModel, string ProductTitle, DBOperationManagment dbm)
         {
@@ -222,9 +256,8 @@ where 1=1 ");
         public static DataTable GetProductRelation(string ProductDetailID, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append(@" select pc.* from ProductCenterDetail pcd
-inner join ProductRelation pr on pcd.ProductDetailID=pr.ProductDetailID
-inner join ProductCenter pc on pr.ProductID=pc.ProductID where 1=1 ");
+            strSql.Append(@" select pcd.* from ProductCenterDetail pcd
+inner join ProductRelation pr on pcd.ProductDetailID=pr.RelatinProductDetailID where 1=1 ");
            
             if (!string.IsNullOrEmpty(ProductDetailID))
             {
@@ -251,14 +284,15 @@ inner join ProductCenter pc on pr.ProductID=pc.ProductID where 1=1 ");
         public static DataTable GetProductDetailList(string Title, int ProductType, string startDate, string endDate, int pageNumber, int pageSize, out int pageCount, out int rowCount, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append(@" select pcd.*,pcm.ProductModel,
-stuff((select ','+pc.ProductTitle from 
+            strSql.Append(@" select pcd.*,pcm.ProductModel,stuff((select ','+detail.Title from 
 ProductRelation pr
-inner join ProductCenter pc on pr.ProductID=pc.ProductID
+inner join ProductCenterDetail detail on pr.RelatinProductDetailID=detail.ProductDetailID
 where pr.ProductDetailID=pcd.ProductDetailID for xml path('')),1,1,'') 
-ProductRelation from ProductCenterDetail pcd
+ProductRelation 
+from ProductCenterDetail pcd
 inner join ProductCenterModel pcm on pcd.ProductModelID=pcm.ProductModelID
-inner join ProductCenter pc on pcm.ProductID=pc.ProductID where 1=1 ");
+inner join ProductCenter pc on pcm.ProductID=pc.ProductID 
+where 1=1 ");
 
             if (ProductType != 0)
             {
@@ -336,8 +370,8 @@ where 1=1  ");
         public static DataTable GetProductRelation(int Language, DBOperationManagment dbm)
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append(@"select * from ProductCenter pc where 1=1  ");
-            strSql.AppendFormat(" and pc.Language={0} ", Language == 0 ? 1 : Language);
+            strSql.Append(@"select * from ProductCenterDetail pcd where 1=1  ");
+            strSql.AppendFormat(" and pcd.Language={0} ", Language == 0 ? 1 : Language);
             QueryData exec = new QueryData();
             exec.SqlCommand = strSql.ToString();
             exec.Parameters = null;

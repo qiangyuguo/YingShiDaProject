@@ -90,8 +90,8 @@ namespace YingShiDa.ProductCenter
             {
                 dbm.Open();
                 DataTable productRelation = DAL.GetDataTable.GetProductRelation(Language, dbm);
-                ddlProductRelation.DataTextField = "ProductTitle";
-                ddlProductRelation.DataValueField = "ProductID";
+                ddlProductRelation.DataTextField = "Title";
+                ddlProductRelation.DataValueField = "ProductDetailID";
                 ddlProductRelation.DataSource = productRelation;
                 ddlProductRelation.DataBind();
             }
@@ -138,6 +138,8 @@ namespace YingShiDa.ProductCenter
                             txtCreatePeople.Text = cp.CreatePeople;
                             HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                             HomePageUploadFileName.Text = cp.LogoUrl;
+                            txtKeywords.Text = cp.Keywords;
+                            txtDescription.Text = cp.Description;
                             //修改过
                             List<string> sp = new List<string>();
                             var photolist = cp.FileName;
@@ -162,7 +164,7 @@ namespace YingShiDa.ProductCenter
                             {
                                 foreach (System.Data.DataRow dr in dt.Rows)
                                 {
-                                    ListItem li = new ListItem(dr["ProductTitle"].ToString(), dr["ProductID"].ToString());
+                                    ListItem li = new ListItem(dr["Title"].ToString(), dr["ProductDetailID"].ToString());
                                     lbMemberGroupID.Items.Add(li);
                                     lbMemberGroupID.ToolTip = li.Text;
                                 }
@@ -238,6 +240,8 @@ namespace YingShiDa.ProductCenter
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
+                        cp.Keywords = txtKeywords.Text.Trim();
+                        cp.Description = txtDescription.Text.Trim();
                         if (!string.IsNullOrEmpty(photo_list[0]))
                         {
                             cp.FileName = photo_list[0].Trim(',');
@@ -254,7 +258,7 @@ namespace YingShiDa.ProductCenter
                                 {
                                     Model.ProductRelation pr = new Model.ProductRelation();
                                     pr.ProductDetailID = cp.ProductDetailID;
-                                    pr.ProductID = item.Value;
+                                    pr.RelatinProductDetailID = item.Value;
                                     prFlag = Factory.GetExecution().Add<Model.ProductRelation>(pr);
                                 }
                             }
@@ -282,6 +286,8 @@ namespace YingShiDa.ProductCenter
                     cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
+                    cp.Keywords = txtKeywords.Text.Trim();
+                    cp.Description = txtDescription.Text.Trim();
                     if (!string.IsNullOrEmpty(photo_list[0]))
                     {
                         cp.FileName = photo_list[0].Trim(',');
@@ -300,7 +306,7 @@ namespace YingShiDa.ProductCenter
                             {
                                 Model.ProductRelation pr = new Model.ProductRelation();
                                 pr.ProductDetailID = cp.ProductDetailID;
-                                pr.ProductID = item.Value;
+                                pr.RelatinProductDetailID = item.Value;
                                 prFlag = Factory.GetExecution().Add<Model.ProductRelation>(pr);
                             }
                         }

@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="08d646e9005147cc8603082c1fa29821" Name="Diagram1">
+      <Diagram DiagramId="ef60b384564749e8b66ebba7074c123f" Name="Diagram1">
         <EntityTypeShape EntityType="YingShiDaModel.CommonQuestion" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="YingShiDaModel.Company_Culture" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="YingShiDaModel.Company_History" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />

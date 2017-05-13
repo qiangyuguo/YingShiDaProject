@@ -66,6 +66,8 @@ namespace YingShiDa.BusinessConsulting
                     txtCreateCompany.Text = cp.CreateCompany;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text= cp.LogoUrl;
+                    txtKeywords.Text = cp.Keywords;
+                    txtDescription.Text = cp.Description;
                 }
             }
         }
@@ -93,6 +95,8 @@ namespace YingShiDa.BusinessConsulting
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
+                        cp.Keywords = txtKeywords.Text.Trim();
+                        cp.Description = txtDescription.Text.Trim();
                         bool flag = Factory.GetExecution().Update<Model.Company_News>(cp);
                         if (flag)
                         {
@@ -113,6 +117,8 @@ namespace YingShiDa.BusinessConsulting
                     cp.BrowseTimes = 0;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
+                    cp.Keywords = txtKeywords.Text.Trim();
+                    cp.Description = txtDescription.Text.Trim();
                     bool flag = Factory.GetExecution().Add<Model.Company_News>(cp);
                     if (flag)
                     {

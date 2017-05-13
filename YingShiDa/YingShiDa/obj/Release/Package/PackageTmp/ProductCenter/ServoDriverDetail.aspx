@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>伺服驱动器详情</title>
+    <title><%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %>详情</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Content/bootStrap/CSS/../Content/bootStrap/CSS/lato-font.css" media="all" rel="stylesheet" />
     <link href="../Content/bootStrap/Public/css/bootstrap.min.css" rel="stylesheet" />

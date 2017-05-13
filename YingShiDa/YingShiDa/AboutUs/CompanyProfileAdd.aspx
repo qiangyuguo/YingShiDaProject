@@ -236,7 +236,7 @@
                                         <div class="col-md-10">
                                             <asp:RadioButton runat="server" ID="Chinese" GroupName="language" value="1" Checked="true" /><em class="tit">中文</em>
                                             <asp:RadioButton ID="English" runat="server" GroupName="language" value="2" /><em class="tit">英文</em>
-                                            <asp:RadioButton ID="Traditional" runat="server" GroupName="language" value="3"/><em class="tit">繁体</em>
+                                            <asp:RadioButton ID="Traditional" runat="server" GroupName="language" value="3" /><em class="tit">繁体</em>
                                         </div>
                                     </div>
 
@@ -316,6 +316,22 @@
                                         </div>
                                     </div>
 
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 ">SEO关键字</label>
+                                        <span class="red-xing" style="margin-left: 6.7px"></span>
+                                        <div class="col-md-10">
+                                            <asp:TextBox ID="txtKeywords" TextMode="MultiLine" Rows="9" onkeyup="value=value.replace(/[&*%$#]/g,'')"  runat="server" CssClass="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 ">SEO内容</label>
+                                        <span class="red-xing" style="margin-left: 6.7px"></span>
+                                        <div class="col-md-10">
+                                            <asp:TextBox ID="txtDescription" TextMode="MultiLine" Rows="9" onkeyup="value=value.replace(/[&*%$#]/g,'')" runat="server" CssClass="form-control" />
+                                        </div>
+                                    </div>
 
                                     <div class="modal-footer" style="border: 0px; padding-left: 4.9%">
                                         <asp:Button ID="btnSave" runat="server" class="stati-check br4 stati-tool-item" Text="保存" OnClick="btnSave_Click" OnClientClick="return checkSave()" />

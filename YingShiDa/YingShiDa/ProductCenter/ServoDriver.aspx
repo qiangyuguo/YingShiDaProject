@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>伺服驱动器列表</title>
+    <title><%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %>列表</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../Content/bootStrap/CSS/../Content/bootStrap/CSS/lato-font.css" media="all" rel="stylesheet" />
     <link href="../Content/bootStrap/Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -134,15 +134,19 @@
                         <div class="col-lg-12">
                             <ol class="breadcrumb">
                                 <li><strong>产品中心</strong></li>
-                                <li><strong>伺服驱动器</strong></li>
+                                <li><strong><%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %></strong>
+                                    <script type="text/javascript">
+                                        getUrlParam("ProductType");
+                                </script>
+                                </li>
                             </ol>
                         </div>
                     </div>
                     <div class="statistics trade">
                         <div class="tabbable">
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#jilu1" data-toggle="tab">伺服驱动器</a></li>
-                                <li><a href="#jilu2" data-toggle="tab">伺服驱动器详情</a></li>
+                                <li class="active"><a href="#jilu1" data-toggle="tab"><%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %></a></li>
+                                <li><a href="#jilu2" data-toggle="tab"><%=new Method.ProductType().GetName(Request["ProductType"].ToString()) %>详情</a></li>
                             </ul>
                             <div class="tab-content">
                                 <div class="stati-content tab-pane active" id="jilu1">

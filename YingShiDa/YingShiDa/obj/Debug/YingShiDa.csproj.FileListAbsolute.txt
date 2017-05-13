@@ -173,4 +173,3 @@ G:\YingShiDa\qiangyuguo.github.io\YingShiDa\YingShiDa\obj\Debug\YingShiDa.Main.r
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\YingShiDa\obj\Debug\YingShiDa.csproj.GenerateResource.Cache
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\YingShiDa\obj\Debug\YingShiDa.dll
 G:\YingShiDa\qiangyuguo.github.io\YingShiDa\YingShiDa\obj\Debug\YingShiDa.pdb
-F:\其他\项目\YinShiDaProject\YingShiDa\YingShiDa\bin\Newtonsoft.Json.dll

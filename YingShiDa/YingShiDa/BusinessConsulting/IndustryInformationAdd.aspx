@@ -316,6 +316,21 @@
                                         </div>
                                     </div>
 
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 ">SEO关键字</label>
+                                        <span class="red-xing" style="margin-left: 6.7px"></span>
+                                        <div class="col-md-10">
+                                            <asp:TextBox ID="txtKeywords" TextMode="MultiLine" Rows="9" onkeyup="value=value.replace(/[&*%$#]/g,'')"  runat="server" CssClass="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="control-label col-md-1 ">SEO内容</label>
+                                        <span class="red-xing" style="margin-left: 6.7px"></span>
+                                        <div class="col-md-10">
+                                            <asp:TextBox ID="txtDescription" TextMode="MultiLine" Rows="9" onkeyup="value=value.replace(/[&*%$#]/g,'')" runat="server" CssClass="form-control" />
+                                        </div>
+                                    </div>
 
                                     <div class="modal-footer" style="border: 0px; padding-left: 4.9%">
                                         <asp:Button ID="btnSave" runat="server" class="stati-check br4 stati-tool-item" Text="保存" OnClick="btnSave_Click" OnClientClick="return checkSave()" />

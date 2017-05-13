@@ -70,6 +70,8 @@ namespace YingShiDa.Action
 
                     case "productdetailbyid": GetProductDetailByID(context); break;//根据ProductID得到产品分类的产品详情
 
+                    case "productdetailbyptype": GetProductDetailByPType(context); break;//根据ProductType得到产品分类的产品详情
+
                     case "productmodelandname": GetProductModelAndName(context); break;//根据产品型号和产品名称得到产品列表
 
                     case "productrelation": GetProductRelation(context); break;//根据产品详情ID得到关联的产品
@@ -557,7 +559,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.ProductCenterDetail> cp = Factory.GetExecution().GetByWhereSqlList<Model.ProductCenterDetail>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.ProductCenterDetail> cp = Factory.GetExecution().GetByWhereSqlList<Model.ProductCenterDetail>(" and Language=" + Language+" and ID="+ID, " UpdateTime desc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -584,6 +586,32 @@ namespace YingShiDa.Action
                 if (dbm.Open())
                 {
                     DataTable dt = DAL.GetDataTable.GetProductDetailByID(Language,ProductID, dbm);
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
+                    context.Response.Write(jsonStr);
+                }
+            }
+            catch (Exception ex)
+            {
+                context.Response.Write("FAIL|无法获取驳回原因");
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
+
+        public string GetProductDetailByPType(HttpContext context)
+        {
+            string jsonStr = string.Empty;
+            int Language = Convert.ToInt32(context.Request.Params["lang"]);
+            string ProductType = context.Request.Params["ProductType"];
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            try
+            {
+                if (dbm.Open())
+                {
+                    DataTable dt = DAL.GetDataTable.GetProductDetailByPType(Language, ProductType, dbm);
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(dt);
                     context.Response.Write(jsonStr);
                 }

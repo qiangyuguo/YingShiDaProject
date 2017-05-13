@@ -23,5 +23,7 @@ namespace Model
         public string LogoUrl { get; set; }
         public string TextUrl { get; set; }
         public Nullable<int> Language { get; set; }
+        public string Keywords { get; set; }
+        public string Description { get; set; }
     }
 }

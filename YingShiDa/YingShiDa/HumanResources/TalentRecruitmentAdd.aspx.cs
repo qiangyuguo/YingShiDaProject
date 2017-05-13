@@ -70,6 +70,8 @@ namespace YingShiDa.HumanResources
                     txtCreatePeople.Text = cp.CreatePeople;
                     HomePageUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.LogoUrl;
                     HomePageUploadFileName.Text = cp.LogoUrl;
+                    txtKeywords.Text = cp.Keywords;
+                    txtDescription.Text = cp.Description;
                 }
             }
         }
@@ -109,6 +111,8 @@ namespace YingShiDa.HumanResources
                         cp.LogoUrl = HomePageUploadFileName.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
+                        cp.Keywords = txtKeywords.Text.Trim();
+                        cp.Description = txtDescription.Text.Trim();
                         bool flag = Factory.GetExecution().Update<Model.Recruitment>(cp);
                         if (flag)
                         {
@@ -132,6 +136,8 @@ namespace YingShiDa.HumanResources
                     cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
+                    cp.Keywords = txtKeywords.Text.Trim();
+                    cp.Description = txtDescription.Text.Trim();
                     bool flag = Factory.GetExecution().Add<Model.Recruitment>(cp);
                     if (flag)
                     {

@@ -67,6 +67,8 @@ namespace YingShiDa.AboutUs
                     HomePageUploadFileName.Text = cp.LogoUrl;
                     TextUploadImg.ImageUrl = WebSite.IMAGESERVER_WEBPATH + photoPath + cp.TextUrl;
                     TextUploadFileName.Text = cp.TextUrl;
+                    txtKeywords.Text = cp.Keywords;
+                    txtDescription.Text = cp.Description;
                 }
             }
         }
@@ -93,6 +95,8 @@ namespace YingShiDa.AboutUs
                         cp.TextUrl = TextUploadFileName.Text;
                         cp.CreatePeople = txtCreatePeople.Text;
                         cp.UpdateTime = DateTime.Now;
+                        cp.Keywords = txtKeywords.Text.Trim();
+                        cp.Description = txtDescription.Text.Trim();
                         bool flag = Factory.GetExecution().Update<Model.Company_Profile>(cp);
                         if (flag)
                         {
@@ -112,6 +116,8 @@ namespace YingShiDa.AboutUs
                     cp.CreatePeople = txtCreatePeople.Text;
                     cp.UpdateTime = DateTime.Now;
                     cp.CreateTime = DateTime.Now;
+                    cp.Keywords = txtKeywords.Text.Trim();
+                    cp.Description = txtDescription.Text.Trim();
                     bool flag = Factory.GetExecution().Add<Model.Company_Profile>(cp);
                     if (flag)
                     {
