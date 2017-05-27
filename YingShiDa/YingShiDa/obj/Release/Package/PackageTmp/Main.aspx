@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
 <head>
-    <title runat="server" id="titleInfo">英仕达后台管理系统</title>
+    <title runat="server" id="titleInfo">英士达后台管理系统</title>
     <meta http-equiv="pragma" content="no-cache" />
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="0" />

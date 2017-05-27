@@ -101,7 +101,7 @@
         <div class="page" id="divPage">
             <div class="inner">
                 <div class="div1">
-                    <span>英仕达后台管理系统</span>
+                    <span>英士达后台管理系统</span>
                 </div>
                 <div class="header">
                     <div class="logo" id="PreferencesLogo">

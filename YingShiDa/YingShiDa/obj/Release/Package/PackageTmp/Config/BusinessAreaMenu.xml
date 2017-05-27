@@ -5,7 +5,7 @@
     <Menu name="企业文化" key="QYWH" value="/AboutUs/CorporateCulture.aspx" />
     <Menu name="企业荣誉" key="QYRY" value="/AboutUs/EnterpriseHonor.aspx" />
   </Menu>
-  <Menu name="企业咨询" key="YEZX" value="">
+  <Menu name="企业资讯" key="YEZX" value="">
     <Menu name="公司新闻" key="GSXW" value="/BusinessConsulting/CompanyNews.aspx" />
     <Menu name="行业资讯" key="HYZX" value="/BusinessConsulting/IndustryInformation.aspx" />
   </Menu>
