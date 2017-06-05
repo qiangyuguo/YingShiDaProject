@@ -26,21 +26,22 @@
   <Menu name="人力资源" key="RLZY" value="">
     <Menu name="人才理念" key="RCLN" value="/HumanResources/TalentConcept.aspx" />
     <Menu name="人才招聘" key="RCZP" value="/HumanResources/TalentRecruitment.aspx" />
-    <Menu name="员工风采" key="YGFC" value="/HumanResources/StaffStyle.aspx" />
+    <Menu name="员工风采" key="YGFC" value="/Carousel/TeamCarousel.aspx" />
   </Menu>
   <Menu name="联系我们" key="LXWM" value="">
     <Menu name="联系方式" key="LXFS" value="/ContactUs/ContactInformation.aspx" />
-    <Menu name="公司位置" key="GSWZ" value="/ContactUs/CompanyLocation.aspx" />
   </Menu>
   <Menu name="轮播图片" key="LBTP" value="">
     <Menu name="首页轮播图片" key="SYLBTP" value="/Carousel/HomePageCarousel.aspx" />
-    <Menu name="团队轮播图片" key="TDLBTP" value="/Carousel/TeamCarousel.aspx" />
   </Menu>
 </MenuList>
 
 
 <!--<Menu name="下载中心" key="XZZX" value="">
+<Menu name="员工风采" key="YGFC" value="/HumanResources/StaffStyle.aspx" />
+<Menu name="团队轮播图片" key="TDLBTP" value="/Carousel/TeamCarousel.aspx" />
   <Menu name="伺服驱动器" key="XZCFQDQ" value="/ProductCenter/XZServoDriver.aspx" />
+  <Menu name="公司位置" key="GSWZ" value="/ContactUs/CompanyLocation.aspx" />
   <Menu name="伺服电机" key="XZCFDJ" value="/ProductCenter/XZServoMotor.aspx" />
   <Menu name="闭环步进驱动" key="XZBHBJQD" value="/ProductCenter/XZClosedLoopDteppingDrive.aspx"/>
   <Menu name="步进驱动器" key="XZBJQDQ" value="/ProductCenter/XZStepDrive.aspx"/>

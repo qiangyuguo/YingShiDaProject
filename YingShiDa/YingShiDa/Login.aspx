@@ -96,12 +96,12 @@
     </script>
 </head>
 <body style="overflow-x: hidden; overflow-y: hidden; width: 100%; height: 100%;">
-    <img src="<%=bgFile %>" alt="" class="beijing" style="width: 100%; height: 100%;" />
+    <img src="PlatFormTemplates//Default/bg.jpg" alt="" class="beijing" style="width: 100%; height: 100%;" />
     <form id="form1" runat="server" defaultbutton="btnLogin">
         <div class="page" id="divPage">
             <div class="inner">
                 <div class="div1">
-                    <span>英士达后台管理系统</span>
+                   
                 </div>
                 <div class="header">
                     <div class="logo" id="PreferencesLogo">
@@ -119,7 +119,7 @@
                             <table cellpadding="0" cellspacing="0" width="100%" <%-- style="margin-top: 10px"--%>>
                                 <tr>
                                     <td>
-                                        <span>用户登录</span>
+                                        <span style="color:#2d2d2d;font-size:24px;">管理员登录</span>
                                     </td>
                                 </tr>
 
@@ -137,7 +137,7 @@
                                         <div>
                                             <asp:Image ID="Image1" runat="server" ImageUrl="/Content/Skin/skin_default/img/zhanghu.png" />
                                         </div>
-                                        <asp:TextBox ID="txtMobilePhone" runat="server" class="ipt-t" Text="请输入账号" onfocus="cleartxt(this.id)" placeholder="请输入账号" Style="width: 250px"></asp:TextBox>
+                                        <asp:TextBox ID="txtMobilePhone" runat="server" class="ipt-t" onfocus="cleartxt(this.id)" placeholder="用户名" Style="width: 250px"></asp:TextBox>
                                     </td>
                                 </tr>
 
@@ -160,14 +160,14 @@
                                         <div>
                                             <asp:Image ID="Image3" runat="server" ImageUrl="/Content/Skin/skin_default/img/mima.png" />
                                         </div>
-                                        <asp:TextBox runat="server" ID="txtPassword" TextMode="Password" class="ipt-t ipt-t-pwd" Style="width: 250px"></asp:TextBox>
+                                        <asp:TextBox runat="server" ID="txtPassword" TextMode="Password" class="ipt-t ipt-t-pwd" Style="width: 250px" placeholder="密码"></asp:TextBox>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
                                         <div>
                                             <asp:TextBox ID="txtValiteCode" Width="100px" Height="20px" runat="server" class="ipt-t" Style="margin-top: 0px; margin-bottom: 10px" MaxLength="4"></asp:TextBox>
-                                            <a style="margin-left: 12px; text-decoration: underline; font-size: 14px; position: absolute; margin-top: 8px; right: 179px;"
+                                            <a style="margin-left: 12px; text-decoration: underline; font-size: 14px; position: absolute; margin-top: 8px; text-decoration:none;"
                                                 href="javascript:changeCode()" id="btnRegister">换一换</a>
                                             <a href="javascript:changeCode()" style="position: absolute; margin-left: 88px;">
                                                 <asp:Image ID="valiCode" runat="server" Width="99px" Height="30px" /></a>

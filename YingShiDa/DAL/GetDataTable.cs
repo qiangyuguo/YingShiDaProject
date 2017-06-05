@@ -30,7 +30,7 @@ namespace DAL
             {
                 strSql.AppendFormat(" AND t1.UpdateTime between '{0} 00:00:00' and '{1} 23:59:59' ", startDate, endDate);
             }
-            strSql.Append(" ORDER BY t1.UpdateTime DESC ");
+            strSql.Append(" ORDER BY t1.ID ASC ");
 
             SqlParameter[] parameters = {
                         new SqlParameter("@sql", SqlDbType.VarChar,3000) ,
@@ -251,6 +251,64 @@ where 1=1 ");
         }
         #endregion
 
+        #region 根据产品型号名称和产品ID判断是否存在产品型号
+        public static DataTable IsExistProductModel(string ProductModel, string ProductID, DBOperationManagment dbm)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append(@" select * from ProductCenterModel pcm where 1=1 ");
+
+            if (!string.IsNullOrEmpty(ProductModel))
+            {
+                strSql.AppendFormat(" AND pcm.ProductModel = '{0}' ", ProductModel);
+            }
+
+            if (!string.IsNullOrEmpty(ProductID))
+            {
+                strSql.AppendFormat(" AND pcm.ProductID = '{0}' ", ProductID);
+            }
+
+            QueryData exec = new QueryData();
+            exec.SqlCommand = strSql.ToString();
+            exec.Parameters = null;
+
+            dbm.Execute(exec);
+            if (exec.ResultData != null && exec.ResultData.Tables != null && exec.ResultData.Tables.Count > 0)
+            {
+                return exec.ResultData.Tables[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+        #endregion
+
+        #region 根据产品型号得到产品详情
+        public static DataTable GetProductModelDetail(string ProductModelID, DBOperationManagment dbm)
+        {
+            StringBuilder strSql = new StringBuilder();
+            strSql.Append(@" select * from ProductCenterDetail pcd where 1=1 ");
+
+            if (!string.IsNullOrEmpty(ProductModelID))
+            {
+                strSql.AppendFormat(" AND pcd.ProductModelID = '{0}' ", ProductModelID);
+            }
+
+            QueryData exec = new QueryData();
+            exec.SqlCommand = strSql.ToString();
+            exec.Parameters = null;
+
+            dbm.Execute(exec);
+            if (exec.ResultData != null && exec.ResultData.Tables != null && exec.ResultData.Tables.Count > 0)
+            {
+                return exec.ResultData.Tables[0];
+            }
+            else
+            {
+                return null;
+            }
+        }
+        #endregion
 
         #region 根据产品详情ID得到关联的产品列表
         public static DataTable GetProductRelation(string ProductDetailID, DBOperationManagment dbm)
@@ -429,6 +487,14 @@ inner join ProductCenterModel pcm on pcd.ProductModelID=pcm.ProductModelID where
                 DataTable dt = row.Table;
                 Model.ProductCenterModel model = new Model.ProductCenterModel();
 
+                if (dt.Columns.Contains("ID") && row["ID"] != DBNull.Value && row["ID"].ToString() != "")
+                {
+                    model.ID = int.Parse(row["ID"].ToString());
+                }
+                if (dt.Columns.Contains("Language") && row["Language"] != DBNull.Value && row["Language"].ToString() != "")
+                {
+                    model.Language = int.Parse(row["Language"].ToString());
+                }
                 if (dt.Columns.Contains("ProductModelID") && row["ProductModelID"] != DBNull.Value)
                 {
                     model.ProductModelID = row["ProductModelID"].ToString();

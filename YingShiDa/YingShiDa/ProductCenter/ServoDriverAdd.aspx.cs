@@ -55,11 +55,11 @@ namespace YingShiDa.ProductCenter
                         {
                             Chinese.Checked = true;
                         }
-                        else if (cp.Language == 2)
+                        else if (cp.Language == 3)
                         {
                             English.Checked = true;
                         }
-                        else if (cp.Language == 3)
+                        else if (cp.Language == 2)
                         {
                             Traditional.Checked = true;
                         }
@@ -75,11 +75,11 @@ namespace YingShiDa.ProductCenter
                             string html = hfEditHtml.Value;
                             if (!string.IsNullOrEmpty(html))
                             {
-                                hfEditHtml.Value =html+","+ item.ProductModel;
+                                hfEditHtml.Value =html+","+ item.ProductModel + ":" + item.ID;
                             }
                             else
                             {
-                                hfEditHtml.Value = item.ProductModel;
+                                hfEditHtml.Value = item.ProductModel+":"+item.ID;
                             }
                         }
                         
@@ -128,14 +128,21 @@ namespace YingShiDa.ProductCenter
                             {
                                 if (!string.IsNullOrEmpty(item.ProductModel))
                                 {
-                                    Model.ProductCenterModel pcm = new Model.ProductCenterModel();
-                                    pcm.ProductModelID = RuleUtility.IDsCreater.GetCreater().CreateProductModelID(dbm);
-                                    pcm.Language = Language;
-                                    pcm.ProductID = cp.ProductID;
-                                    pcm.ProductModel = item.ProductModel;
-                                    pcm.CreateTime = DateTime.Now;
-                                    pcm.UpdateTime = DateTime.Now;
-                                    flag2 = Factory.GetExecution().Add<Model.ProductCenterModel>(pcm);
+                                    DataTable dt = DAL.GetDataTable.IsExistProductModel(item.ProductModel, cp.ProductID,dbm);
+                                    if (dt != null && dt.Rows.Count > 0)
+                                    {
+                                    }
+                                    else
+                                    {
+                                        Model.ProductCenterModel pcm = new Model.ProductCenterModel();
+                                        pcm.ProductModelID = RuleUtility.IDsCreater.GetCreater().CreateProductModelID(dbm);
+                                        pcm.Language = Language;
+                                        pcm.ProductID = cp.ProductID;
+                                        pcm.ProductModel = item.ProductModel;
+                                        pcm.CreateTime = DateTime.Now;
+                                        pcm.UpdateTime = DateTime.Now;
+                                        flag2 = Factory.GetExecution().Add<Model.ProductCenterModel>(pcm);
+                                    }
                                 }
                             }
                         }

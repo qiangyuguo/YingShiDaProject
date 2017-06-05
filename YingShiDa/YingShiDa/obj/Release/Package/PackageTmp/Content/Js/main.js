@@ -4,6 +4,7 @@
  * Time: 2016-11-10
  */
 $(function () {
+    $.PE_FrameTab.AddNew('/AboutUs/CompanyProfile.aspx', '公司简介');
     "use strict"
     var mainConfig = {
         cs: {

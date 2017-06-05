@@ -384,8 +384,8 @@
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
                                             <asp:RadioButton runat="server" onclick="SwitchLanguage(this)" ID="Chinese" GroupName="language" value="1" Checked="true" OnCheckedChanged="Chinese_CheckedChanged" AutoPostBack="true" /><em class="tit">中文</em>
-                                            <asp:RadioButton ID="English" onclick="SwitchLanguage(this)" runat="server" GroupName="language" value="2" OnCheckedChanged="English_CheckedChanged" AutoPostBack="true" /><em class="tit">英文</em>
-                                            <asp:RadioButton ID="Traditional" onclick="SwitchLanguage(this)" runat="server" GroupName="language" value="3" OnCheckedChanged="Traditional_CheckedChanged" AutoPostBack="true" /><em class="tit">繁体</em>
+                                            <asp:RadioButton ID="English" onclick="SwitchLanguage(this)" runat="server" GroupName="language" value="3" OnCheckedChanged="English_CheckedChanged" AutoPostBack="true" /><em class="tit">英文</em>
+                                            <asp:RadioButton ID="Traditional" onclick="SwitchLanguage(this)" runat="server" GroupName="language" value="2" OnCheckedChanged="Traditional_CheckedChanged" AutoPostBack="true" /><em class="tit">繁体</em>
                                         </div>
                                     </div>
 

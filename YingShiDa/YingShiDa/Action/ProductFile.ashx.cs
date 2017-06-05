@@ -76,6 +76,8 @@ namespace YingShiDa.Action
 
                     case "productrelation": GetProductRelation(context); break;//根据产品详情ID得到关联的产品
 
+                    case "delproduct": DelProduct(context); break;
+
                 }
 
             }
@@ -90,6 +92,59 @@ namespace YingShiDa.Action
             }
         }
 
+        public string DelProduct(HttpContext context)
+        {
+            int ID =Convert.ToInt32(context.Request["ID"]);
+            DBOperation.DBOperationManagment dbm = new DBOperation.DBOperationManagment();
+            string msg = string.Empty;
+            string error = string.Empty;
+            string jsonStr = string.Empty;
+            try
+            {
+                if (dbm.Open())
+                {
+                    Dictionary<string, string> r1 = new Dictionary<string, string>();
+                    Model.ProductCenterModel pcm = Factory.GetExecution().SelectByID<Model.ProductCenterModel>(ID);
+                    if (pcm != null)
+                    {
+                        DataTable dt = DAL.GetDataTable.GetProductModelDetail(pcm.ProductModelID, dbm);
+                        if (dt != null&&dt.Rows.Count>0)
+                        {
+                            msg = "false";
+                            error = "此产品型号已被绑定，不能删除!";
+                            r1.Add("msg", msg);
+                            r1.Add("error", error);
+                            jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(r1);
+                            context.Response.Write(jsonStr);
+                            return jsonStr;
+                        }
+                    }
+                    if (Factory.GetExecution().Delete<Model.ProductCenterModel>(ID))
+                    {
+                        msg = "true";
+                    }
+                    else
+                    {
+                        msg = "false";
+                        error = "删除失败!";
+                    }
+                    r1.Add("msg", msg);
+                    r1.Add("error", error);
+                    jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(r1);
+                    context.Response.Write(jsonStr);
+                    return jsonStr;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogTool.LogWriter.WriteError("读取资源出错，！", ex);
+            }
+            finally
+            {
+                dbm.Close();
+            }
+            return jsonStr;
+        }
 
         public string GetComPanyProfile(HttpContext context)
         {
@@ -100,7 +155,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Company_Profile> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Profile>(" and Language="+ Language, " UpdateTime desc");
+                    List<Model.Company_Profile> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Profile>(" and Language="+ Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -125,7 +180,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Company_History> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_History>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Company_History> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_History>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -150,7 +205,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Company_Culture> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Culture>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Company_Culture> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Culture>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -175,7 +230,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Company_Honor> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Honor>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Company_Honor> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Honor>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -200,7 +255,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Company_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_News>(" and Language=" + Language, " UpdateTime desc", " ID,Title,UpdateTime ");
+                    List<Model.Company_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_News>(" and Language=" + Language, " ID asc", " ID,Title,UpdateTime ");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -229,7 +284,7 @@ namespace YingShiDa.Action
                     Model.Company_News cn = Factory.GetExecution().SelectByID<Model.Company_News>(ID);
                     cn.BrowseTimes += 1;
                     bool flag = Factory.GetExecution().Update<Model.Company_News>(cn);
-                    List<Model.Company_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_News>(" and ID="+ ID + " and Language=" + Language, " UpdateTime desc");
+                    List<Model.Company_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_News>(" and ID="+ ID + " and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -254,7 +309,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Industry_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Industry_News>(" and Language=" + Language, " UpdateTime desc", " ID,Title,UpdateTime ");
+                    List<Model.Industry_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Industry_News>(" and Language=" + Language, " ID asc", " ID,Title,UpdateTime ");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -283,7 +338,7 @@ namespace YingShiDa.Action
                     Model.Industry_News iNew = Factory.GetExecution().SelectByID<Model.Industry_News>(ID);
                     iNew.BrowseTimes += 1;
                     bool flag = Factory.GetExecution().Update<Model.Industry_News>(iNew);
-                    List<Model.Industry_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Industry_News>(" and ID=" + ID + " and Language=" + Language, " UpdateTime desc");
+                    List<Model.Industry_News> cp = Factory.GetExecution().GetByWhereSqlList<Model.Industry_News>(" and ID=" + ID + " and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -308,7 +363,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Service_Concept> cp = Factory.GetExecution().GetByWhereSqlList<Model.Service_Concept>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Service_Concept> cp = Factory.GetExecution().GetByWhereSqlList<Model.Service_Concept>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -333,7 +388,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.CommonQuestion> cp = Factory.GetExecution().GetByWhereSqlList<Model.CommonQuestion>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.CommonQuestion> cp = Factory.GetExecution().GetByWhereSqlList<Model.CommonQuestion>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -358,7 +413,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Talent_Concept> cp = Factory.GetExecution().GetByWhereSqlList<Model.Talent_Concept>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Talent_Concept> cp = Factory.GetExecution().GetByWhereSqlList<Model.Talent_Concept>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -383,7 +438,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Recruitment> cp = Factory.GetExecution().GetByWhereSqlList<Model.Recruitment>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Recruitment> cp = Factory.GetExecution().GetByWhereSqlList<Model.Recruitment>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -408,7 +463,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Staff_Presence> cp = Factory.GetExecution().GetByWhereSqlList<Model.Staff_Presence>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Staff_Presence> cp = Factory.GetExecution().GetByWhereSqlList<Model.Staff_Presence>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -433,7 +488,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Company_Location> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Location>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Company_Location> cp = Factory.GetExecution().GetByWhereSqlList<Model.Company_Location>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -458,7 +513,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.InBanner> cp = Factory.GetExecution().GetByWhereSqlList<Model.InBanner>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.InBanner> cp = Factory.GetExecution().GetByWhereSqlList<Model.InBanner>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -483,7 +538,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.Contact_US> cp = Factory.GetExecution().GetByWhereSqlList<Model.Contact_US>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.Contact_US> cp = Factory.GetExecution().GetByWhereSqlList<Model.Contact_US>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -508,7 +563,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.InTeam> cp = Factory.GetExecution().GetByWhereSqlList<Model.InTeam>(" and Language=" + Language, " UpdateTime desc");
+                    List<Model.InTeam> cp = Factory.GetExecution().GetByWhereSqlList<Model.InTeam>(" and Language=" + Language, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }
@@ -559,7 +614,7 @@ namespace YingShiDa.Action
             {
                 if (dbm.Open())
                 {
-                    List<Model.ProductCenterDetail> cp = Factory.GetExecution().GetByWhereSqlList<Model.ProductCenterDetail>(" and Language=" + Language+" and ID="+ID, " UpdateTime desc");
+                    List<Model.ProductCenterDetail> cp = Factory.GetExecution().GetByWhereSqlList<Model.ProductCenterDetail>(" and Language=" + Language+" and ID="+ID, " ID asc");
                     jsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(cp);
                     context.Response.Write(jsonStr);
                 }

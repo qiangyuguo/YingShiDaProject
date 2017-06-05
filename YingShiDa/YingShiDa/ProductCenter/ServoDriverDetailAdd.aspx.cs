@@ -121,11 +121,11 @@ namespace YingShiDa.ProductCenter
                             {
                                 Chinese.Checked = true;
                             }
-                            else if (cp.Language == 2)
+                            else if (cp.Language == 3)
                             {
                                 English.Checked = true;
                             }
-                            else if (cp.Language == 3)
+                            else if (cp.Language == 2)
                             {
                                 Traditional.Checked = true;
                             }

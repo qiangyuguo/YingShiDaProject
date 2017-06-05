@@ -235,8 +235,8 @@
                                         <span class="red-xing">*</span>
                                         <div class="col-md-10">
                                             <asp:RadioButton runat="server" ID="Chinese" GroupName="language" value="1" Checked="true" /><em class="tit">中文</em>
-                                            <asp:RadioButton ID="English" runat="server" GroupName="language" value="2" /><em class="tit">英文</em>
-                                            <asp:RadioButton ID="Traditional" runat="server" GroupName="language" value="3"/><em class="tit">繁体</em>
+                                            <asp:RadioButton ID="English" runat="server" GroupName="language" value="3" /><em class="tit">英文</em>
+                                            <asp:RadioButton ID="Traditional" runat="server" GroupName="language" value="2"/><em class="tit">繁体</em>
                                         </div>
                                     </div>
 

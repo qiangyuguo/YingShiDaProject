@@ -3,7 +3,7 @@
         var hfEditHtml = $("#hfEditHtml").val().split(',');
         var html = "";
         for (var i = 0; i < hfEditHtml.length; i++) {
-            html += "<tr><td style=\"text-align: left;\">" + hfEditHtml[i] + "</td><td style=\"text-align: left;\">上次添加</td></tr>";
+            html += "<tr><td style=\"text-align: left;\">" + hfEditHtml[i].split(':')[0] + "</td><td style=\"text-align: left;\"><a type=\"button\" class=\"color-light-blue\" onclick=\"delProduct(this,'" + hfEditHtml[i].split(':')[1] + "')\">删除</a></td></tr>";
         }
         $("#AddProductModel").append(html);
     }
@@ -59,6 +59,19 @@ function ProductAdd()
         return false;
     }
     return false;
+}
+
+function delProduct(obj, ID)
+{
+    $.post('/Action/ProductFile.ashx', { action: "DelProduct", ID: ID },
+        function (data) {
+            var dataJson = JSON.parse(data);
+            if (dataJson.msg == "true") {
+                $(obj).parent().parent().remove();
+            } else {
+                alert(dataJson.error);
+            }
+    });
 }
 
 function delProductModel(obj)

@@ -28,7 +28,10 @@
                     </button>
                     <a class="navbar-brand" href="javascript:void(0)"></a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar" class="navbar-collapse collapse" height="54px">
+                    <ul class="nav navbar-nav navbar-left newcss">
+                        <img src="Content/images/logo.png" style="display:inline;margin:0 10px 10px 0 "/><span style="color:#fff;height:54px;line-height:54px;font-size:24px;">英士达后台管理系统</span>
+                    </ul>
                     <ul class="nav navbar-nav navbar-right newcss">
                         <li style="display: none;">
                             <asp:LinkButton runat="server" ID="SC" OnClick="SC_Click">简体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
@@ -36,7 +39,7 @@
                             <asp:LinkButton runat="server" ID="TC" OnClick="TC_Click">繁体中文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
                         <li style="display: none;">
                             <asp:LinkButton runat="server" ID="EN" OnClick="EN_Click">英文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</asp:LinkButton></li>
-                        <li><a href="javascript:void(0)"><%Model.SysUser userinfo = (Model.SysUser)Session["UserInfo"];%><%=userinfo.UserName%>  欢迎您</a></li>
+                        <li><a id="user0" href="javascript:void(0)"><%Model.SysUser userinfo = (Model.SysUser)Session["UserInfo"];%><%=userinfo.UserName%>  欢迎您</a></li>
                         <%--<li><a href="javascript:void(0)" onclick="javascript: $.PE_FrameTab.AddNew('SystemManage/UserEdit.aspx','修改密码')">修改密码</a></li>
                         <li>
                             <asp:LinkButton ID="lbtnLogout" runat="server" OnClick="lbtnLogout_Click" CssClass="newa30">退出</asp:LinkButton></li>--%>
@@ -44,7 +47,7 @@
                 </div>
             </div>
         </nav>
-        <nav class="navbar-default navbar-static-side">
+        <nav class="navbar-default navbar-static-side" style="margin-top:8px;">
             <ul class="nav nav-sidebar" id="menuNavigation">
                 <% 
                     List<Common.WebSite.Menu> topMenus = MenuList.FindAll(
@@ -96,7 +99,8 @@
         </nav>
         <div id="wrapper">
             <div id="page-wrapper" class="gray-bg dashbard-1">
-                <div id="main_right_frame"></div>
+                <div id="main_right_frame" >
+                </div>
             </div>
         </div>
         <div style="text-align: center; line-height: 25px; padding-left: 200px; background: #ededed;">

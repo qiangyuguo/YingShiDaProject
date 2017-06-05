@@ -752,6 +752,7 @@
     <Content Include="Content\images\leftarrow_big.gif" />
     <Content Include="Content\images\login\bg.gif" />
     <Content Include="Content\images\login\bgx.jpg" />
+    <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\mail.gif" />
     <Content Include="Content\images\map-ico.png" />
     <Content Include="Content\images\menuDnArrow.gif" />

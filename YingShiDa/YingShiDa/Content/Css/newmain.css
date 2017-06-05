@@ -7,7 +7,7 @@ body {
     /*font-family: "微软雅黑","Microsoft Yahei";*/
     color: #333;
     overflow-x: hidden;
-    background-color: #2E4250;
+    background-color: #ffffff;
 }
 
 .sub-header {
@@ -29,10 +29,13 @@ body {
     margin-top: 2px;
 }
 
+
+#navbar{background-color: #43b92f;}
+#topNavigation{background-color: #43b92f;}
 .navbar-default {
     background-color: transparent;
 }
-
+#user0{background-color:#43b92f;padding-right: 20px;}
 .navbar-static-side {
     webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -105,24 +108,29 @@ body {
 }
 
 .nav > li > a {
-    color: #fff;
+    color: #736968;
     padding: 16px 15px;
     letter-spacing: 2px;
     font-weight: bold;
     outline: none;
+    background-color: #fff;
 }
 
+/*#menuNavigation > li > ul > li a {
+    background-color: #fff;
+}*/
 .nav > li.son > a {
     padding: 16px 15px 16px 45px;
     /*text-indent: 20px;*/
     position: relative;
     outline: none;
+    color: #9a9a9a;
 }
 
 .sonaico {
     width: 5px;
     height: 5px;
-    background-image: url(images/ico.png);
+    /*background-image: url(images/ico.png);*/
     position: absolute;
     top: 22px;
     left: 33px;
@@ -134,27 +142,30 @@ body {
 }
 
 .nav > li.son > a.Aactive, .nav > li.son > a:hover {
-    background-color: #1D2733;
+    background-color: #43b92f/*1D2733*/;
+    color: #fff;
 }
 
 .nav-sidebar > li > a {
     padding-right: 20px;
     padding-left: 30px;
     border-left: 4px solid rgba(0, 0, 0, 0);
-    color: #fff;
+    border-bottom: 1px solid #e3e8dd/*d4dacc*/;
+    color: #736968;
+    background-color: #f8f8f8;
 }
 
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-    color: #fff;
-    /*background-color: #253140;*/
+    color: #736968;
+    background-color: #f8f8f8/*#253140*/;
 }
 
 .nav-sidebar > li > a.Aactive,
 .nav-sidebar > li > a:hover {
-    background-color: #253140;
-    /*border-left: 4px solid #7599CC;*/
+    background-color: #f8f8f8;
+    border-left: 4px solid #43b92f;
 }
 
 .main {
@@ -195,7 +206,7 @@ body {
 }
 
 .navbar-inverse {
-    background-color: #535353;
+    background-color: #769ACD;
 }
 
     .navbar-inverse .navbar-nav > li > a {
